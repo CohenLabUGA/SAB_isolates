@@ -1,0 +1,32 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2759
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 #use BayesHammer/IonHammer module\
+#use FASTQ file for error correction to run (will not run for \
+PacBio tho)\
+#PacBio reads provided should be filtered subreads in FASTQ/FASTA \
+#PacBio CCS/Reads of Insert reads or pre-corrected (using third-party \
+software) PacBio CLR / Oxford Nanopore reads can be simply provided as \
+single reads to SPAdes.\
+#NOT reccomended to run with low coverage (less \
+than 5)\
+#make sure that for every read from R1.fastq the corresponding paired read from R2.fastq is placed in the respective paired file on the same line number\
+#If adapter and/or quality trimming software has been used prior to assembly, files with the orphan reads can be provided as "single read files" for the corresponding read-pair library\
+#SPAdes will use PacBio CLR and Oxford Nanopore reads for gap closure and repeat resolution.\
+\
+\
+#provide full path to rnaspades\
+<rnaspades installation dir>/bin/rnaspades.py\
+rnaspades.py --pacbio <pacbio file name> --dataset <YAML file> --pe<#>-1 \
+<file_name> --pe<#>-2 <file_name> -o <output_dir>\
+\
+#Options:\
+	#-1 <file_name>,	forward reads\
+	#-2 <file_name>, 	reverse reads\
+	#--dataset <YAML file>,	csv file containging path to data files and type of data separated by brackets\
+	#--cov-cutoff <auto, off, or positive float> coverage threshold \
+	#--phred-offset <33 or 64> }

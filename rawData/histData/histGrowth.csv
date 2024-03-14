@@ -1,0 +1,77 @@
+﻿Organism,Treatment,GrowthRate,Shelf,Taxa
+C. closterium UGA4,High Fe,0.9867,Outer,Diatom
+C. closterium UGA4,High Fe,1.511,Outer,Diatom
+C. closterium UGA4,High Fe,0.8855,Outer,Diatom
+C. closterium UGA4,High Fe,0.9881,Outer,Diatom
+C. closterium UGA4,High Fe,1.6506,Outer,Diatom
+C. closterium UGA4,High Fe,0.6626,Outer,Diatom
+C. closterium UGA4,High Fe,0.6047,Outer,Diatom
+C. closterium UGA4,High Fe,1.3134,Outer,Diatom
+C. closterium UGA4,High Fe,1.1313,Outer,Diatom
+C. closterium UGA4,Low Fe,0.449,Outer,Diatom
+C. closterium UGA4,Low Fe,0.3077,Outer,Diatom
+C. closterium UGA4,Low Fe,0.6119,Outer,Diatom
+C. closterium UGA4,Low Fe,0.4217,Outer,Diatom
+C. closterium UGA4,Low Fe,0.5501,Outer,Diatom
+C. closterium UGA4,Low Fe,0.7712,Outer,Diatom
+C. closterium UGA4,Low Fe,0.7097,Outer,Diatom
+C. closterium UGA4,Low Fe,0.7326,Outer,Diatom
+C. closterium UGA4,Low Fe,0.264,Outer,Diatom
+C. closterium UGA4,Low Fe,0.5599,Outer,Diatom
+C. closterium UGA4,Low Fe,0.6154,Outer,Diatom
+C. closterium UGA8,High Fe,1.3274,Inner,Diatom
+C. closterium UGA8,High Fe,1.6033,Inner,Diatom
+C. closterium UGA8,High Fe,0.7936,Inner,Diatom
+C. closterium UGA8,High Fe,1.2348,Inner,Diatom
+C. closterium UGA8,High Fe,1.0163,Inner,Diatom
+C. closterium UGA8,High Fe,1.5611,Inner,Diatom
+C. closterium UGA8,High Fe,1.0087,Inner,Diatom
+C. closterium UGA8,High Fe,0.92,Inner,Diatom
+C. closterium UGA8,High Fe,2.1926,Inner,Diatom
+C. closterium UGA8,High Fe,1.7071,Inner,Diatom
+C. closterium UGA8,High Fe,1.6813,Inner,Diatom
+C. closterium UGA8,High Fe,0.8835,Inner,Diatom
+C. closterium UGA8,High Fe,0.5334,Inner,Diatom
+C. closterium UGA8,High Fe,1.0452,Inner,Diatom
+C. closterium UGA8,Low Fe,0.6333,Inner,Diatom
+C. closterium UGA8,Low Fe,0.3166,Inner,Diatom
+C. closterium UGA8,Low Fe,0.4517,Inner,Diatom
+C. closterium UGA8,Low Fe,0.4719,Inner,Diatom
+C. closterium UGA8,Low Fe,1.1229,Inner,Diatom
+C. closterium UGA8,Low Fe,0.3903,Inner,Diatom
+C. closterium UGA8,Low Fe,0.2752,Inner,Diatom
+C. closterium UGA8,Low Fe,0.94,Inner,Diatom
+G. oceanica,High Fe,1.0502,Inner,Coccolithophore
+G. oceanica,High Fe,0.8352,Inner,Coccolithophore
+G. oceanica,High Fe,1.0384,Inner,Coccolithophore
+G. oceanica,High Fe,0.6113,Inner,Coccolithophore
+G. oceanica,High Fe,0.8076,Inner,Coccolithophore
+G. oceanica,High Fe,1.3124,Inner,Coccolithophore
+G. oceanica,High Fe,0.8777,Inner,Coccolithophore
+G. oceanica,High Fe,1.2886,Inner,Coccolithophore
+G. oceanica,High Fe,0.9895,Inner,Coccolithophore
+G. oceanica,High Fe,0.8518,Inner,Coccolithophore
+G. oceanica,High Fe,0.8916,Inner,Coccolithophore
+G. oceanica,High Fe,0.9258,Inner,Coccolithophore
+G. oceanica,High Fe,1.0061,Inner,Coccolithophore
+G. oceanica,High Fe,1.0241,Inner,Coccolithophore
+G. oceanica,Low Fe,0.5982,Inner,Coccolithophore
+G. oceanica,Low Fe,0.476,Inner,Coccolithophore
+G. oceanica,Low Fe,0.2883,Inner,Coccolithophore
+G. oceanica,Low Fe,0.8195,Inner,Coccolithophore
+G. oceanica,Low Fe,0.4459,Inner,Coccolithophore
+G. oceanica,Low Fe,0.7368,Inner,Coccolithophore
+G. oceanica,Low Fe,0.8955,Inner,Coccolithophore
+G. oceanica,Low Fe,0.7897,Inner,Coccolithophore
+G. oceanica,Low Fe,0.4741,Inner,Coccolithophore
+G. oceanica,Low Fe,0.7665,Inner,Coccolithophore
+G. huxleyi,High Fe,0.8846,Outer,Coccolithophore
+G. huxleyi,High Fe,0.8698,Outer,Coccolithophore
+G. huxleyi,High Fe,0.9028,Outer,Coccolithophore
+G. huxleyi,High Fe,0.8538,Outer,Coccolithophore
+G. huxleyi,High Fe,0.6217,Outer,Coccolithophore
+G. huxleyi,High Fe,0.813,Outer,Coccolithophore
+G. huxleyi,Low Fe,0.8758,Outer,Coccolithophore
+G. huxleyi,Low Fe,0.7923,Outer,Coccolithophore
+G. huxleyi,Low Fe,0.6838,Outer,Coccolithophore
+G. huxleyi,Low Fe,0.4574,Outer,Coccolithophore
