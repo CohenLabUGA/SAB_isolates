@@ -35,15 +35,12 @@ physioData<-read.csv(paste(path_in, 'physio_exp.csv', sep = ''))
 |   Before I can plot my data, I need to make some changes to the data frame. I use functions from the package **stringr** to replace the code for each organism with it's proper name. Next, I add a column of data for a missing treatment with the function `rbind`, we learned in class the rows of a data frame are lists and lists can be added to a data frame with the function `rbind`. Then, I add two columns with the shelf zone the organism was isolated and it's taxanomic group using a loop.
 
 ```{r clean data, comment=''}
-physioData$culture <- str_replace_all(
-  physioData$culture, 
-  c('4' = 'C. closterium UGA4','8' = 'C. closterium UGA8', 
-    '6' = 'G. oceanica','13' = 'G. huxleyi'))
+physioData$culture <- str_replace_all(physioData$culture, c('4' = 'C. closterium UGA4','8' = 'C. closterium UGA8','6' = 'G. oceanica','13' = 'G. huxleyi'))
 
 #add an empty row for missing treatment in uga4
-empty.04 <- list("C. closterium UGA4","High Fe", "04pfe19", 
-                 0, 0, 0, 0, 0, 0, 0, 0, 0)
+empty.04 <- list("C. closterium UGA4","High Fe", "04pfe19",0, 0, 0, 0, 0, 0, 0, 0, 0)
 physioData<- rbind(physioData,empty.04)
+
 for (i in 1:nrow(physioData)) {
   if (physioData$culture[i] == "G. oceanica"|physioData$culture[i] == "C. closterium UGA8"){
     physioData$Shelf[i] = "Inner shelf"} 
@@ -131,11 +128,10 @@ head(mu.signif,3)
 |   The figure I will make with show the mean and standard deviation of the growth rate under high and low iron treatments for each organism. We learned in class that rather than tediously calculating the mean and SD for each treatment and organism, `dplyr` can quickly do this for us.   
 |   First, I use the `group_by` function to group my growth rate data by organism and treatment. Then, I use the `summarise` function to calculate the mean and SD. I combine this data with the significance calculated above so I can include it in my figure. 
 ```{r make figure df, comment=''}
-
 avg.mu <- growth %>% group_by(culture,treatment,taxa,Shelf) %>%
   summarise('mu'=mean(GrowthRate), 'mu.sd'=sd(GrowthRate))
 
-mu.signif <- mu.signif %>% select(c('p.adj', 'p.adj.signif','culture', 'shelf')) %>%
+mu.signif <- mu.signif %>% select(c('p.adj','p.adj.signif','culture', 'shelf')) %>%
   mutate('treatment'='High Fe')
 
 avg.mu <- left_join(avg.mu, mu.signif)
@@ -144,28 +140,15 @@ head(avg.mu,3)
 |   Now the data is ready to plot. I will create a bar plot with error bars showing the standard deviation for the growth rate data using ggplot. In class, we learned how to make ggplots using aes() to select the x and y axis, and using geom_ to select the type of figure we wish to make. 
 ```{r make plot, comment=''}
 mu.plot <-{
-  avg.mu$culture <- factor(avg.mu$culture, 
-                           levels=c('G. oceanica','G. huxleyi',
-                                    'C. closterium UGA8','C. closterium UGA4'))
+  avg.mu$culture <- factor(avg.mu$culture, levels=c('G. oceanica','G. huxleyi','C. closterium UGA8','C. closterium UGA4'))
   brp <- ggplot(avg.mu, aes(culture, mu, fill=treatment))+
-    geom_bar(linewidth=1, 
-             color='black',stat='identity', 
-             position =position_dodge2(0.8))+
-    geom_errorbar(aes(ymin=mu-mu.sd, ymax=mu+mu.sd),
-                  position = position_dodge(width=0.9),
-                  width=0.2, linewidth=1) +
-    geom_text(aes(label=p.adj.signif, y=mu+mu.sd, 
-                  vjust=-1.6),size=c(20/.pt),show.legend=FALSE) +
+    geom_bar(linewidth=1, color='black',stat='identity', position =position_dodge2(0.8))+
+    geom_errorbar(aes(ymin=mu-mu.sd, ymax=mu+mu.sd),position = position_dodge(width=0.9), width=0.2, linewidth=1) +
+    geom_text(aes(label=p.adj.signif, y=mu+mu.sd,vjust=-1.6),size=c(20/.pt),show.legend=FALSE) +
     facet_grid(~taxa, scales="free_x", space="free_x", switch="x")+
-    labs(y=expression(paste('Growth Rate (',day^-1,')')), fill='Treatment')+
+    labs(y=expression(paste('Growth Rate (',day^-1,')')),fill='Treatment')+
     theme_pubr()+
-    theme(text = element_text(size=10),
-          axis.title.x=element_blank(), 
-          axis.text.x = element_text(face="italic"),
-          legend.position = 'bottom', 
-          strip.placement = 'outside',
-          strip.text = element_text( face='bold'),
-          strip.background = element_rect(fill='white', color='white'))  +
+    theme(text = element_text(size=10),axis.title.x=element_blank(), axis.text.x = element_text(face="italic"),legend.position = 'bottom', strip.placement = 'outside',strip.text = element_text( face='bold'),strip.background = element_rect(fill='white', color='white'))  +
     scale_fill_manual(labels=c('High iron','Low iron'),values=c("black","white")) +
     scale_x_discrete(labels=c(
       "C. closterium UGA8" = "C. closterium UGA8\n(Inner)",
