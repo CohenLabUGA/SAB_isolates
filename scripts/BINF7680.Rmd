@@ -71,7 +71,6 @@ head(growth,3)
 The function will need the data frame, organism, variable (or parameter) which I am interested in testing, and shelf location of isolation. The output of the function is a data frame with the significance information. 
 ```{r t-test function}
 high.vs.low <- function(df, organism, var, location){
-  print(paste('Running significance on ', organism,':', sep=''))
   df <- filter(df,culture == eval(quote(organism))) 
   df <- data.frame(treatment = df$treatment, param = df[[var]], culture = df$culture)
   df$treatment <- factor(df$treatment)
@@ -93,7 +92,6 @@ high.vs.low <- function(df, organism, var, location){
       f.test <- var.test(param ~ treatment,df)  
 ## 3.
       if(f.test$p.value > 0.05){
-        print("run a t.test with equal variance")
         stat.test <- t_test(df, param ~ treatment) %>% 
           adjust_pvalue(method = 'fdr') %>%
           add_significance('p.adj')
