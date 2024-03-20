@@ -83,16 +83,13 @@ high.vs.low <- function(df, organism, var, location){
   if (nrow(low.fe) >= 3){ #check there are enough rows for normality test
     normal.h <-shapiro_test(high.fe$param) 
     normal.l <- shapiro_test(low.fe$param)
-    
     if (normal.h$p.value < 0.05 || normal.l$p.value < 0.05){ 
-      print("Sample not normal, run a wilcoxon rank test")
       stat.test <- wilcox_test(df,param ~ treatment) %>% 
         adjust_pvalue(method = 'fdr') %>%
         add_significance('p.adj')
       stat.test
 ## 2. 
     }else{
-      print("Sample is normal, run an f test")
       f.test <- var.test(param ~ treatment,df)  
 ## 3.
       if(f.test$p.value > 0.05){
@@ -102,11 +99,10 @@ high.vs.low <- function(df, organism, var, location){
           add_significance('p.adj')
         stat.test
       }else{
-        print("run a t test with unequal variance")  
         stat.test <- t_test(df, param ~ treatment, var.equal = FALSE) %>% 
           adjust_pvalue(method = 'fdr') %>%
           add_significance('p.adj')
-        print(stat.test)
+        stat.test
       }
     }
   }
