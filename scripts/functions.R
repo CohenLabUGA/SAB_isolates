@@ -20,7 +20,7 @@ checkAndLoadPackages <- function(...,silent=FALSE){
   
   res<- unlist(sapply(packages, requirePkg))
   
-  if(silent == FALSE && !is.null(res)) {cat("\nBellow Packages Successfully Installed:\n\n")
+  if(silent == FALSE && !is.null(res)) {cat("\nBellow Packages Successfully Loaded:\n\n")
     print(res)
   }
 }
