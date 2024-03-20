@@ -17,9 +17,10 @@ knitr::opts_knit$set(root.dir = '/Users/lquirk/Thesis_git/')
 |   This script will utilize skills I learned in R, bash, and git during the BINF 7960 spring course. Skills learned in this course will help me visualize physiological data from my thesis, and create a clear script available on my github account. I will apply the use of creating and mutating data frames with dplyr to make a figure in ggplot.
 
 ## Set up script and read in data
+
 |   First, I will call in an R script which contains some useful functions I can use in this document. By writing `source(functions.R)`, all functions written in the file will be accessible to me. In the Carpentries course, we learned how to name and create different data structures (*lists*, *vectors*, matrices and *data* *frames*), and call these objects, calling the named function `checkAndLoadPackages` follows the same logic. First, I create a vector called `pkgs` and list each package I need for the script. Calling the vector `pkgs` within the function `checkAndLoadPackages()` will look at each package in the vector, first checking it is installed, install it if needed, then load all packages to my working directory.
 
-Next, I will create two objects called "path_" and "path_out" with the location to reading data in and save output
+Next, I will create two objects called "path\_" and "path_out" with the location to reading data in and save output
 
 ```{r set up script, comment=''}
 source('./scripts/functions.R')
@@ -32,6 +33,7 @@ physioData<-read.csv(paste(path_in, 'physio_exp.csv', sep = ''))
 ```
 
 ## Clean up data
+
 |   Before I can plot my data, I need to make some changes to the data frame. I use functions from the package **stringr** to replace the code for each organism with it's proper name. Next, I add a column of data for a missing treatment with the function `rbind`, we learned in class the rows of a data frame are lists and lists can be added to a data frame with the function `rbind`. Then, I add two columns with the shelf zone the organism was isolated and it's taxanomic group using a loop.
 
 ```{r clean data, comment=''}
@@ -52,8 +54,11 @@ for (i in 1:nrow(physioData)) {
   else{physioData$taxa[i] = "Diatom"}
 }
 ```
+
 ## Pull out growth rates
-|   For this project, I will create a figure of my growth rate data. The data file I read in includes multiple parameters so I will use **dplyr** pipes and `select` to extract the growth rate data. 
+
+|   For this project, I will create a figure of my growth rate data. The data file I read in includes multiple parameters so I will use **dplyr** pipes and `select` to extract the growth rate data.
+
 ```{r pull out growth rates, comment=''}
 colnames(physioData)
 growth <- physioData %>% 
@@ -63,12 +68,15 @@ growth <- physioData %>%
 growth$treatment <- factor(growth$treatment, levels = c("High Fe","Low Fe"))
 head(growth,3)
 ```
+
 ## Run statistical tests
+
 |   When plotting data, it is helpful to show if changes observed were statistically different. To do this, I will create a function called `high.vs.low()` to see if the growth rate between high and low iron treatments was significant. This function will perform a few jobs for me:
-1. Test for normality within iron treatments with a Wilks-shapiro test
-2. Test for equal variance between iron treatments with an f-test
-3. Run the appropriate test based on the results (wilcoxon rank test, t-test with unequal variance, or t-test with equal variance). 
-The function will need the data frame, organism, variable (or parameter) which I am interested in testing, and shelf location of isolation. The output of the function is a data frame with the significance information. 
+
+1.  Test for normality within iron treatments with a Wilks-shapiro test
+2.  Test for equal variance between iron treatments with an f-test
+3.  Run the appropriate test based on the results (wilcoxon rank test, t-test with unequal variance, or t-test with equal variance). The function will need the data frame, organism, variable (or parameter) which I am interested in testing, and shelf location of isolation. The output of the function is a data frame with the significance information.
+
 ```{r t-test function}
 high.vs.low <- function(df, organism, var, location){
   df <- filter(df,culture == eval(quote(organism))) 
@@ -109,7 +117,8 @@ high.vs.low <- function(df, organism, var, location){
 }
 ```
 
-I run the function on each organism, then I create a data frame with the significance output from the function, printing it using the head() function we learned in class. 
+I run the function on each organism, then I create a data frame with the significance output from the function, printing it using the head() function we learned in class.
+
 ```{r run significance, comment=''}
 mu.08 <- high.vs.low(growth,"C. closterium UGA8",'GrowthRate', 'Inner Shelf')  
 mu.06 <- high.vs.low(growth,"G. oceanica",'GrowthRate', 'Inner Shelf')
@@ -118,10 +127,13 @@ mu.13 <- high.vs.low(growth,"G. huxleyi",'GrowthRate', 'Outer Shelf')
 mu.signif <- bind_rows(mu.13, mu.06, mu.08)
 head(mu.signif,3)
 ```
+
 ## Plotting growth rate data
-|   The figure I will make with show the mean and standard deviation of the growth rate under high and low iron treatments for each organism. We learned in class that rather than tediously calculating the mean and SD for each treatment and organism, `dplyr` can quickly do this for us.   
-|   First, I use the `group_by` function to group my growth rate data by organism and treatment. Then, I use the `summarise` function to calculate the mean and SD. I combine this data with the significance calculated above so I can include it in my figure. 
-```{r make figure df, comment=''}
+
+|   The figure I will make with show the mean and standard deviation of the growth rate under high and low iron treatments for each organism. We learned in class that rather than tediously calculating the mean and SD for each treatment and organism, `dplyr` can quickly do this for us.
+|   First, I use the `group_by` function to group my growth rate data by organism and treatment. Then, I use the `summarise` function to calculate the mean and SD. I combine this data with the significance calculated above so I can include it in my figure.
+
+```{r make figure df, include=FALSE}
 avg.mu <- growth %>% group_by(culture,treatment,taxa,Shelf) %>%
   summarise('mu'=mean(GrowthRate), 'mu.sd'=sd(GrowthRate))
 
@@ -129,9 +141,14 @@ mu.signif <- mu.signif %>% select(c('p.adj','p.adj.signif','culture', 'shelf')) 
   mutate('treatment'='High Fe')
 
 avg.mu <- left_join(avg.mu, mu.signif)
+```
+
+```{r, comment=''}
 head(avg.mu,3)
 ```
-|   Now the data is ready to plot. I will create a bar plot with error bars showing the standard deviation for the growth rate data using ggplot. In class, we learned how to make ggplots using aes() to select the x and y axis, and using geom_ to select the type of figure we wish to make. 
+
+|   Now the data is ready to plot. I will create a bar plot with error bars showing the standard deviation for the growth rate data using ggplot. In class, we learned how to make ggplots using aes() to select the x and y axis, and using geom\_ to select the type of figure we wish to make.
+
 ```{r make plot, comment=''}
 mu.plot <-{
   avg.mu$culture <- factor(avg.mu$culture, levels=c('G. oceanica','G. huxleyi','C. closterium UGA8','C. closterium UGA4'))
@@ -156,12 +173,14 @@ mu.plot <-{
 
 ## Updating my github account
 
-|   One of the last applications of this class to my research is the use of git. I have a github repository called Thesis in the current working directory. I will add this project to my github repository under the scripts folder using a bash coding chunk. 
+|   One of the last applications of this class to my research is the use of git. I have a github repository called Thesis in the current working directory. I will add this project to my github repository under the scripts folder using a bash coding chunk.
+
 ```{bash}
 ls -a #showing my '.git' file indicating git repo in this folder
 git add scripts/BINF7680.Rmd
 git commit -m 'Adding bioinformatics class project'
 git push origin main
 ```
-The file uploaded to my github repository can be accessed with the link below:  
-https://github.com/Lucy-Quirk/Thesis/blob/main/scripts/BINF7680.Rmd
+
+The file uploaded to my github repository can be accessed with the link below:\
+<https://github.com/Lucy-Quirk/Thesis/blob/main/scripts/BINF7680.Rmd>
