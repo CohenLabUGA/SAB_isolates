@@ -178,7 +178,8 @@ mu.plot <-{
 }
 ```
 ## Updating my github account
-| One of the last applications of this class to my research is the use of git. I have a github repository called Thesis in the current working directory. I will add this project to my github repository under the scripts folder using a bash coding chunk. 
+
+|   One of the last applications of this class to my research is the use of git. I have a github repository called Thesis in the current working directory. I will add this project to my github repository under the scripts folder using a bash coding chunk. 
 ```{bash}
 ls -a #showing my '.git' file indicating git repo in this folder
 git add scripts/BINF7680.Rmd
@@ -186,5 +187,5 @@ git commit -m 'Adding bioinformatics class project'
 git push origin main
 ```
 The file uploaded to my github repository can be accessed with the link below:  
-https://github.com/Lucy-Quirk/Thesis/blob/main/scripts/BINF7680.Rmd
+<https://github.com/Lucy-Quirk/Thesis/blob/main/scripts/BINF7680.Rmd>
 
