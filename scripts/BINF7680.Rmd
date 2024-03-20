@@ -3,6 +3,7 @@ title: "BINF 7960 Project"
 author: "Lucy Quirk"
 date: "`r Sys.Date()`"
 output: pdf_document
+urlcolor: blue
 ---
 
 ```{r setup, include=FALSE}
@@ -22,7 +23,7 @@ Next, I will create two objects called "path_" and "path_out" with the location 
 
 ```{r set up script, comment=''}
 source('./scripts/functions.R')
-pkgs <- c('tidyverse','rstatix','shadowtext','ggpubr')
+pkgs <- c('dplyr','stringr','ggplot2','rstatix','shadowtext','ggpubr')
 checkAndLoadPackages(pkgs)
 
 path_in <- c('./rawData/')
@@ -43,13 +44,11 @@ physioData$culture <- str_replace_all(
 empty.04 <- list("C. closterium UGA4","High Fe", "04pfe19", 
                  0, 0, 0, 0, 0, 0, 0, 0, 0)
 physioData<- rbind(physioData,empty.04)
-
 for (i in 1:nrow(physioData)) {
   if (physioData$culture[i] == "G. oceanica"|physioData$culture[i] == "C. closterium UGA8"){
     physioData$Shelf[i] = "Inner shelf"} 
   else{physioData$Shelf[i] = "Outer shelf"}
 }
-
 for (i in 1:nrow(physioData)) {
   if (physioData$culture[i] == "G. oceanica"|physioData$culture[i] == "G. huxleyi"){
     physioData$taxa[i] = "Coccolithophore"} 
@@ -126,7 +125,7 @@ mu.06 <- high.vs.low(growth,"G. oceanica",'GrowthRate', 'Inner Shelf')
 mu.13 <- high.vs.low(growth,"G. huxleyi",'GrowthRate', 'Outer Shelf') 
 
 mu.signif <- bind_rows(mu.13, mu.06, mu.08)
-head(mu.signif)
+head(mu.signif,3)
 ```
 ## Plotting growth rate data
 |   The figure I will make with show the mean and standard deviation of the growth rate under high and low iron treatments for each organism. We learned in class that rather than tediously calculating the mean and SD for each treatment and organism, `dplyr` can quickly do this for us.   
@@ -140,7 +139,7 @@ mu.signif <- mu.signif %>% select(c('p.adj', 'p.adj.signif','culture', 'shelf'))
   mutate('treatment'='High Fe')
 
 avg.mu <- left_join(avg.mu, mu.signif)
-head(avg.mu)
+head(avg.mu,3)
 ```
 |   Now the data is ready to plot. I will create a bar plot with error bars showing the standard deviation for the growth rate data using ggplot. In class, we learned how to make ggplots using aes() to select the x and y axis, and using geom_ to select the type of figure we wish to make. 
 ```{r make plot, comment=''}
@@ -177,6 +176,7 @@ mu.plot <-{
   print(brp)
 }
 ```
+
 ## Updating my github account
 
 |   One of the last applications of this class to my research is the use of git. I have a github repository called Thesis in the current working directory. I will add this project to my github repository under the scripts folder using a bash coding chunk. 
@@ -187,5 +187,4 @@ git commit -m 'Adding bioinformatics class project'
 git push origin main
 ```
 The file uploaded to my github repository can be accessed with the link below:  
-<https://github.com/Lucy-Quirk/Thesis/blob/main/scripts/BINF7680.Rmd>
-
+https://github.com/Lucy-Quirk/Thesis/blob/main/scripts/BINF7680.Rmd
