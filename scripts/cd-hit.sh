@@ -8,11 +8,17 @@
 
 module load CD-HIT
 
-path="/work/nclab/lucy/SAB/Assembly/$1/rnaSpades"
-pathout="/work/nclab/lucy/SAB/Assembly/$1/cd-hit"
+samples='04 06 08 13"
+for s in $samples; do
 
+  path="/work/nclab/lucy/SAB/Assembly/${s}/rnaSpades"
+  pathout="/work/nclab/lucy/SAB/Assembly/${s}/cd-hit"
+
+  echo "collaping transcripts in ${s} with over 94% identity"
 #we collaps at 100% identity match
-cd-hit-est -i $path/transcripts.fasta -o $pathout/$1transcript95.fasta -c 0.95 -n 9
+  cd-hit-est -i $path/transcripts.fasta -o $pathout/${s}transcript95.fasta -c 0.95 -n 9
+  
+done;
 
 
 
