@@ -8,7 +8,7 @@ checkAndLoadPackages <- function(...,silent=FALSE){
   
   #check names and run 'require' function over if the given package is installed
   requirePkg<- function(pkg){if(length(setdiff(pkg,rownames(installed.packages())))==0)
-    require(pkg, quietly = TRUE,character.only = TRUE)
+    suppressPackageStartupMessages(require(pkg, quietly = TRUE,character.only = TRUE))
   }
   
   packages <- as.vector(unlist(list(...)))
