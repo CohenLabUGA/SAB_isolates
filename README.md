@@ -9,7 +9,7 @@ A <i>C. closterium</i> and coccolithophores (<i>G. oceanica</i> and <i>G. huxley
 
 This repository contains data and code used in the analysis of this project. 
 
-## [rawData]
+## rawData
 
 All of the raw data collected for physiology is contained in [rawData](rawData/). 
 
