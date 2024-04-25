@@ -19,6 +19,8 @@ This file contains most of the physiological data. It contains the growth rate, 
 
 Maintainence cultures were kept in small volumes during the year prior to the experiment. Growth rate and FIRe measurements were also taken during this time and are found in the subfolder **histData**. Growth rates are in `histGrowth.csv`, FIRe output from dark-adapted samples such as Fv/Fm are in `histFire.csv`, and FIRe output using the ALS, such as NPQ, are in `histALS.csv`. These data were used in **Fig2_physiology** to make the dashed lines in the bar graphs.
 
+>The sequences used in the transcriptomic analysis can be found at **link to ncbi**, and the coassemblies can be found at **link to zenodo**. 
+
 ## output
 
 Summarized physiological data and descriptive data from sequencing and assembly used to make the tables in the **figures** folder. 
@@ -68,6 +70,30 @@ Lineage differences between diatoms and coccolithophores and among species of ea
 
 `ncbi_blast.sh` was used to find the iron starvation induced proteins (ISIP) in each transcriptome. Kegg orthology does not include ISIPs although reference sequences are located on the NCBI website. These sequences were later added to the functional annotation output for differential expression analysis. 
 
+## expression_analysis
+
+Jupyter notebooks for the differential expression analysis, enrichment analysis, and making of heatmaps.
+
+#### `Kegg_annotations.ipynb`
+This notebook cleans the output of eggNOG-mapper and pulls out just the Kegg Ko annotations from each isolate. To make the counts of ORFs to a function/gene, this notebook creates a table for each isolate mapping the ORF ID to Kegg Ko's. Some ORFs were assigned multiple Ko's, so the final output creates a table with three columns, ORF ID, Kegg Ko, and Ko_iteration; where the ORFs are repeated for each unique assigned Ko, and Ko_iteration iterates from 1 to n unique Ko's assigned. These ORF-to-Ko tables are then used to create a list of all unique Kos assinged across all organism, including the name and symbol for that Ko. Additionally, this notebook uses the Kegg API to create tables for pathways of interest, where the ko, name, and symbol for each pathway is listed in the table. 
+- Input:
+  - eggNOG-mapper annotation files
+- Output:
+  - ORF-to-Ko table, with ORFs repeated for each unique Ko.
+  - ko_def.csv, a table of all unique Kos assigned across organisms with name and symbol for each Ko
+  - all_paths.csv a table of the Kegg pathways Photosynthesis, Nitrogen metabolism, and Carbon fixation in photosynthetic organisms, including the ko, name, and symbol for each pathway.
+
+#### `DE_run.ipynb`
+Differential expression anlysis with DESeq2. This notebook uses ORF counts from Salmon to compare expression of genes among iron treatments for each isolate. The analysis is first done on all ORFs quantified, then using Kegg annotations from eggNOG-mapper. The counts are split between the number of Kegg Ko's an ORF was assigned and summed to each Ko to compare expression at the Kegg Ko level.
+- Input:
+  - Salmon quant.sf file
+  - Kegg notebook output, kegg_def.csv
+- Output:
+  - DESeq2 results comparing high and low iron, and iron amendment and low iron, with adj-pvalues, standard error, and log fold change of expression for each gene across the comparison.
+  - Log2 fold shrinkage of DESeq2 results; these files are named lfc.4.Avl.csv where 4 is the organism and Avl is the comparison.
+  - Variance transformed stabilized counts (VST counts); these files are named vsd.4.csv where 4 is the organism.
+ 
+  
 
 
 
@@ -76,7 +102,4 @@ Lineage differences between diatoms and coccolithophores and among species of ea
 
 
 
-
-
-The sequences used in the transcriptomic analysis can be found at **link to ncbi**, and the coassemblies can be found at **link to zenodo**. 
 
