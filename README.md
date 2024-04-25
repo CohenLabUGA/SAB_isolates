@@ -37,6 +37,37 @@ This script will create **Fig.4_sourmash** showing the Jaccard similarity coeffi
 `functions.R`: 
 Functions repeatidly used in the 'physio_exp.R' script; these include loading/installing packages, statistical tests, or mutating dataframes. 
 
+## bash_scripts
+
+All bash scripts used to assemble a hybrid De Novo assembly for each organism, quantify translated genes, and functionally annotate the genes. 
+
+#### Transcriptome assembly:
+
+1. Initial quality assement with FastQC use `fastqc.sh`
+2. Trim adapter sequences with Trimmomatic using `trimmomatic.sh`
+3. Remove ribosomeal RNA (rRNA) with RiboDetector using `ribodetector.sh`
+    - Although polyadenalated ends were selected for during sequencing to reduce rRNA, this was performed as an additional quality control step.
+4. Quality check with FastQC and MultiQC using `fastqc.sh` and `multiqc.sh`
+5. Reduce sequence redundancy with CD-HIT using `cd-hit.sh`
+6. Check for potential contamination with sourmash using `sig.sh` then `gather.sh`
+7. Assembly a hybrid De Novo transcriptome for each organism with rnaSPAdes usig `assemble.sh`
+8. Assess transcriptome quality with rnaQUAST using `quast.sh`
+9. Check transcriptome completeness with BUSCO using `busco.sh`
+
+#### Quantification and functional annotation
+
+1. Translate reads from nucleotide to open reading frames (ORFs) using TransDecoder with `transdecoder.sh`
+2. Quantify gene expression with Salmon using `salmon.sh`
+3. Functional annotation with eggNOG-mapper using `eggnog.sh`
+
+#### Additional analysis
+
+sourmash was used to calculate the Jaccard similarity between all samples and between transcriptomes, later used to create the figures Fig.3_sourmash and SFig.2_sourmashTranscriptome respectively. This process uses `sig.sh` and `compare.sh`. 
+
+Lineage differences between diatoms and coccolithophores and among species of each taxa were found using `cox1.sh`. This script will output the COX1 gene for each isolate, which can later be used to construct the maximum likelihood phylogenetic tree in Fig.3_cox1Tree. 
+
+`ncbi_blast.sh` was used to find the iron starvation induced proteins (ISIP) in each transcriptome. Kegg orthology does not include ISIPs although reference sequences are located on the NCBI website. These sequences were later added to the functional annotation output for differential expression analysis. 
+
 
 
 
