@@ -12,30 +12,30 @@ This repository contains data and code used in the analysis of this project.
 
 All of the raw data collected for physiology is contained in **rawData**. 
 
-physio_exp.csv:   This file contains most of the physiological data. It contains the growth rate, Chl a concentration, cell size, cell count, pH of media before and after the experiment, as well as the maximum potential quantum yeild of PSII (Fv/Fm), the reoxidation time of the first quinone acceptor ($\tau Q_a$ ), and the functional absorption cross-section of PSII ($\sigma_{PSII}$ which were extracted from the FIRe output files. The full output from the FIRe is the exp_fire.csv file; these are results from dark-adapted samples. Results from the Actinic Light Source (ALS) run on the fire are in the exp_als.csv file; this contains the non-photochemical quenching (NPQ) data used in Figure 2F. physiology in the **figures** folder. 
+`physio_exp.csv`:   
+This file contains most of the physiological data. It contains the growth rate, Chl a concentration, cell size, cell count, pH of media before and after the experiment, as well as the maximum potential quantum yeild of PSII (Fv/Fm), the reoxidation time of the first quinone acceptor ($\tau Q_a$ ), and the functional absorption cross-section of PSII ($\sigma_{PSII}$) which were extracted from the FIRe output files. The full output from the FIRe is the `fire_exp.csv` file; these are results from dark-adapted samples. Results from the Actinic Light Source (ALS) run on the fire are in the `als_exp.csv` file; this contains the non-photochemical quenching (NPQ) data used in Figure 2F. physiology in the **figures** folder. 
 
-Maintainence cultures were kept in small volumes during the year prior to the experiment. Growth rate and FIRe measurements were also taken during this time and are found in the subfolder **histData**. Growth rates are in histGrowth.csv, FIRe output from dark-adapted samples such as Fv/Fm are in histFire.csv, and FIRe output using the ALS, such as NPQ, are in histALS.csv. These data were used in Fig2_physiology to make the dashed lines in the bar graphs.
+#### rawData/histData
+
+Maintainence cultures were kept in small volumes during the year prior to the experiment. Growth rate and FIRe measurements were also taken during this time and are found in the subfolder **histData**. Growth rates are in `histGrowth.csv`, FIRe output from dark-adapted samples such as Fv/Fm are in `histFire.csv`, and FIRe output using the ALS, such as NPQ, are in `histALS.csv`. These data were used in **Fig2_physiology** to make the dashed lines in the bar graphs.
 
 ## output
 
-Summarized data and descriptive data from sequencing and assembly used to make the tables in the **figures** folder. The `makeTables.R` script in **r_scripts** use these files. 
+Summarized physiological data and descriptive data from sequencing and assembly used to make the tables in the **figures** folder. 
+>Used in `makeTables.R` script under folder **r_scripts**. 
 
 ## r_scripts
 
-All R script files used to analyze physiological data amd make figures Fig2_physiology and Fig4_sourmash and the tables located in the **figures** folder. 
+ `physio_fig.R` :
+ This file will clean up data, summarize, and run statistical tests on each physiology parameter, eventually creating the physiology figure.
+ - Input: `physio_exp.csv` and `als_exp.csv`
+ - Output: Physiology figure, raw csv files located in output folder
 
-These files are used to seperately summarize and run statistical tests on each physiology parameter, and create a clean data frame that is imported in physio_fig.R file to make the physiology figure. 
-- growthRate.R
-- cellSize.R
-- chl.R
-- fv.fm.R
-- tQa.R
-- NPQ.R
-- sigma.R
+`sourmash.R`:
+This script will create **Fig.4_sourmash** showing the Jaccard similarity coefficients between all samples in a clustered heat map. The correlations were calculated using the `sourmash.sh` bash script located in the **bash_scripts folder**.
 
-The sourmash.R script will create Fig.4_sourmash which displays the Jaccard similarity coefficient between all samples in a clustered heat map. 
-
-Functions which are used repeatedly are in the functions.R file; these include loading/installing packages, statistical tests, or mutating dataframes. 
+`functions.R`: 
+Functions repeatidly used in the 'physio_exp.R' script; these include loading/installing packages, statistical tests, or mutating dataframes. 
 
 
 
