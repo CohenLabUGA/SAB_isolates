@@ -93,13 +93,14 @@ Differential expression anlysis with DESeq2. This notebook uses ORF counts from 
   - Log2 fold shrinkage of DESeq2 results; these files are named lfc.4.Avl.csv where 4 is the organism and Avl is the comparison.
   - Variance transformed stabilized counts (VST counts); these files are named vsd.4.csv where 4 is the organism.
  
-  
+#### `DE_figs.ipynb`
+Plotting the differential expression anlysis results. Using the output from `Kegg_annotations.ipynb` and `DE_run.ipynb`, this notebook creates the heatmaps **Fig.5_heatmap**, **SFig.3_orfHeatma**, and **SFig.4_carbonHeatmap** located in the **figures** folder.
+
+### `clusterProfiler.ipynb`
+Running a gene set enrichment analysis using the DESeq2 results. This notebook finds the pathways with are statistically over represented among significantly expressed genes and creates the enrichmnet dotplot **Fig6_gsea**
 
 
 
+# Acknowledgements
 
-
-
-
-
-
+Bioinformatic processing was performed with resources from the UGA Georgia Advanced Computing Resource Center (GACRC). We acknowledge funding support from UGA Skidaway Institute of Oceanography and National Science Foundation awards NSF-OPP #2240780 and NSF-OPP #2149071 to NRC during the time of writing.
