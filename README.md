@@ -16,6 +16,26 @@ physio_exp.csv:   This file contains most of the physiological data. It contains
 
 Maintainence cultures were kept in small volumes during the year prior to the experiment. Growth rate and FIRe measurements were also taken during this time and are found in the subfolder **histData**. Growth rates are in histGrowth.csv, FIRe output from dark-adapted samples such as Fv/Fm are in histFire.csv, and FIRe output using the ALS, such as NPQ, are in histALS.csv. These data were used in Fig2_physiology to make the dashed lines in the bar graphs.
 
+## output
+
+Summarized data and descriptive data from sequencing and assembly used to make the tables in the **figures** folder. The `makeTables.R` script in **r_scripts** use these files. 
+
+## r_scripts
+
+All R script files used to analyze physiological data amd make figures Fig2_physiology and Fig4_sourmash and the tables located in the **figures** folder. 
+
+These files are used to seperately summarize and run statistical tests on each physiology parameter, and create a clean data frame that is imported in physio_fig.R file to make the physiology figure. 
+- growthRate.R
+- cellSize.R
+- chl.R
+- fv.fm.R
+- tQa.R
+- NPQ.R
+- sigma.R
+
+The sourmash.R script will create Fig.4_sourmash which displays the Jaccard similarity coefficient between all samples in a clustered heat map. 
+
+Functions which are used repeatedly are in the functions.R file; these include loading/installing packages, statistical tests, or mutating dataframes. 
 
 
 
