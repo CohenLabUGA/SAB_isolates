@@ -1,6 +1,6 @@
 # Iron physiology and metabolism of model phytoplankton taxa in the South Atlantic Bight
 
-## Quick Links:
+## Table of contents
 
 ### [Project Background](#project-background)
 
