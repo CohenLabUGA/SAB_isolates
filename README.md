@@ -1,6 +1,12 @@
 # Iron physiology and metabolism of model phytoplankton taxa in the South Atlantic Bight
-### [rawData](#rawdata)
-[jupyter notebooks](#expression_analysis)
+
+## Sections:
+[Project Background](#project-background)
+[rawData](#rawdata)
+[Output](#output)
+[R scripts](#r_scripts)
+[Bash scripts](#bash_scripts)
+[Jupyter notebooks for expression analysis](#expression_analysis)
 
 ## Project Background
 
@@ -17,7 +23,7 @@ All of the raw data collected for physiology is contained in [rawData](rawData/)
 `physio_exp.csv`:   
 This file contains most of the physiological data. It contains the growth rate, Chl a concentration, cell size, cell count, pH of media before and after the experiment, as well as the maximum potential quantum yeild of PSII (Fv/Fm), the reoxidation time of the first quinone acceptor ($\tau Q_a$ ), and the functional absorption cross-section of PSII ($\sigma_{PSII}$) which were extracted from the FIRe output files. The full output from the FIRe is the `fire_exp.csv` file; these are results from dark-adapted samples. Results from the Actinic Light Source (ALS) run on the fire are in the `als_exp.csv` file; this contains the non-photochemical quenching (NPQ) data used in Figure 2F. physiology in the **figures** folder. 
 
-#### rawData/histData
+#### [rawData/histData](rawData/histData)
 
 Maintainence cultures were kept in small volumes during the year prior to the experiment. Growth rate and FIRe measurements were also taken during this time and are found in the subfolder **histData**. Growth rates are in `histGrowth.csv`, FIRe output from dark-adapted samples such as Fv/Fm are in `histFire.csv`, and FIRe output using the ALS, such as NPQ, are in `histALS.csv`. These data were used in **Fig2_physiology** to make the dashed lines in the bar graphs.
 
@@ -25,8 +31,8 @@ Maintainence cultures were kept in small volumes during the year prior to the ex
 
 ## output
 
-Summarized physiological data and descriptive data from sequencing and assembly used to make the tables in the **figures** folder. 
->Used in `makeTables.R` script under folder **r_scripts**. 
+The [output folder](output/) contains summarized physiological data and descriptive data from sequencing and assembly used to make the tables in the [figures folder](figs/). 
+>Used in `makeTables.R` script under [r_scripts folder](r_scripts/). 
 
 ## r_scripts
 
@@ -43,13 +49,13 @@ Functions repeatidly used in the 'physio_exp.R' script; these include loading/in
 
 ## bash_scripts
 
-All bash scripts used to assemble a hybrid De Novo assembly for each organism, quantify translated genes, and functionally annotate the genes. 
+All [bash scripts](bash_scripts/) used to assemble a hybrid De Novo assembly for each organism, quantify translated genes, and functionally annotate the genes. 
 
 #### Transcriptome assembly:
 
-1. Initial quality assement with FastQC use `fastqc.sh`
-2. Trim adapter sequences with Trimmomatic using `trimmomatic.sh`
-3. Remove ribosomeal RNA (rRNA) with RiboDetector using `ribodetector.sh`
+1. Initial quality assement with FastQC use [fastqc.sh](bash_scripts/fastqc.sh)
+2. Trim adapter sequences with Trimmomatic using [trimmomatic.sh](bash_scripts/trimmomatic.sh)
+3. Remove ribosomeal RNA (rRNA) with RiboDetector using [ribodetector.sh](bash_scripts/ribodetector.sh)
     - Although polyadenalated ends were selected for during sequencing to reduce rRNA, this was performed as an additional quality control step.
 4. Quality check with FastQC and MultiQC using `fastqc.sh` and `multiqc.sh`
 5. Reduce sequence redundancy with CD-HIT using `cd-hit.sh`
