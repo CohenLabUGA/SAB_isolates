@@ -1,0 +1,6 @@
+#unique names for the fasta files for each PacBio sample
+
+bc1018_5p--bc1018_3p = 08add_backC
+bc1019_5p--bc1019_3p = 04add_backA
+bc1020_5p--bc1020_3p = 06add_backB
+bc1023_5p--bc1023_3p = 13add_backB

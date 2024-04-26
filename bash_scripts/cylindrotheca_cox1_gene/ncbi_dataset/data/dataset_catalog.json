@@ -1,0 +1,19 @@
+{
+  "genes": {
+    "files": [
+      {
+        "filePath": "rna.fna",
+        "fileType": "RNA_NUCLEOTIDE_FASTA"
+      },
+      {
+        "filePath": "protein.faa",
+        "fileType": "PROTEIN_FASTA"
+      },
+      {
+        "filePath": "data_report.jsonl",
+        "fileType": "DATA_REPORT"
+      }
+    ]
+  },
+  "apiVersion": "V2"
+}

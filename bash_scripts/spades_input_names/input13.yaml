@@ -1,0 +1,40 @@
+#input data file to run rnaspades
+#starting with one organism, read in all files for that organisms (each treatment) and it's pacbio se
+[
+{
+orientation: "fr",
+type: "paired-end",
+right reads:
+[
+"/work/nclab/lucy/SAB/Assembly/ribodetector/nonrna/13add_backA_S29_L001_.R1.fq",
+"/work/nclab/lucy/SAB/Assembly/ribodetector/nonrna/13add_backB_S30_L001_.R1.fq",
+"/work/nclab/lucy/SAB/Assembly/ribodetector/nonrna/13add_backC_S31_L001_.R1.fq",
+"/work/nclab/lucy/SAB/Assembly/ribodetector/nonrna/13pFe19A_S23_L001_.R1.fq",
+"/work/nclab/lucy/SAB/Assembly/ribodetector/nonrna/13pFe19B_S24_L001_.R1.fq",
+"/work/nclab/lucy/SAB/Assembly/ribodetector/nonrna/13pFe19C_S25_L001_.R1.fq",
+"/work/nclab/lucy/SAB/Assembly/ribodetector/nonrna/13pFe21_9A_S26_L001_.R1.fq",
+"/work/nclab/lucy/SAB/Assembly/ribodetector/nonrna/13pFe21_9B_S27_L001_.R1.fq",
+"/work/nclab/lucy/SAB/Assembly/ribodetector/nonrna/13pFe21_9C_S28_L001_.R1.fq"
+],
+left reads: 
+[
+"/work/nclab/lucy/SAB/Assembly/ribodetector/nonrna/13add_backA_S29_L001_.R2.fq",
+"/work/nclab/lucy/SAB/Assembly/ribodetector/nonrna/13add_backB_S30_L001_.R2.fq",
+"/work/nclab/lucy/SAB/Assembly/ribodetector/nonrna/13add_backC_S31_L001_.R2.fq",
+"/work/nclab/lucy/SAB/Assembly/ribodetector/nonrna/13pFe19A_S23_L001_.R2.fq",
+"/work/nclab/lucy/SAB/Assembly/ribodetector/nonrna/13pFe19B_S24_L001_.R2.fq",
+"/work/nclab/lucy/SAB/Assembly/ribodetector/nonrna/13pFe19C_S25_L001_.R2.fq",
+"/work/nclab/lucy/SAB/Assembly/ribodetector/nonrna/13pFe21_9A_S26_L001_.R2.fq",
+"/work/nclab/lucy/SAB/Assembly/ribodetector/nonrna/13pFe21_9B_S27_L001_.R2.fq",
+"/work/nclab/lucy/SAB/Assembly/ribodetector/nonrna/13pFe21_9C_S28_L001_.R2.fq"
+]
+},
+{
+type: "pacbio",
+single reads: 
+[
+"/work/nclab/data/SAB_isolates/PacBio/m64060_230111_210023.bc1023_5p--bc1023_3p.hifi_reads.fastq.gz"
+]
+}
+]
+

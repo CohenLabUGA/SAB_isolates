@@ -1,0 +1,33 @@
+#example input data file to run rnaspades
+#csv file with [ ] separating right and left reads
+#starting with one organism, read in all files for that organisms (each treatment) and it's pacbio se
+[
+{
+orientation: "fr",
+type: "paired-end",
+right reads:
+[
+"/work/nclab/data/SAB_isolates/Illumina/trimmed/04add_backA_S12_L001_R1_001_outP.fastq.gz",
+"/work/nclab/data/SAB_isolates/Illumina/trimmed/04add_backB_S13_L001_R1_001_outP.fastq.gz",
+"/work/nclab/data/SAB_isolates/Illumina/trimmed/04pFe21_9A_S9_L001_R1_001_outP.fastq.gz",
+"/work/nclab/data/SAB_isolates/Illumina/trimmed/04pFe21_9B_S10_L001_R1_001_outP.fastq.gz",
+"/work/nclab/data/SAB_isolates/Illumina/trimmed/04pFe21_9C_S11_L001_R1_001_outP.fastq.gz"
+],
+left reads: 
+[
+"/work/nclab/data/SAB_isolates/Illumina/trimmed/04add_backA_S12_L001_R2_001_outP.fastq.gz",
+"/work/nclab/data/SAB_isolates/Illumina/trimmed/04add_backB_S13_L001_R2_001_outP.fastq.gz",
+"/work/nclab/data/SAB_isolates/Illumina/trimmed/04pFe21_9A_S9_L001_R2_001_outP.fastq.gz",
+"/work/nclab/data/SAB_isolates/Illumina/trimmed/04pFe21_9B_S10_L001_R2_001_outP.fastq.gz",
+"/work/nclab/data/SAB_isolates/Illumina/trimmed/04pFe21_9C_S11_L001_R2_001_outP.fastq.gz"
+]
+},
+{
+type: "pacbio",
+single reads: 
+[
+"/work/nclab/data/SAB_isolates/PacBio/m64060_230111_210023.bc1019_5p--bc1019_3p.hifi_reads.fastq.gz"
+]
+}
+]
+
