@@ -1,13 +1,92 @@
 #Making tables for thesis
+source('functions.R')
 
-library(tidyverse)
-library(flextable)
-library(officer)
+checkAndLoadPackages('tidyverse','flextable','officer')
 
-setwd("/Users/lquirk/Library/CloudStorage/OneDrive-UniversityofGeorgia/Thesis_g/SAB_pipeline/")
-path1 = "/Users/lquirk/Library/CloudStorage/OneDrive-UniversityofGeorgia/Thesis_g/output/"
+set_flextable_defaults(font.size=12, font.family = 'Times New Roman')
 
-set_flextable_defaults(font.size=8, font.family = 'Helvetica')
+####---Physiology Table---####
+avgGrowth <- read.csv('../output/AvgGrowth.csv')
+avgGrowth$Treatment <- str_replace(avgGrowth$Treatment, 'Fe','Iron')
+avgChla <- read.csv('../output/Avg.Chla.csv')
+avgChla$Treatment <- str_replace(avgChla$Treatment, 'Fe','Iron')
+avgFire <- read.csv('../output/AvgFire.csv')
+
+phys_table <- left_join(avgFire,avgGrowth, by=c('Organism','Treatment')) 
+phys_table <- left_join(phys_table,avgChla, by=c('Organism','Treatment')) 
+phys_table$Organism <- factor(phys_table$Organism, 
+                              levels = c('C. closterium UGA8','G. oceanica',
+                                         'C. closterium UGA4','G. huxleyi')) 
+phys_table <- arrange(phys_table, Organism)
+
+
+phys_table <- mutate(phys_table, 'Growth'=(paste(signif(mu,2),'±',round(mu.sd,2))),
+       'Chla'=(paste(signif(chla,2),'±',round(chla.sd,2))),
+       'Fv/Fm'=(paste(signif(AvgFv.Fm,2),'±',round(SdFv.Fm,2))),
+       'tQa'=(paste(signif(AvgtQa,2),'±',round(SdtQa,2))),
+       'sigma'=(paste(signif(AvgSigma,2),'±',round(SdSigma,2))))
+
+phys_table <- select(phys_table, c(1,2,13:17))
+phys_table <- pivot_longer(phys_table,cols=!c('Organism','Treatment'),names_to = 'Parameter',
+                           values_to = 'mean')
+phys_table$mean <-  str_replace_na(phys_table$mean, '--')
+phys_table$mean <- str_replace(phys_table$mean, '0 ± NA','--')
+phys_table$Treatment <- str_replace(phys_table$Treatment, 'Fe','Iron')
+phys_table <- pivot_wider(phys_table, names_from = Organism, values_from = mean)
+phys_table <- group_by(phys_table, Parameter)
+phys_table <- phys_table[,c(2,1,3,5,4,6)]
+phys_table <- phys_table%>%arrange(match(Parameter,c('Growth','Chla','Fv/Fm','tQa','sigma')))
+phys_table$Parameter <- str_replace_all(phys_table$Parameter, c('Chla'='Chl a (µg/L)',
+                                                                'Growth'='Growth Rate (day^-1)',
+                                                                'sigma'='Sigma'))
+
+
+ps <- as_grouped_data(phys_table, groups=c('Parameter'))
+exp_tab <- as_flextable(ps, hide_grouplabel = T) %>% 
+  style(j=1, i=~!is.na(Parameter), pr_t=fp_text_default(bold=TRUE),
+        pr_p=officer::fp_par(text.align='left', padding=5)) %>%
+  prepend_chunks(i = ~is.na(Parameter), j = 1, as_chunk("\t")) %>%
+  set_header_labels(values=list(Treatment='',
+                                'C. closterium 8'='C. closterium UGA8',
+                                'C. closterium 4'='C. closterium UGA4',
+                                'G. oceanica'='G. oceanica',
+                                'G. huxleyi'='G. huxleyi')) %>%
+  hline(i=c(4,8,12), part='body') %>% 
+  add_header_row(values=c('','Inner Shelf','Outer Shelf'), 
+                 colwidth=c(1,2,2))%>%
+  italic(part='header', i=2) %>%autofit()
+exp_tab
+
+
+hist_table <- full_join(hist.mu.table, h.fv.fm)
+hist_table$Treatment <- str_remove(hist_table$Treatment, ' Fe|Fe ')
+hist_table <- pivot_longer(hist_table, cols=!c(Organism,Treatment), names_to = 'Parameter', 
+                           values_to='xx')
+hist_table <- pivot_wider(hist_table, names_from = Organism, values_from = xx)
+hist_table <- group_by(hist_table, Parameter)
+hist_table <- hist_table[,c(2,1,4,6,3,5)]
+hist_table <- hist_table%>%arrange(match(Parameter,c('GrowthRate','Chla','Fv/Fm','tQa')))
+hist_table$Parameter <- str_replace_all(hist_table$Parameter, 
+                                        c('Chla'='Chl a (µg/L)',
+                                          'GrowthRate'='Growth Rate (day^-1)'))
+
+hs <- as_grouped_data(hist_table, groups=c('Parameter'))
+hist_tab <- as_flextable(hs, hide_grouplabel = T) %>% 
+  style(j=1, i=~!is.na(Parameter), pr_t=fp_text_default(bold=TRUE),
+        pr_p=officer::fp_par(text.align='left', padding=5)) %>%
+  prepend_chunks(i = ~is.na(Parameter), j = 1, as_chunk("\t")) %>%
+  set_header_labels(values=list(Treatment='',
+                                'C. closterium 8'='C. closterium UGA8',
+                                'C. closterium 4'='C. closterium UGA4',
+                                'G. oceanica'='G. oceanica',
+                                'G. huxleyi'='G. huxleyi')) %>%
+  hline(i=c(3,6), part='body') %>% 
+  add_header_row(values=c('','Inner Shelf','Outer Shelf'), 
+                 colwidth=c(1,2,2))%>%
+  italic(part='header', i=2) %>% autofit()
+
+hist_tab
+
 
 #### Sequencing Table ####
 illumina <- read.csv('./Illumina/illumina_stat.csv')

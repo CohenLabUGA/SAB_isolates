@@ -158,23 +158,11 @@ hist_muMax_plot <-  hist.mu.plot +
              fill='white') 
 hist_muMax_plot
 
-ggsave("hist_muMAX.png",plot=hist_muMax_plot,path=path1, width=10, height = 10)
 
 #### Fv.Fm ####
-path.out<-"/Users/lquirk/Library/CloudStorage/OneDrive-UniversityofGeorgia/Thesis_g/output/Fire/"
-path.fig<-"/Users/lquirk/Library/CloudStorage/OneDrive-UniversityofGeorgia/Thesis_g/Figures/Physio/"
-
-
-read <- function(df){
-  headers <- names(read.csv(paste('./FIRe/Cultures/exp-data/',df,sep=''), nrows=1))
-  data <- read.csv(paste('./FIRe/Cultures/exp-data/',df,sep=''), col.names=headers)
-}
 
 ##### read in data #####
-fv.fm.04 <- read('../04.fv.fm.csv')
-fv.fm.08 <- read('../08.fv.fm.csv')
-fv.fm.06 <- read('../06.fv.fm.csv')
-fv.fm.13 <- read('../13.fv.fm.csv')
+histFire <- read.csv("../rawData/histData/histFire.csv")
 
 
 ###### remove outliers ######
@@ -190,13 +178,9 @@ clean.df <- function(df, org, culture){
     group_by(Treatment) 
   
 }
+## remove treatments not used in experiment
+histFire = histFire[(str_detect(histFire$File, '[[:digit:]]{2}.*-N')==F),]
 
-fv.fm4.h <- clean.df(fv.fm.04, '04', 'C. closterium 4')
-fv.fm8.h <- clean.df(fv.fm.08, '08', 'C. closterium 8')
-fv.fm6.h <- clean.df(fv.fm.06, '06', 'G. oceanica')
-fv.fm13.h <- clean.df(fv.fm.13, '13', 'G. huxleyi')
-
-hist.fv.fm <- bind_rows(fv.fm4.h, fv.fm8.h, fv.fm6.h, fv.fm13.h)
 hist.fv.fm <- ungroup(hist.fv.fm)
 
 ##### summarize fv.fm #####
@@ -410,5 +394,3 @@ hist.physio.plot <- hist.physio.plot +
 
 hist.physio.plot
 
-ggsave('hist_physiology_plot.png',plot=hist.physio.plot,device = 'png',path=path1, 
-       width=48, height=40, limitsize=F)

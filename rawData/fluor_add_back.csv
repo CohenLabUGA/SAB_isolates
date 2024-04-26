@@ -1,0 +1,217 @@
+﻿Time,Fluorescence,rep,Culture
+0.00,0.04,a,C. closterium UGA8
+0.86,0.10,a,C. closterium UGA8
+2.07,0.43,a,C. closterium UGA8
+3.13,1.22,a,C. closterium UGA8
+0.00,0.04,b,C. closterium UGA8
+0.86,0.06,b,C. closterium UGA8
+2.07,0.30,b,C. closterium UGA8
+3.13,0.76,b,C. closterium UGA8
+3.88,1.01,b,C. closterium UGA8
+4.95,3.45,b,C. closterium UGA8
+0.00,0.04,c,C. closterium UGA8
+0.86,0.06,c,C. closterium UGA8
+2.07,0.25,c,C. closterium UGA8
+3.13,0.52,c,C. closterium UGA8
+3.88,0.69,c,C. closterium UGA8
+4.95,2.35,c,C. closterium UGA8
+0.00,0.03,a,C. closterium UGA4
+0.15,0.03,a,C. closterium UGA4
+0.91,0.02,a,C. closterium UGA4
+1.84,0.01,a,C. closterium UGA4
+2.89,0.01,a,C. closterium UGA4
+4.05,0.04,a,C. closterium UGA4
+5.91,0.13,a,C. closterium UGA4
+6.94,0.22,a,C. closterium UGA4
+8.00,0.51,a,C. closterium UGA4
+9.04,1.00,a,C. closterium UGA4
+9.90,1.41,a,C. closterium UGA4
+11.12,5.10,a,C. closterium UGA4
+0.00,0.03,b,C. closterium UGA4
+0.15,0.02,b,C. closterium UGA4
+0.91,0.02,b,C. closterium UGA4
+1.84,0.02,b,C. closterium UGA4
+2.89,0.03,b,C. closterium UGA4
+4.05,0.03,b,C. closterium UGA4
+5.91,0.11,b,C. closterium UGA4
+6.94,0.24,b,C. closterium UGA4
+8.00,0.36,b,C. closterium UGA4
+9.04,0.76,b,C. closterium UGA4
+9.90,1.01,b,C. closterium UGA4
+11.12,4.26,b,C. closterium UGA4
+0.00,0.05,c,C. closterium UGA4
+0.15,0.02,c,C. closterium UGA4
+0.91,0.02,c,C. closterium UGA4
+1.84,0.01,c,C. closterium UGA4
+2.89,0.03,c,C. closterium UGA4
+4.05,0.01,c,C. closterium UGA4
+5.91,0.05,c,C. closterium UGA4
+6.94,0.14,c,C. closterium UGA4
+8.00,0.15,c,C. closterium UGA4
+9.04,0.24,c,C. closterium UGA4
+9.90,0.28,c,C. closterium UGA4
+11.12,0.56,c,C. closterium UGA4
+12.17,0.94,c,C. closterium UGA4
+0.00,0.04,a,G. oceanica
+0.81,0.02,a,G. oceanica
+1.87,0.03,a,G. oceanica
+2.94,0.05,a,G. oceanica
+3.89,0.05,a,G. oceanica
+4.88,0.09,a,G. oceanica
+5.91,0.08,a,G. oceanica
+6.86,0.09,a,G. oceanica
+7.76,0.11,a,G. oceanica
+8.80,0.11,a,G. oceanica
+9.79,0.13,a,G. oceanica
+11.03,0.15,a,G. oceanica
+11.95,0.18,a,G. oceanica
+12.95,0.24,a,G. oceanica
+13.97,0.27,a,G. oceanica
+15.00,0.33,a,G. oceanica
+15.72,0.23,a,G. oceanica
+16.97,0.38,a,G. oceanica
+17.93,0.41,a,G. oceanica
+18.99,0.44,a,G. oceanica
+19.97,0.52,a,G. oceanica
+20.90,0.51,a,G. oceanica
+22.00,0.59,a,G. oceanica
+22.89,0.53,a,G. oceanica
+24.02,0.70,a,G. oceanica
+25.10,1.23,a,G. oceanica
+0.00,0.02,b,G. oceanica
+0.81,0.02,b,G. oceanica
+1.87,0.04,b,G. oceanica
+2.94,0.05,b,G. oceanica
+3.89,0.07,b,G. oceanica
+4.88,0.09,b,G. oceanica
+5.91,0.11,b,G. oceanica
+6.86,0.11,b,G. oceanica
+7.76,0.13,b,G. oceanica
+8.80,0.14,b,G. oceanica
+9.79,0.14,b,G. oceanica
+11.03,0.16,b,G. oceanica
+11.95,0.21,b,G. oceanica
+12.95,0.23,b,G. oceanica
+13.97,0.28,b,G. oceanica
+15.00,0.32,b,G. oceanica
+15.72,0.26,b,G. oceanica
+16.97,0.42,b,G. oceanica
+17.93,0.46,b,G. oceanica
+18.99,0.49,b,G. oceanica
+19.97,0.59,b,G. oceanica
+20.90,0.61,b,G. oceanica
+22.00,0.68,b,G. oceanica
+22.89,0.65,b,G. oceanica
+24.02,0.84,b,G. oceanica
+25.10,1.29,b,G. oceanica
+0.00,0.02,c,G. oceanica
+0.81,0.04,c,G. oceanica
+1.87,0.04,c,G. oceanica
+2.94,0.10,c,G. oceanica
+3.89,0.11,c,G. oceanica
+4.88,0.13,c,G. oceanica
+5.91,0.17,c,G. oceanica
+6.86,0.19,c,G. oceanica
+7.76,0.26,c,G. oceanica
+8.80,0.27,c,G. oceanica
+9.79,0.35,c,G. oceanica
+11.03,0.57,c,G. oceanica
+11.95,0.75,c,G. oceanica
+12.95,0.92,c,G. oceanica
+13.97,1.39,c,G. oceanica
+0.00,0.09,a,G. oceanica
+2.90,0.06,a2,G. oceanica
+4.04,0.05,a2,G. oceanica
+6.98,0.11,a2,G. oceanica
+8.09,0.20,a2,G. oceanica
+9.04,0.22,a2,G. oceanica
+10.03,0.23,a2,G. oceanica
+11.02,0.33,a2,G. oceanica
+11.95,0.39,a2,G. oceanica
+13.04,0.57,a2,G. oceanica
+14.11,0.88,a2,G. oceanica
+15.12,1.52,a2,G. oceanica
+0.00,0.05,b2,G. oceanica
+2.90,0.05,b2,G. oceanica
+4.04,0.05,b2,G. oceanica
+6.98,0.10,b2,G. oceanica
+8.09,0.17,b2,G. oceanica
+9.04,0.26,b2,G. oceanica
+10.03,0.31,b2,G. oceanica
+11.02,0.42,b2,G. oceanica
+11.95,0.45,b2,G. oceanica
+13.04,0.63,b2,G. oceanica
+14.11,0.78,b2,G. oceanica
+15.12,1.40,b2,G. oceanica
+0.00,0.05,c2,G. oceanica
+2.90,0.06,c2,G. oceanica
+4.04,0.05,c2,G. oceanica
+6.98,0.08,c2,G. oceanica
+8.09,0.15,c2,G. oceanica
+9.04,0.24,c2,G. oceanica
+10.03,0.19,c2,G. oceanica
+11.02,0.26,c2,G. oceanica
+11.95,0.41,c2,G. oceanica
+13.04,0.55,c2,G. oceanica
+14.11,0.79,c2,G. oceanica
+15.12,1.25,c2,G. oceanica
+0.00,0.03,a,G. huxleyi
+1.10,0.04,a,G. huxleyi
+2.00,0.06,a,G. huxleyi
+3.13,0.10,a,G. huxleyi
+4.20,0.17,a,G. huxleyi
+5.04,0.25,a,G. huxleyi
+6.00,0.54,a,G. huxleyi
+7.04,1.06,a,G. huxleyi
+8.10,1.35,a,G. huxleyi
+0.00,0.04,b,G. huxleyi
+1.10,0.07,b,G. huxleyi
+2.00,0.06,b,G. huxleyi
+3.13,0.10,b,G. huxleyi
+4.20,0.19,b,G. huxleyi
+5.04,0.29,b,G. huxleyi
+6.00,0.57,b,G. huxleyi
+7.04,1.31,b,G. huxleyi
+8.10,1.50,b,G. huxleyi
+0.00,0.02,c,G. huxleyi
+1.10,0.03,c,G. huxleyi
+2.00,0.07,c,G. huxleyi
+3.13,0.07,c,G. huxleyi
+4.20,0.21,c,G. huxleyi
+5.04,0.21,c,G. huxleyi
+6.00,0.58,c,G. huxleyi
+7.04,1.36,c,G. huxleyi
+8.10,1.62,c,G. huxleyi
+0.00,0.09,a2,G. huxleyi
+0.64,0.08,a2,G. huxleyi
+3.58,0.12,a2,G. huxleyi
+4.70,0.17,a2,G. huxleyi
+5.64,0.19,a2,G. huxleyi
+6.13,0.34,a2,G. huxleyi
+7.74,0.63,a2,G. huxleyi
+8.55,0.80,a2,G. huxleyi
+9.64,1.55,a2,G. huxleyi
+10.70,1.57,a2,G. huxleyi
+11.72,3.47,a2,G. huxleyi
+0.00,0.04,b2,G. huxleyi
+0.64,0.06,b2,G. huxleyi
+3.58,0.10,b2,G. huxleyi
+4.70,0.18,b2,G. huxleyi
+5.64,0.26,b2,G. huxleyi
+6.13,0.33,b2,G. huxleyi
+7.74,0.58,b2,G. huxleyi
+8.55,0.84,b2,G. huxleyi
+9.64,1.50,b2,G. huxleyi
+10.70,1.56,b2,G. huxleyi
+11.72,3.81,b2,G. huxleyi
+0.00,0.04,c2,G. huxleyi
+0.64,0.04,c2,G. huxleyi
+3.58,0.12,c2,G. huxleyi
+4.70,0.18,c2,G. huxleyi
+5.64,0.16,c2,G. huxleyi
+6.13,0.32,c2,G. huxleyi
+7.74,0.57,c2,G. huxleyi
+8.55,0.74,c2,G. huxleyi
+9.64,1.46,c2,G. huxleyi
+10.70,1.58,c2,G. huxleyi
+11.72,2.97,c2,G. huxleyi

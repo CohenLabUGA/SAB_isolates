@@ -1,0 +1,9 @@
+"","Organism","Treatment","Shelf","taxa","mu","mu.sd"
+"1","C. closterium UGA4","High Fe","Outer shelf","Diatom",0,NA
+"2","C. closterium UGA4","Low Fe","Outer shelf","Diatom",0.613266666666667,0.0411332387897347
+"3","C. closterium UGA8","High Fe","Inner shelf","Diatom",1.6839,0.295102473727348
+"4","C. closterium UGA8","Low Fe","Inner shelf","Diatom",1.0058,0.136406781356353
+"5","G. huxleyi","High Fe","Outer shelf","Coccolithophore",0.701866666666667,0.0129187202668582
+"6","G. huxleyi","Low Fe","Outer shelf","Coccolithophore",0.47325,0.062605678656173
+"7","G. oceanica","High Fe","Inner shelf","Coccolithophore",0.9031,0.080084705156478
+"8","G. oceanica","Low Fe","Inner shelf","Coccolithophore",0.2308,0.0518950864726132
