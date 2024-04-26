@@ -37,7 +37,7 @@ Maintainence cultures were kept in small volumes during the year prior to the ex
 
 ## output
 
-The [output folder](output/) contains summarized physiological data and descriptive data from sequencing and assembly used to make the tables in the [figures folder](figs/), using the [`makeTables.R`](r_scripts/makeTables.R) script. 
+The [output folder](output/) contains summarized physiological data and descriptive data from sequencing and assembly used to make the tables in the [figures folder](figures/), using the [`makeTables.R`](r_scripts/makeTables.R) script. 
 
 ## r_scripts
 
@@ -107,7 +107,7 @@ Differential expression anlysis with DESeq2. This notebook uses ORF counts from 
   - Variance transformed stabilized counts (VST counts); these files are named vsd.4.csv where 4 is the organism.
  
 #### [`DE_figs.ipynb`](expression_analysis/DE_figs.ipynb)
-Plotting the differential expression anlysis results. Using the output from [`Kegg_annotations.ipynb`](expression_analysis/Kegg_annotations.ipynb) and [`DE_run.ipynb`](expression_analysis/DE_run.ipynb), this notebook creates the [photosynthesis and nitrogen metabolism](figs/Fig5_combinedHeatmap.png), [all shared ORFs](figs/SFig.3_orfHeatmap.png), and [carbon metabolism](figs/SFig.4_carbonHeatmap.png) heatmaps located in the [**figures**](figs/) folder.
+Plotting the differential expression anlysis results. Using the output from [`Kegg_annotations.ipynb`](expression_analysis/Kegg_annotations.ipynb) and [`DE_run.ipynb`](expression_analysis/DE_run.ipynb), this notebook creates the [photosynthesis and nitrogen metabolism](figs/Fig5_combinedHeatmap.png), [all shared ORFs](figs/SFig.3_orfHeatmap.png), and [carbon metabolism](figs/SFig.4_carbonHeatmap.png) heatmaps located in the [**figures**](figures/) folder.
 
 #### [`clusterProfiler.ipynb`](expression_analysis/clusterProfiler.ipynb)
 Running a gene set enrichment analysis using the DESeq2 results. This notebook finds the pathways with are statistically over represented among significantly expressed genes and creates the [enrichmnet dotplot](figs/Fig6_gsea.png)
