@@ -8,14 +8,16 @@
 #SBATCH --output=%x.out
 #SBATCH --error=%x.err
 
-transcripts=/work/nclab/lucy/SAB/Assembly/ribodetector/nonrna
+transcripts=/path/to/ribodetector/output
 
+# file listing file names to loop through
 source trimmed_names.sh
-
+isolates="04 06 08 13"
 for s in `echo $samples`; do
+for i in $isolates; do
         echo ${s}
-        transcriptome=/work/nclab/lucy/SAB/Assembly/$1/rnaSpades/post_ribo/transcripts.fasta
-        outdir=/work/nclab/lucy/SAB/Assembly/$1/salmon
+        transcriptome=/path/to/${i}/rnaSpades/assemvly
+        outdir=/path/to/${i}/salmon
 
 	R1=`ls -1 $transcripts | grep -o ${s}.*R1.fq`
 	R2=`ls -1 $transcripts | grep -o ${s}.*R2.fq`
@@ -27,4 +29,4 @@ for s in `echo $samples`; do
 salmon quant -i $outdir/$1_index -l A -1 $transcripts/${R1} -2 $transcripts/${R2} -p 16 --validate Mappings -o $outdir/${base}_quant
 
 done;
-
+done;
