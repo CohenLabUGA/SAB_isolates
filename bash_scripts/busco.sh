@@ -8,16 +8,17 @@
 #SBATCH --output=%x.out
 #SBATCH --error=%x.err
 
-## activate busco environment called 
-#busco files are downloaded at:
-busco_files=/home/leq40065/.conda/envs/env-mabma/bin/busco_downloads
+## activate busco environment called busco
+
+#busco Eukaryote files were downloaded:
+busco_files=/path/to/.conda/envs/busco/bin/busco_downloads
 
 samples="04 06 08 13"
 
 for s in `echo $samples`; do
 	echo ${s}
-	indir=/work/nclab/lucy/SAB/Assembly/${s}/rnaSpades/post_ribo
-	outdir=/work/nclab/lucy/SAB/Assembly/${s}/busco/post_ribo
+	indir=/path/to/Assembly/${s}/rnaSpades/post_ribo
+	outdir=/path/to/Assembly/${s}/busco/
 
 	busco -i $indir/transcripts.fasta -l eukaryota_odb10 -o ${s}busco_post_ribo --out_path $outdir -m transcriptome --offline --download_path $busco_files -f
 done;
