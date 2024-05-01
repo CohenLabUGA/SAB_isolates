@@ -26,7 +26,7 @@ This repository contains data and code used in the analysis of this project.
 
 All of the raw data collected for physiology is contained in [rawData](rawData/). 
 
-##### [physio_exp.csv](rawData/physio_exp.csv):   
+### [physio_exp.csv](rawData/physio_exp.csv):   
 This file contains most of the physiological data. It contains the growth rate, Chl a concentration, cell size, cell count, pH of media before and after the experiment, as well as the maximum potential quantum yeild of PSII (Fv/Fm), the reoxidation time of the first quinone acceptor ($\tau Q_a$ ), and the functional absorption cross-section of PSII ($\sigma_{PSII}$) which were extracted from the FIRe output files. The full output from the FIRe is the [fire_exp.csv](rawData/fire_exp.csv) file; these are results from dark-adapted samples. Results from the Actinic Light Source (ALS) run on the fire are in the [als_exp.csv](rawData/fire_exp.csv) file; this contains the non-photochemical quenching (NPQ) data used in the [physiology figure](figures/Fig3_physiology.png).
 
 #### [rawData/histData](rawData/histData)
@@ -37,7 +37,7 @@ Maintainence cultures were kept in small volumes during the year prior to the ex
 
 ## output
 
-The [output folder](output/) contains summarized physiological data and descriptive data from sequencing and assembly used to make the tables in the [figures folder](figures/), using the [`makeTables.R`](r_scripts/makeTables.R) script. 
+The [output folder](output/) contains summarized physiological data and descriptive data from sequencing and assembly used to make the tables in the [figures folder](figures/), using the [`makeTables.R`](r_scripts/make_tables.R) script. 
 
 ## r_scripts
 
