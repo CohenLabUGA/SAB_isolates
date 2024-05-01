@@ -12,9 +12,11 @@
 
 export OMP_NUM_THREADS=20
 
+# trimmed_names.sh is a file listing illumina sequence file names shortened 
 source trimmed_names.sh
-indir=/work/nclab/data/SAB_isolates/Illumina/trimmed
-outdir=/work/nclab/lucy/SAB/Assembly/ribodetector/nonrna
+
+indir=/path/to/trimmed/Illumina/reads
+outdir=/path/to/ribodetector/output
 
 for s in `echo $samples`; do
 	echo ${s}
