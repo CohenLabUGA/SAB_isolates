@@ -8,20 +8,23 @@
 #SBATCH --output=%x.out
 #SBATCH --error=%x.err
 
-# first we will index the data and then we will map the transcripts to the index to quantify contigs or transcripts
-# index in created from the .cds file from transdecoder. the .cds file works in nucleotide space so that we map with the transcripts (nucleotides)
-## define variables ##
+## activate env salmon
 
+# first index the data, then map the transcripts to the index to quantify contigs or transcripts
+# index is created from the .cds file from transdecoder. 
+# the .cds file are nucleotides so that it can map with the transcripts (nucleotides)
+
+## define variables ##
 source trimmed_names.sh #used to call transcript files
-transcripts=/work/nclab/lucy/SAB/Assembly/ribodetector/nonrna
+transcripts=/path/to/ribodetector/output
 taxa="04 06 08 13"
 patern='(?:[[:alnum:]]+_)+'
 
 for s in `echo $taxa`; do
 	echo ${s}
 	#locate transdecoder file '.cds' for each ${s} or taxa
-	transcriptome=/work/nclab/lucy/SAB/Annotation/transdecoder/${s}/transcripts.fasta.transdecoder.cds
-	outdir=/work/nclab/lucy/SAB/Assembly/${s}/salmon/run_2
+	transcriptome=/path/to/transdecoder/${s}/assembly.transdecoder.cds
+	outdir=/path/to/${s}/salmon
 	echo $transcriptome
 	#index each transcriptome
 	salmon index -t $transcriptome -i $outdir/${s}_index
