@@ -31,7 +31,7 @@ This file contains most of the physiological data. It contains the growth rate, 
 
 #### [rawData/histData](rawData/histData)
 
-Maintainence cultures were kept in small volumes during the year prior to the experiment. Growth rate and FIRe measurements were also taken during this time and are found in the subfolder [**histData**](/rawData/histData). Growth rates are in [histGrowth.csv](rawData/histData/histGrowth.csv), FIRe output from dark-adapted samples such as Fv/Fm are in [histFire.csv](rawData/histData/histFire.csv), and FIRe output using the ALS, such as NPQ, are in [histALS.csv](rawData/histData/histALS.csv). These data were used in the [physiology figure](figures/Fig2_physiology.png) to make the dashed lines in the bar graphs and plotted alone as a [SFig2_histPhysio](figures/SFig2_histPhysio).
+Maintainence cultures were kept in small volumes during the year prior to the experiment. Growth rate and FIRe measurements were also taken during this time and are found in the subfolder [**histData**](/rawData/histData). Growth rates are in [histGrowth.csv](rawData/histData/histGrowth.csv), FIRe output from dark-adapted samples such as Fv/Fm are in [histFire.csv](rawData/histData/histFire.csv), and FIRe output using the ALS, such as NPQ, are in [histALS.csv](rawData/histData/histALS.csv). These data were used in the [physiology figure](figures/Fig2_physiology.png) to make the dashed lines in the bar graphs and plotted alone as a [SFig2_histPhysio](figures/SFig2_histPhysio.png).
 
 >The sequences used in the transcriptomic analysis can be found at **link to ncbi**, and the coassemblies can be found at **link to zenodo**. 
 
