@@ -25,6 +25,7 @@ checkAndLoadPackages <- function(...,silent=FALSE){
   }
 }
 
+## Function used in physio_exp.R for one-way anova tests
 anova.fire <- function(organism, var){
   aov.fire <- fire %>% filter(Organism==organism) 
   aov.fire <- data.frame(Treatment=aov.fire$Treatment, 
@@ -57,7 +58,7 @@ anova.fire <- function(organism, var){
   summary.org
 }
 
-
+## function used in physio_exp.R to make bar plots for anova output
 barplot.aov <- function(df.sig){
   df.sig <- df.sig %>% group_by(Organism, Treatment)
   plot = ggplot(df.sig, aes(Organism ,av.Param, fill=Treatment)) +
