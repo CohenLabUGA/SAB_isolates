@@ -21,12 +21,4 @@ for s in $samples; do
 
 	emapper.py -i $indir/transcripts.fasta.transdecoder.pep -o ${s} --output_dir $outdir
 
-## run to get a gff file of annotations:
-#	emapper.py -i $indir/transcripts.fasta.transdecoder.pep -o ${s} --output_dir $outdir --decorate_gff yes --decorate_gff_ID_field GeneID --override
-
-## run which translates as it annotates:
-#	emapper.py -m diamond --itype CDS --translate -i $indir/${s}transcripts.fast -o ${s} --output_dir $outdir
-#	emapper.py -m hmmer -d Eukaryotic -i $indir/${s}transcripts.fasta
-
-
 done;
