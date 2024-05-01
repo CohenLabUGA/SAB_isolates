@@ -7,14 +7,12 @@
 #SBATCH --output=%x.out
 #SBATCH --error=%x.err
 
-indir=/work/nclab/lucy/SAB/Assembly/ribodetector/nonrna
-outdir=/work/nclab/lucy/SAB/Assembly/ribodetector/fastqc
-
-
-#load module fast qc
+#load modules FastQC and MultiQC before running
 
 indir=/path/to/raw/reads
 outdir=/path/to/output/fastqc
 
 
 fastqc $indir/*.fq -o $outdir
+
+multiqc $outdir/ 
