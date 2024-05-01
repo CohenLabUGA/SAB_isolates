@@ -6,17 +6,19 @@
 #SBATCH --output=%x.out
 #SBATCH --error=%x.err
 
+## load the CD-HIT module
 module load CD-HIT
 
-samples='04 06 08 13"
+samples='04 06 08 13'
+
 for s in $samples; do
 
-  path="/work/nclab/lucy/SAB/Assembly/${s}/rnaSpades"
-  pathout="/work/nclab/lucy/SAB/Assembly/${s}/cd-hit"
+  pathin="/path/to/Assembly/${s}/rnaSpades"
+  pathout="/path/to/Assembly/${s}/cd-hit"
 
   echo "collaping transcripts in ${s} with over 94% identity"
-#we collaps at 100% identity match
-  cd-hit-est -i $path/transcripts.fasta -o $pathout/${s}transcript95.fasta -c 0.95 -n 9
+#we collaps at 95% identity match
+  cd-hit-est -i $pathin/transcripts.fasta -o $pathout/${s}transcript95.fasta -c 0.95 -n 9
   
 done;
 
