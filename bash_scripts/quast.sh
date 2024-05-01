@@ -7,16 +7,15 @@
 #SBATCH --output=%x.out
 #SBATCH --error=%x.err
 
-###  activate env-quast1 for rnaQUAST
+###  activate env rnaQuast for rnaQUAST
 
 samples="04 06 08 13"
 
 for s in `echo $samples`; do
 
-indir=/work/nclab/lucy/SAB/Assembly/${s}/rnaSpades/post_ribo
-outdir=/work/nclab/lucy/SAB/Assembly/${s}/quast/post_ribo
+indir=/path/to/${s}/assembly
+outdir=/path/to/${s}/quast
 
-rnaQUAST.py --transcripts $indir/transcripts.fasta --output_dir $outdir/rnaQUAST_${s} --busco /home/leq40065/.conda/env/env-quast1/bin/busco_downloads/eukaryota --gene_mark -d
-#gmst.pl Euka_transcripts.fasta
+rnaQUAST.py --transcripts $indir/transcripts.fasta --output_dir $outdir/rnaQUAST_${s} --busco /path/to/.conda/env/rnaQuast/bin/busco_downloads/eukaryota --gene_mark -d
 
 done;
