@@ -7,29 +7,23 @@
 #SBATCH --output=isip.out
 #SBATCH --error=isip.err
 
-####  make sure to activate ncbi_database env samples is a space 
-## delinated list of organism names used as the folder naming 
-## scheme We will loop through each organism, and within that loop, 
-## loop through each protein in a specified folder to blast against 
+#### activate ncbi_database env 
+## samples is a space delinated list of organism names used as the folder naming scheme.
+## We will loop through each organism, and within each protein to blast against 
 ## the organism's translated transcriptome
 
 samples="04 08 06 13"
 proteins="isip1a isip1b isip1 isip2a isip2b isip3"
-proteins_dir="/work/nclab/lucy/SAB/src/isip_prot"
+proteins_dir="/path/to/isip_prot"
 
 for s in `echo $samples`; do
     echo ${s}
 
 ### 1. name in and out dir as variables to be called throughout the script 
 
-## for nucleotide, transcriptome:
-#  indir="/work/nclab/lucy/SAB/Assembly/${s}/rnaSpades/post_ribo/"
+    indir="/path/to/${s}/transdecoder/ouput"
 
-## translated transcriptome fasta file
-
-    indir="/work/nclab/lucy/SAB/Annotation/transdecoder/${s}/transcripts.fasta.transdecoder_dir"
-
-    outdir="/work/nclab/lucy/SAB/Annotation/eggnog/isip"
+    outdir="/path/to/isip/output"
 
  	echo ${indir}
         echo ${outdir}
@@ -38,8 +32,6 @@ for s in `echo $samples`; do
 ## fasta headings are too long for blast, this will shorten the file header
 
 	awk -F " " '{if ($0 ~ /^>/) {print $1} else {print $0}}' $indir/longest_orfs.pep > $indir/shorter.pep.fasta
-
-#when using the .pep files, I have to remove -parse_seqids
 
 	makeblastdb -in $indir/shorter.pep.fasta -title ${s} -out $outdir/pep_db/${s}db/${s} -dbtype prot
 
@@ -64,22 +56,7 @@ for s in `echo $samples`; do
 		orf_id=($(cat $outdir/pep_hit/${s}${p}.txt | grep -oP 'NODE\S*'| sort -u ))
 		echo 'orf_ids:' $orf_id
 
-	#readarray -d ' ' targets < <(grep -oP 'NODE\S*' $outdir/pep_hit/${s}${p}.txt)
-
-
-#echo ${targets}
-
-#printf "${targets}"
-	#	targets=(cat $outdir/pep_hit/${s}${p}.2.txt | grep -oP 'NODE\S*'| sort -u)
-	#	echo 'targets:' $targets 
 		echo $orf_id > $outdir/pep_hit/${s}${p}_hits.txt
-#grep -f -oP 'NODE\S*' <<< $outdir/pep_hit/${s}${p}.2.txt > $outdir/pep_hit/${s}${p}.2_hits.txt
-#		cat $outdir/pep_hit/${s}${p}.2_hits.txt
-
-	#	blastdbcmd -db ${outdir}/pep_db/${s}db/${s}2 -dbtype prot -entry_batch $outdir/pep_hit/${s}${p}.2_hits.txt -outfmt %f -out $outdir/pep_hit/${s}${p}.2.fasta
-	
-#	grep -wf $outdir/pep_hit/${s}${p}_hits.txt -A 1 $indir/shorter.pep.fasta | grep -v '^>' >$outdir/pep_hit/${s}${p}_hits.fasta
-
 	done
 done;
 
