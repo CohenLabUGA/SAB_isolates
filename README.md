@@ -4,9 +4,9 @@
 
 ### [Project Background](#project-background)
 
-### [rawData](#rawdata)
+### [rawData](#rawdata-1)
 
-### [Output](#output)
+### [Output](#output-1)
 
 ### [R scripts](#r_scripts)
 
@@ -27,11 +27,11 @@ This repository contains data and code used in the analysis of this project.
 All of the raw data collected for physiology is contained in [rawData](rawData/). 
 
 ### [physio_exp.csv](rawData/physio_exp.csv):   
-This file contains most of the physiological data. It contains the growth rate, Chl a concentration, cell size, cell count, pH of media before and after the experiment, as well as the maximum potential quantum yeild of PSII (Fv/Fm), the reoxidation time of the first quinone acceptor ($\tau Q_a$ ), and the functional absorption cross-section of PSII ($\sigma_{PSII}$) which were extracted from the FIRe output files. The full output from the FIRe is the [fire_exp.csv](rawData/fire_exp.csv) file; these are results from dark-adapted samples. Results from the Actinic Light Source (ALS) run on the fire are in the [als_exp.csv](rawData/fire_exp.csv) file; this contains the non-photochemical quenching (NPQ) data used in the [physiology figure](figures/Fig3_physiology.png).
+This file contains most of the physiological data. It contains the growth rate, Chl a concentration, cell size, cell count, pH of media before and after the experiment, as well as the maximum potential quantum yeild of PSII (Fv/Fm), the reoxidation time of the first quinone acceptor ($\tau Q_a$ ), and the functional absorption cross-section of PSII ($\sigma_{PSII}$) which were extracted from the FIRe output files. The full output from the FIRe is the [fire_exp.csv](rawData/fire_exp.csv) file; these are results from dark-adapted samples. Results from the Actinic Light Source (ALS) run on the fire are in the [als_exp.csv](rawData/fire_exp.csv) file; this contains the non-photochemical quenching (NPQ) data used in the [physiology figure](figures/Fig2_physiology.png).
 
 #### [rawData/histData](rawData/histData)
 
-Maintainence cultures were kept in small volumes during the year prior to the experiment. Growth rate and FIRe measurements were also taken during this time and are found in the subfolder [**histData**](/rawData/histData). Growth rates are in [histGrowth.csv](rawData/histData/histGrowth.csv), FIRe output from dark-adapted samples such as Fv/Fm are in [histFire.csv](rawData/histData/histFire.csv), and FIRe output using the ALS, such as NPQ, are in [histALS.csv](rawData/histData/histALS.csv). These data were used in the [physiology figure](figures/Fig2_physiology.png) to make the dashed lines in the bar graphs.
+Maintainence cultures were kept in small volumes during the year prior to the experiment. Growth rate and FIRe measurements were also taken during this time and are found in the subfolder [**histData**](/rawData/histData). Growth rates are in [histGrowth.csv](rawData/histData/histGrowth.csv), FIRe output from dark-adapted samples such as Fv/Fm are in [histFire.csv](rawData/histData/histFire.csv), and FIRe output using the ALS, such as NPQ, are in [histALS.csv](rawData/histData/histALS.csv). These data were used in the [physiology figure](figures/Fig2_physiology.png) to make the dashed lines in the bar graphs and plotted alone as a [SFig2_histPhysio](figures/SFig2_histPhysio).
 
 >The sequences used in the transcriptomic analysis can be found at **link to ncbi**, and the coassemblies can be found at **link to zenodo**. 
 
@@ -41,13 +41,13 @@ The [output folder](output/) contains summarized physiological data and descript
 
 ## r_scripts
 
-##### [`physio_fig.R`](r_scripts/physio_fig.R) :
+##### [`physio_fig.R`](r_scripts/Physio_exp.R) :
  This file will clean up data, summarize, and run statistical tests on each physiology parameter, eventually creating the physiology figure.
  - Input: [physiology data](rawData/physio_exp.csv) and [NPQ](rawData/als_exp.csv) from the FIRe
  - Output: [Physiology figure](figures/Fig2_physiology.png) and raw [csv files](output/) used to make tables
 
 ##### [`sourmash.R`](r_scripts/sourmash.R):
-This script will create a heatmap showing the [Jaccard similarity coefficients](figures/Fig3_sourmashAll.png) between all samples in a clustered by similarity. The correlations were calculated using the [`sourmash.sh`](bash_scripts/sourmash.sh) bash script.
+This script will create a heatmap showing the [Jaccard similarity coefficients](figures/Fig3_sourmash_sample.png) between all samples in a clustered by similarity. The correlations were calculated using the [`sourmash.sh`](bash_scripts/sourmash.sh) bash script.
 
 ##### [`functions.R`](r_scripts/functions.R): 
 Functions defined that are repeatidly used; these include loading/installing packages, statistical tests, or mutating dataframes. 
@@ -77,7 +77,7 @@ All [bash scripts](bash_scripts/) used to assemble a hybrid De Novo assembly for
 
 #### Additional analysis
 
-sourmash was used to calculate the Jaccard similarity between all samples and between transcriptomes, later used to create the figures comparing similarity between all [samples](figures/Fig3_sourmashAll.png) and each [transcriptome](figures/SFig2_sourmashTranscriptome.png) respectively. This process uses [`sig.sh`](bash_scripts/sig.sh) and [`compare.sh`](bash_scripts/compare.sh). 
+sourmash was used to calculate the Jaccard similarity between all samples and between transcriptomes, later used to create the figures comparing similarity between all [samples](figures/Fig3_sourmash_sample.png) and each [transcriptome](figures/SFig3_sourmashTranscriptome.png) respectively. This process uses [`sig.sh`](bash_scripts/sig.sh) and [`compare.sh`](bash_scripts/compare.sh). 
 
 Lineage differences between diatoms and coccolithophores and among species of each taxa were found using [`cox1.sh`](bash_scripts/cox1.sh). This script will output the COX1 gene for each isolate, which can later be used to construct the maximum likelihood [phylogenetic trees](figures/cox1Trees.png). 
 
@@ -107,10 +107,10 @@ Differential expression anlysis with DESeq2. This notebook uses ORF counts from 
   - Variance transformed stabilized counts (VST counts); these files are named vsd.4.csv where 4 is the organism.
  
 #### [`DE_figs.ipynb`](expression_analysis/DE_figs.ipynb)
-Plotting the differential expression anlysis results. Using the output from [`Kegg_annotations.ipynb`](expression_analysis/Kegg_annotations.ipynb) and [`DE_run.ipynb`](expression_analysis/DE_run.ipynb), this notebook creates the [photosynthesis and nitrogen metabolism](figures/Fig5_combinedHeatmap.png), [all shared ORFs](figures/SFig.3_orfHeatmap.png), and [carbon metabolism](figures/SFig.4_carbonHeatmap.png) heatmaps located in the [**figures**](figures/) folder.
+Plotting the differential expression anlysis results. Using the output from [`Kegg_annotations.ipynb`](expression_analysis/Kegg_annotations.ipynb) and [`DE_run.ipynb`](expression_analysis/DE_run.ipynb), this notebook creates the [photosynthesis and nitrogen metabolism](figures/Fig4_heatmap.png), [all shared ORFs](figures/SFig.5_orfHeatmap.png), and [carbon metabolism](figures/SFig.6_carbonHeatmap.png) heatmaps located in the [**figures**](figures/) folder.
 
 #### [`clusterProfiler.ipynb`](expression_analysis/clusterProfiler.ipynb)
-Running a gene set enrichment analysis using the DESeq2 results. This notebook finds the pathways with are statistically over represented among significantly expressed genes and creates the [enrichmnet dotplot](figures/Fig6_gsea.png)
+Running a gene set enrichment analysis using the DESeq2 results. This notebook finds the pathways with are statistically over represented among significantly expressed genes and creates the [enrichmnet dotplot](figures/Fig5_gsea.png)
 
 
 
