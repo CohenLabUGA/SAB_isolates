@@ -107,7 +107,7 @@ Differential expression anlysis with DESeq2. This notebook uses ORF counts from 
   - Variance transformed stabilized counts (VST counts); these files are named vsd.4.csv where 4 is the organism.
  
 #### [`DE_figs.ipynb`](expression_analysis/DE_figs.ipynb)
-Plotting the differential expression anlysis results. Using the output from [`Kegg_annotations.ipynb`](expression_analysis/Kegg_annotations.ipynb) and [`DE_run.ipynb`](expression_analysis/DE_run.ipynb), this notebook creates the [photosynthesis and nitrogen metabolism](figures/Fig4_heatmap.png), [all shared ORFs](figures/SFig.5_orfHeatmap.png), and [carbon metabolism](figures/SFig.6_carbonHeatmap.png) heatmaps located in the [**figures**](figures/) folder.
+Plotting the differential expression anlysis results. Using the output from [`Kegg_annotations.ipynb`](expression_analysis/Kegg_annotations.ipynb) and [`DE_run.ipynb`](expression_analysis/DE_run.ipynb), this notebook creates the [photosynthesis and nitrogen metabolism](figures/Fig4_heatmap.png), [all shared ORFs](figures/SFig5_orfHeatmap.png), and [carbon metabolism](figures/SFig6_carbonHeatmap.png) heatmaps located in the [**figures**](figures/) folder.
 
 #### [`clusterProfiler.ipynb`](expression_analysis/clusterProfiler.ipynb)
 Running a gene set enrichment analysis using the DESeq2 results. This notebook finds the pathways with are statistically over represented among significantly expressed genes and creates the [enrichmnet dotplot](figures/Fig5_gsea.png)
