@@ -10,6 +10,8 @@
 
 ### [R scripts](#r_scripts)
 
+### [conda_envs](#conda_envs)
+
 ### [Bash scripts](#bash_scripts)
 
 ### [Jupyter notebooks for expression analysis](#expression_analysis)
@@ -51,6 +53,10 @@ This script will create a heatmap showing the [Jaccard similarity coefficients](
 
 ##### [`functions.R`](r_scripts/functions.R): 
 Functions defined that are repeatidly used; these include loading/installing packages, statistical tests, or mutating dataframes. 
+
+## conda_envs
+
+All [conda environments](conda_envs/) used durring analysis. Bash scripts list conda environment used. 
 
 ## bash_scripts
 
