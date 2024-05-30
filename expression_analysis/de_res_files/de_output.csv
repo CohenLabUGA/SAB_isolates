@@ -1,8 +1,8 @@
-"Contrast","Organism","num.de","percent.de"
-"Add_Back","C. closterium UGA4",880,3.24017820980154
-"High_Iron","C. closterium UGA8",1649,6.95369823732816
-"Add_Back","C. closterium UGA8",1910,8.05431390739647
-"High_Iron","G. oceanica",3177,9.05205573125908
-"Add_Back","G. oceanica",2202,6.27404051628344
-"High_Iron","G. huxleyi",1783,6.14530916109464
-"Add_Back","G. huxleyi",2032,7.00351554422003
+"Contrast","Organism","number_de","percent_de"
+"Add_Back","C. closterium UGA4",883,3.25074549939256
+"High_Iron","C. closterium UGA8",1646,6.94104748249979
+"Add_Back","C. closterium UGA8",1914,8.07118158050097
+"High_Iron","G. oceanica",3150,8.97410330190023
+"Add_Back","G. oceanica",2195,6.25338309449873
+"High_Iron","G. huxleyi",2911,10.0663946331005
+"Add_Back","G. huxleyi",2539,8.77999861677848
