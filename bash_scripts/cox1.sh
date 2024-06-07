@@ -27,7 +27,7 @@ for s in `echo $samples`; do
 ### 1. location and name of protein file from ncbi database
 if [${s} = '04'] || [${s} = '08']; then
 	cox_gene="/path/to/cylindrotheca_cox1_gene.faa"
- else 
+ else
 	cox_gene="/path/to/coccolith_cox1_gene/${s}_cox1.fasta"
  fi
 

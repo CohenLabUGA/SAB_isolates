@@ -10,7 +10,8 @@
 
 #while read line; do hit=$(curl -# http://rest.kegg.jp/list/pathway | grep -w "${line/ko/map}"); echo -e "${line}\t${hit}" |cut -f1,3 >> all.ko.txt; done < all.ko.txt
 
-source all.ko.sh
+source all.ko.txt
+
 #source all.brite.txt
 #source all.path.txt
 #source all.modules.txt
