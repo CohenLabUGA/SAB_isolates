@@ -1,4 +1,4 @@
 "orfs","ko_iteration","ko_id"
-"NODE_14000_length_1790_cov_57.659872_g7170_i0.p1","ko:_1","ptox_a"
-"NODE_16240_length_1655_cov_63.367257_g7170_i1.p1","ko:_1","ptox_b"
-"NODE_18734_length_1522_cov_64.064872_g8003_i1.p2","ko:_1","ptox_c"
+"NODE_14000_length_1790_cov_57.659872_g7170_i0.p1","ko:_1","ptox1"
+"NODE_16240_length_1655_cov_63.367257_g7170_i1.p1","ko:_1","ptox1"
+"NODE_18734_length_1522_cov_64.064872_g8003_i1.p2","ko:_1","ptox1"
