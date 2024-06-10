@@ -1,3 +1,4 @@
-NODE_15645_length_1522_cov_47.151139_g8781_i0.p1
-NODE_15735_length_1514_cov_43.294934_g8781_i1.p1
-NODE_2807_length_3757_cov_7.428882_g1403_i0.p2
+"orfs","ko_iteration","ko_id"
+"NODE_15645_length_1522_cov_47.151139_g8781_i0.p1", "ko:_1","ptox_a"
+"NODE_15735_length_1514_cov_43.294934_g8781_i1.p1","ko:_1","ptox_b"
+"NODE_2807_length_3757_cov_7.428882_g1403_i0.p2","ko:_1","ptox_c"
