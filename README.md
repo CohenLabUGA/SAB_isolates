@@ -118,8 +118,3 @@ Plotting the differential expression anlysis results. Using the output from [`Ke
 #### [`clusterProfiler.ipynb`](expression_analysis/clusterProfiler.ipynb)
 Running a gene set enrichment analysis using the DESeq2 results. This notebook finds the pathways with are statistically over represented among significantly expressed genes and creates the [enrichmnet dotplot](figures/Fig5_gsea.png)
 
-
-
-# Acknowledgements
-
-Bioinformatic processing was performed with resources from the UGA Georgia Advanced Computing Resource Center (GACRC). We acknowledge funding support from UGA Skidaway Institute of Oceanography and National Science Foundation awards NSF-OPP #2240780 and NSF-OPP #2149071 to NRC during the time of writing.
