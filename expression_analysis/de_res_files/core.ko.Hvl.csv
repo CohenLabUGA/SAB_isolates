@@ -1,612 +1,208 @@
 "ko_id","symbol","name","Description","organism","treatment","NES"
-"K00284"," GLU, gltS"," glutamate synthase (ferredoxin) "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K09838"," ZEP, ABA1"," zeaxanthin epoxidase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K01649"," leuA, IMS"," 2-isopropylmalate synthase "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K03801"," lipB"," lipoyl(octanoyl) transferase "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K15371"," GDH2"," glutamate dehydrogenase "," Nitrogen metabolism","G. huxleyi","Low Iron",-2.34018659762105
-"K15371"," GDH2"," glutamate dehydrogenase "," Microbial metabolism in diverse environments","G. huxleyi","Low Iron",-1.78756647289849
-"K15371"," GDH2"," glutamate dehydrogenase "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-1.72996893807351
-"K00059"," fabG, OAR1"," 3-oxoacyl-[acyl-carrier protein] reductase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00059"," fabG, OAR1"," 3-oxoacyl-[acyl-carrier protein] reductase "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K00059"," fabG, OAR1"," 3-oxoacyl-[acyl-carrier protein] reductase "," Fatty acid metabolism","C. closterium 8","Low Iron",-1.89606743142593
-"K00059"," fabG, OAR1"," 3-oxoacyl-[acyl-carrier protein] reductase "," Fatty acid biosynthesis","C. closterium 8","Low Iron",-1.77514704517309
-"K06119"," SQD2"," sulfoquinovosyltransferase "," Glycerolipid metabolism","C. closterium 8","Low Iron",-1.67743373260717
-"K00873"," PK, pyk"," pyruvate kinase "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K08679"," GAE, cap1J"," UDP-glucuronate 4-epimerase "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K06443"," lcyB, crtL1, crtY"," lycopene beta-cyclase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K12661"," LRA3, rhmD"," L-rhamnonate dehydratase "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-1.72996893807351
-"K00814"," GPT, ALT"," alanine transaminase "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K00814"," GPT, ALT"," alanine transaminase "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K00814"," GPT, ALT"," alanine transaminase "," Carbon metabolism","C. closterium 8","Low Iron",-1.97726153696893
-"K00814"," GPT, ALT"," alanine transaminase "," Carbon fixation in photosynthetic organisms","C. closterium 8","Low Iron",-2.02075412527927
-"K02136"," ATPeF1G, ATP5C1, ATP3"," F-type H+-transporting ATPase subunit gamma"," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K00963"," UGP2, galU, galF"," UTP--glucose-1-phosphate uridylyltransferase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00963"," UGP2, galU, galF"," UTP--glucose-1-phosphate uridylyltransferase "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K00053"," ilvC"," ketol-acid reductoisomerase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00053"," ilvC"," ketol-acid reductoisomerase "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K01810"," GPI, pgi"," glucose-6-phosphate isomerase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K01810"," GPI, pgi"," glucose-6-phosphate isomerase "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K01810"," GPI, pgi"," glucose-6-phosphate isomerase "," Carbon metabolism","C. closterium 8","Low Iron",-1.97726153696893
-"K01810"," GPI, pgi"," glucose-6-phosphate isomerase "," Glycolysis / Gluconeogenesis","C. closterium 8","Low Iron",-1.92115621735555
-"K01810"," GPI, pgi"," glucose-6-phosphate isomerase "," Pentose phosphate pathway","C. closterium 8","Low Iron",-1.70830269239501
-"K00106"," XDH"," xanthine dehydrogenase/oxidase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00106"," XDH"," xanthine dehydrogenase/oxidase "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K01770"," ispF"," 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K01770"," ispF"," 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase "," Terpenoid backbone biosynthesis","C. closterium 8","Low Iron",-1.92668113018138
-"K01079"," serB, PSPH"," phosphoserine phosphatase "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K01079"," serB, PSPH"," phosphoserine phosphatase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K01079"," serB, PSPH"," phosphoserine phosphatase "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K01079"," serB, PSPH"," phosphoserine phosphatase "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K01079"," serB, PSPH"," phosphoserine phosphatase "," Carbon metabolism","C. closterium 8","Low Iron",-1.97726153696893
-"K15877"," CYP55"," fungal nitric oxide reductase "," Nitrogen metabolism","G. huxleyi","Low Iron",-2.34018659762105
-"K15877"," CYP55"," fungal nitric oxide reductase "," Microbial metabolism in diverse environments","G. huxleyi","Low Iron",-1.78756647289849
-"K03841"," FBP, fbp"," fructose-1,6-bisphosphatase I "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K03841"," FBP, fbp"," fructose-1,6-bisphosphatase I "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K03841"," FBP, fbp"," fructose-1,6-bisphosphatase I "," Carbon metabolism","C. closterium 8","Low Iron",-1.97726153696893
-"K03841"," FBP, fbp"," fructose-1,6-bisphosphatase I "," Carbon fixation in photosynthetic organisms","C. closterium 8","Low Iron",-2.02075412527927
-"K03841"," FBP, fbp"," fructose-1,6-bisphosphatase I "," Glycolysis / Gluconeogenesis","C. closterium 8","Low Iron",-1.92115621735555
-"K03841"," FBP, fbp"," fructose-1,6-bisphosphatase I "," Fructose and mannose metabolism","C. closterium 8","Low Iron",-1.70434362705106
-"K03841"," FBP, fbp"," fructose-1,6-bisphosphatase I "," Pentose phosphate pathway","C. closterium 8","Low Iron",-1.70830269239501
-"K03841"," FBP, fbp"," fructose-1,6-bisphosphatase I "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-1.72996893807351
-"K01792"," E5.1.3.15"," glucose-6-phosphate 1-epimerase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K01792"," E5.1.3.15"," glucose-6-phosphate 1-epimerase "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K01792"," E5.1.3.15"," glucose-6-phosphate 1-epimerase "," Glycolysis / Gluconeogenesis","C. closterium 8","Low Iron",-1.92115621735555
-"K00052"," leuB, IMDH"," 3-isopropylmalate dehydrogenase "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K00134"," GAPDH, gapA"," glyceraldehyde 3-phosphate dehydrogenase (phosphorylating) "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K00134"," GAPDH, gapA"," glyceraldehyde 3-phosphate dehydrogenase (phosphorylating) "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00134"," GAPDH, gapA"," glyceraldehyde 3-phosphate dehydrogenase (phosphorylating) "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K00134"," GAPDH, gapA"," glyceraldehyde 3-phosphate dehydrogenase (phosphorylating) "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K00134"," GAPDH, gapA"," glyceraldehyde 3-phosphate dehydrogenase (phosphorylating) "," Carbon metabolism","C. closterium 8","Low Iron",-1.97726153696893
-"K00134"," GAPDH, gapA"," glyceraldehyde 3-phosphate dehydrogenase (phosphorylating) "," Carbon fixation in photosynthetic organisms","C. closterium 8","Low Iron",-2.02075412527927
-"K00134"," GAPDH, gapA"," glyceraldehyde 3-phosphate dehydrogenase (phosphorylating) "," Glycolysis / Gluconeogenesis","C. closterium 8","Low Iron",-1.92115621735555
-"K00001"," E1.1.1.1, adh"," alcohol dehydrogenase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00001"," E1.1.1.1, adh"," alcohol dehydrogenase "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K00001"," E1.1.1.1, adh"," alcohol dehydrogenase "," Glycolysis / Gluconeogenesis","C. closterium 8","Low Iron",-1.92115621735555
-"K03403"," chlH, bchH"," magnesium chelatase subunit H "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K03403"," chlH, bchH"," magnesium chelatase subunit H "," Porphyrin metabolism","C. closterium 8","Low Iron",-2.46553410972825
-"K00648"," fabH"," 3-oxoacyl-[acyl-carrier-protein] synthase III "," Fatty acid metabolism","C. closterium 8","Low Iron",-1.89606743142593
-"K00648"," fabH"," 3-oxoacyl-[acyl-carrier-protein] synthase III "," Fatty acid biosynthesis","C. closterium 8","Low Iron",-1.77514704517309
-"K00928"," lysC"," aspartate kinase "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K00231"," PPOX, hemY"," protoporphyrinogen/coproporphyrinogen III oxidase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00231"," PPOX, hemY"," protoporphyrinogen/coproporphyrinogen III oxidase "," Porphyrin metabolism","C. closterium 8","Low Iron",-2.46553410972825
-"K00231"," PPOX, hemY"," protoporphyrinogen/coproporphyrinogen III oxidase "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K02492"," hemA"," glutamyl-tRNA reductase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K02492"," hemA"," glutamyl-tRNA reductase "," Porphyrin metabolism","C. closterium 8","Low Iron",-2.46553410972825
-"K02492"," hemA"," glutamyl-tRNA reductase "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K02492"," hemA"," glutamyl-tRNA reductase "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K02291"," crtB"," 15-cis-phytoene synthase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K01626"," E2.5.1.54, aroF, aroG, aroH"," 3-deoxy-7-phosphoheptulonate synthase "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K01626"," E2.5.1.54, aroF, aroG, aroH"," 3-deoxy-7-phosphoheptulonate synthase "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K11262"," ACACA"," acetyl-CoA carboxylase / biotin carboxylase 1 "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K11262"," ACACA"," acetyl-CoA carboxylase / biotin carboxylase 1 "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K11262"," ACACA"," acetyl-CoA carboxylase / biotin carboxylase 1 "," Fatty acid metabolism","C. closterium 8","Low Iron",-1.89606743142593
-"K11262"," ACACA"," acetyl-CoA carboxylase / biotin carboxylase 1 "," Fatty acid biosynthesis","C. closterium 8","Low Iron",-1.77514704517309
-"K00382"," DLD, lpd, pdhD"," dihydrolipoyl dehydrogenase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00382"," DLD, lpd, pdhD"," dihydrolipoyl dehydrogenase "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K00382"," DLD, lpd, pdhD"," dihydrolipoyl dehydrogenase "," Carbon metabolism","C. closterium 8","Low Iron",-1.97726153696893
-"K00382"," DLD, lpd, pdhD"," dihydrolipoyl dehydrogenase "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K00382"," DLD, lpd, pdhD"," dihydrolipoyl dehydrogenase "," Glycolysis / Gluconeogenesis","C. closterium 8","Low Iron",-1.92115621735555
-"K04487"," iscS, NFS1"," cysteine desulfurase "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K00099"," dxr"," 1-deoxy-D-xylulose-5-phosphate reductoisomerase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00099"," dxr"," 1-deoxy-D-xylulose-5-phosphate reductoisomerase "," Terpenoid backbone biosynthesis","C. closterium 8","Low Iron",-1.92668113018138
-"K20967"," MOCS1"," GTP 3',8-cyclase / cyclic pyranopterin monophosphate synthase "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K02132"," ATPeF1A, ATP5A1, ATP1"," F-type H+-transporting ATPase subunit alpha"," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K21480"," HO, pbsA1, hmuO"," heme oxygenase (biliverdin-producing, ferredoxin) "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K21480"," HO, pbsA1, hmuO"," heme oxygenase (biliverdin-producing, ferredoxin) "," Porphyrin metabolism","C. closterium 8","Low Iron",-2.46553410972825
-"K01637"," E4.1.3.1, aceA"," isocitrate lyase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K01637"," E4.1.3.1, aceA"," isocitrate lyase "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K01637"," E4.1.3.1, aceA"," isocitrate lyase "," Carbon metabolism","C. closterium 8","Low Iron",-1.97726153696893
-"K01637"," E4.1.3.1, aceA"," isocitrate lyase "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-1.72996893807351
-"K06118"," SQD1, sqdB"," UDP-sulfoquinovose synthase "," Glycerolipid metabolism","C. closterium 8","Low Iron",-1.67743373260717
-"K00138"," aldB"," aldehyde dehydrogenase "," Microbial metabolism in diverse environments","G. huxleyi","Low Iron",-1.78756647289849
-"K00138"," aldB"," aldehyde dehydrogenase "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-1.72996893807351
-"K12524"," thrA"," bifunctional aspartokinase / homoserine dehydrogenase 1 "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K00413"," CYC1, CYT1, petC"," ubiquinol-cytochrome c reductase cytochrome c1 subunit"," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K12657"," ALDH18A1, P5CS"," delta-1-pyrroline-5-carboxylate synthetase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K12657"," ALDH18A1, P5CS"," delta-1-pyrroline-5-carboxylate synthetase "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K00236"," SDHC, SDH3"," succinate dehydrogenase (ubiquinone) cytochrome b560 subunit"," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K03783"," punA, PNP"," purine-nucleoside phosphorylase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K01834"," PGAM, gpmA"," 2,3-bisphosphoglycerate-dependent phosphoglycerate mutase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K01834"," PGAM, gpmA"," 2,3-bisphosphoglycerate-dependent phosphoglycerate mutase "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K01834"," PGAM, gpmA"," 2,3-bisphosphoglycerate-dependent phosphoglycerate mutase "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K01834"," PGAM, gpmA"," 2,3-bisphosphoglycerate-dependent phosphoglycerate mutase "," Carbon metabolism","C. closterium 8","Low Iron",-1.97726153696893
-"K01834"," PGAM, gpmA"," 2,3-bisphosphoglycerate-dependent phosphoglycerate mutase "," Glycolysis / Gluconeogenesis","C. closterium 8","Low Iron",-1.92115621735555
-"K00366"," nirA"," ferredoxin-nitrite reductase "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K02145"," ATPeV1A, ATP6A"," V-type H+-transporting ATPase subunit A "," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K00239"," sdhA, frdA"," succinate dehydrogenase flavoprotein subunit "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00239"," sdhA, frdA"," succinate dehydrogenase flavoprotein subunit "," Carbon metabolism","C. closterium 8","Low Iron",-1.97726153696893
-"K01652"," E2.2.1.6L, ilvB, ilvG, ilvI"," acetolactate synthase I/II/III large subunit "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K01652"," E2.2.1.6L, ilvB, ilvG, ilvI"," acetolactate synthase I/II/III large subunit "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K01652"," E2.2.1.6L, ilvB, ilvG, ilvI"," acetolactate synthase I/II/III large subunit "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K09458"," fabF, OXSM, CEM1"," 3-oxoacyl-[acyl-carrier-protein] synthase II "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K09458"," fabF, OXSM, CEM1"," 3-oxoacyl-[acyl-carrier-protein] synthase II "," Fatty acid metabolism","C. closterium 8","Low Iron",-1.89606743142593
-"K09458"," fabF, OXSM, CEM1"," 3-oxoacyl-[acyl-carrier-protein] synthase II "," Fatty acid biosynthesis","C. closterium 8","Low Iron",-1.77514704517309
-"K01663"," HIS7"," imidazole glycerol-phosphate synthase "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K01663"," HIS7"," imidazole glycerol-phosphate synthase "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K00232"," E1.3.3.6, ACOX1, ACOX3"," acyl-CoA oxidase "," Carbon metabolism","G. huxleyi","Low Iron",-1.72201876693846
-"K02112"," ATPF1B, atpD"," F-type H+/Na+-transporting ATPase subunit beta "," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K00600"," glyA, SHMT"," glycine hydroxymethyltransferase "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K06013"," STE24"," STE24 endopeptidase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K06013"," STE24"," STE24 endopeptidase "," Terpenoid backbone biosynthesis","C. closterium 8","Low Iron",-1.92668113018138
-"K01845"," hemL"," glutamate-1-semialdehyde 2,1-aminomutase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K01845"," hemL"," glutamate-1-semialdehyde 2,1-aminomutase "," Porphyrin metabolism","C. closterium 8","Low Iron",-2.46553410972825
-"K01845"," hemL"," glutamate-1-semialdehyde 2,1-aminomutase "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K01845"," hemL"," glutamate-1-semialdehyde 2,1-aminomutase "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K00655"," plsC"," 1-acyl-sn-glycerol-3-phosphate acyltransferase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00655"," plsC"," 1-acyl-sn-glycerol-3-phosphate acyltransferase "," Glycerolipid metabolism","C. closterium 8","Low Iron",-1.67743373260717
-"K01778"," dapF"," diaminopimelate epimerase "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K03527"," ispH, lytB"," 4-hydroxy-3-methylbut-2-en-1-yl diphosphate reductase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K03527"," ispH, lytB"," 4-hydroxy-3-methylbut-2-en-1-yl diphosphate reductase "," Terpenoid backbone biosynthesis","C. closterium 8","Low Iron",-1.92668113018138
-"K01885"," EARS, gltX"," glutamyl-tRNA synthetase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K01885"," EARS, gltX"," glutamyl-tRNA synthetase "," Porphyrin metabolism","C. closterium 8","Low Iron",-2.46553410972825
-"K01885"," EARS, gltX"," glutamyl-tRNA synthetase "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K01885"," EARS, gltX"," glutamyl-tRNA synthetase "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K01783"," rpe, RPE"," ribulose-phosphate 3-epimerase "," Microbial metabolism in diverse environments","G. huxleyi","Low Iron",-1.78756647289849
-"K01783"," rpe, RPE"," ribulose-phosphate 3-epimerase "," Carbon metabolism","G. huxleyi","Low Iron",-1.72201876693846
-"K01783"," rpe, RPE"," ribulose-phosphate 3-epimerase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K01783"," rpe, RPE"," ribulose-phosphate 3-epimerase "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K01783"," rpe, RPE"," ribulose-phosphate 3-epimerase "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K01783"," rpe, RPE"," ribulose-phosphate 3-epimerase "," Carbon metabolism","C. closterium 8","Low Iron",-1.97726153696893
-"K01783"," rpe, RPE"," ribulose-phosphate 3-epimerase "," Carbon fixation in photosynthetic organisms","C. closterium 8","Low Iron",-2.02075412527927
-"K01783"," rpe, RPE"," ribulose-phosphate 3-epimerase "," Pentose phosphate pathway","C. closterium 8","Low Iron",-1.70830269239501
-"K01783"," rpe, RPE"," ribulose-phosphate 3-epimerase "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-1.72996893807351
-"K00993"," EPT1"," ethanolaminephosphotransferase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K02133"," ATPeF1B, ATP5B, ATP2"," F-type H+-transporting ATPase subunit beta "," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K01693"," hisB"," imidazoleglycerol-phosphate dehydratase "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K00641"," metX"," homoserine O-acetyltransferase/O-succinyltransferase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00641"," metX"," homoserine O-acetyltransferase/O-succinyltransferase "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K01624"," FBA, fbaA"," fructose-bisphosphate aldolase, class II "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K01624"," FBA, fbaA"," fructose-bisphosphate aldolase, class II "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K01624"," FBA, fbaA"," fructose-bisphosphate aldolase, class II "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K01624"," FBA, fbaA"," fructose-bisphosphate aldolase, class II "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K01624"," FBA, fbaA"," fructose-bisphosphate aldolase, class II "," Carbon metabolism","C. closterium 8","Low Iron",-1.97726153696893
-"K01624"," FBA, fbaA"," fructose-bisphosphate aldolase, class II "," Carbon fixation in photosynthetic organisms","C. closterium 8","Low Iron",-2.02075412527927
-"K01624"," FBA, fbaA"," fructose-bisphosphate aldolase, class II "," Glycolysis / Gluconeogenesis","C. closterium 8","Low Iron",-1.92115621735555
-"K01624"," FBA, fbaA"," fructose-bisphosphate aldolase, class II "," Fructose and mannose metabolism","C. closterium 8","Low Iron",-1.70434362705106
-"K01624"," FBA, fbaA"," fructose-bisphosphate aldolase, class II "," Pentose phosphate pathway","C. closterium 8","Low Iron",-1.70830269239501
-"K01679"," E4.2.1.2B, fumC, FH"," fumarate hydratase, class II "," Microbial metabolism in diverse environments","G. huxleyi","Low Iron",-1.78756647289849
-"K01679"," E4.2.1.2B, fumC, FH"," fumarate hydratase, class II "," Carbon metabolism","G. huxleyi","Low Iron",-1.72201876693846
-"K01679"," E4.2.1.2B, fumC, FH"," fumarate hydratase, class II "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-1.72996893807351
-"K00766"," trpD"," anthranilate phosphoribosyltransferase "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K00766"," trpD"," anthranilate phosphoribosyltransferase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00766"," trpD"," anthranilate phosphoribosyltransferase "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K14652"," ribBA"," 3,4-dihydroxy 2-butanone 4-phosphate synthase / GTP cyclohydrolase II "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K14652"," ribBA"," 3,4-dihydroxy 2-butanone 4-phosphate synthase / GTP cyclohydrolase II "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K00789"," metK, MAT"," S-adenosylmethionine synthetase "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K00826"," E2.6.1.42, ilvE"," branched-chain amino acid aminotransferase "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K00003"," hom"," homoserine dehydrogenase "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K00003"," hom"," homoserine dehydrogenase "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K10960"," chlP, bchP"," geranylgeranyl diphosphate/geranylgeranyl-bacteriochlorophyllide a reductase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K10960"," chlP, bchP"," geranylgeranyl diphosphate/geranylgeranyl-bacteriochlorophyllide a reductase "," Porphyrin metabolism","C. closterium 8","Low Iron",-2.46553410972825
-"K10960"," chlP, bchP"," geranylgeranyl diphosphate/geranylgeranyl-bacteriochlorophyllide a reductase "," Terpenoid backbone biosynthesis","C. closterium 8","Low Iron",-1.92668113018138
-"K01733"," thrC"," threonine synthase "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K01733"," thrC"," threonine synthase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K01733"," thrC"," threonine synthase "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K01733"," thrC"," threonine synthase "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K15422"," SAL"," 3'(2'), 5'-bisphosphate nucleotidase / inositol polyphosphate 1-phosphatase "," Microbial metabolism in diverse environments","G. huxleyi","Low Iron",-1.78756647289849
-"K03942"," NDUFV1"," NADH dehydrogenase (ubiquinone) flavoprotein 1 "," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K00819"," rocD, OAT"," ornithine--oxo-acid transaminase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00045"," E1.1.1.67, mtlK"," mannitol 2-dehydrogenase "," Fructose and mannose metabolism","C. closterium 8","Low Iron",-1.70434362705106
-"K19007"," AGPAT5"," lysophosphatidiate acyltransferase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K19007"," AGPAT5"," lysophosphatidiate acyltransferase "," Glycerolipid metabolism","C. closterium 8","Low Iron",-1.67743373260717
-"K02293"," PDS, crtP"," 15-cis-phytoene desaturase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00872"," thrB"," homoserine kinase "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K00872"," thrB"," homoserine kinase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00872"," thrB"," homoserine kinase "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K00872"," thrB"," homoserine kinase "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K01772"," hemH, FECH"," protoporphyrin/coproporphyrin ferrochelatase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K01772"," hemH, FECH"," protoporphyrin/coproporphyrin ferrochelatase "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K00248"," ACADS, bcd"," butyryl-CoA dehydrogenase "," Carbon metabolism","C. closterium 8","Low Iron",-1.97726153696893
-"K00248"," ACADS, bcd"," butyryl-CoA dehydrogenase "," Fatty acid metabolism","C. closterium 8","Low Iron",-1.89606743142593
-"K00895"," pfp, PFP"," diphosphate-dependent phosphofructokinase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00895"," pfp, PFP"," diphosphate-dependent phosphofructokinase "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K00895"," pfp, PFP"," diphosphate-dependent phosphofructokinase "," Glycolysis / Gluconeogenesis","C. closterium 8","Low Iron",-1.92115621735555
-"K00895"," pfp, PFP"," diphosphate-dependent phosphofructokinase "," Fructose and mannose metabolism","C. closterium 8","Low Iron",-1.70434362705106
-"K00895"," pfp, PFP"," diphosphate-dependent phosphofructokinase "," Pentose phosphate pathway","C. closterium 8","Low Iron",-1.70830269239501
-"K00927"," PGK, pgk"," phosphoglycerate kinase "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K00927"," PGK, pgk"," phosphoglycerate kinase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00927"," PGK, pgk"," phosphoglycerate kinase "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K00927"," PGK, pgk"," phosphoglycerate kinase "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K00927"," PGK, pgk"," phosphoglycerate kinase "," Carbon metabolism","C. closterium 8","Low Iron",-1.97726153696893
-"K00927"," PGK, pgk"," phosphoglycerate kinase "," Carbon fixation in photosynthetic organisms","C. closterium 8","Low Iron",-2.02075412527927
-"K00927"," PGK, pgk"," phosphoglycerate kinase "," Glycolysis / Gluconeogenesis","C. closterium 8","Low Iron",-1.92115621735555
-"K00958"," sat, met3"," sulfate adenylyltransferase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00958"," sat, met3"," sulfate adenylyltransferase "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K00058"," serA, PHGDH"," D-3-phosphoglycerate dehydrogenase / 2-oxoglutarate reductase "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K01755"," argH, ASL"," argininosuccinate lyase "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K01755"," argH, ASL"," argininosuccinate lyase "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K00213"," DHCR7"," 7-dehydrocholesterol reductase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K02115"," ATPF1G, atpG"," F-type H+-transporting ATPase subunit gamma"," Photosynthesis","G. huxleyi","High Iron",1.90636539586772
-"K02115"," ATPF1G, atpG"," F-type H+-transporting ATPase subunit gamma"," Photosynthesis","C. closterium 8","Low Iron",-2.28614624083326
-"K00548"," metH, MTR"," 5-methyltetrahydrofolate--homocysteine methyltransferase "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K00548"," metH, MTR"," 5-methyltetrahydrofolate--homocysteine methyltransferase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00548"," metH, MTR"," 5-methyltetrahydrofolate--homocysteine methyltransferase "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K01057"," PGLS, pgl, devB"," 6-phosphogluconolactonase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K01057"," PGLS, pgl, devB"," 6-phosphogluconolactonase "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K01057"," PGLS, pgl, devB"," 6-phosphogluconolactonase "," Carbon metabolism","C. closterium 8","Low Iron",-1.97726153696893
-"K01057"," PGLS, pgl, devB"," 6-phosphogluconolactonase "," Pentose phosphate pathway","C. closterium 8","Low Iron",-1.70830269239501
-"K10206"," E2.6.1.83"," LL-diaminopimelate aminotransferase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K10206"," E2.6.1.83"," LL-diaminopimelate aminotransferase "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K00228"," CPOX, hemF"," coproporphyrinogen III oxidase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00228"," CPOX, hemF"," coproporphyrinogen III oxidase "," Porphyrin metabolism","C. closterium 8","Low Iron",-2.46553410972825
-"K00228"," CPOX, hemF"," coproporphyrinogen III oxidase "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K02113"," ATPF1D, atpH"," F-type H+-transporting ATPase subunit delta"," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K01749"," hemC, HMBS"," hydroxymethylbilane synthase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K01749"," hemC, HMBS"," hydroxymethylbilane synthase "," Porphyrin metabolism","C. closterium 8","Low Iron",-2.46553410972825
-"K01749"," hemC, HMBS"," hydroxymethylbilane synthase "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K01749"," hemC, HMBS"," hydroxymethylbilane synthase "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K01940"," argG, ASS1"," argininosuccinate synthase "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K01940"," argG, ASS1"," argininosuccinate synthase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K01940"," argG, ASS1"," argininosuccinate synthase "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K00817"," hisC"," histidinol-phosphate aminotransferase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00817"," hisC"," histidinol-phosphate aminotransferase "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K01555"," FAH, fahA"," fumarylacetoacetase "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-1.72996893807351
-"K14338"," cypD_E, CYP102A, CYP505"," cytochrome P450 / NADPH-cytochrome P450 reductase "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-1.72996893807351
-"K13788"," pta"," phosphate acetyltransferase "," Carbon metabolism","C. closterium 8","Low Iron",-1.97726153696893
-"K00297"," metF, MTHFR"," methylenetetrahydrofolate reductase (NADH) "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K00297"," metF, MTHFR"," methylenetetrahydrofolate reductase (NADH) "," Carbon metabolism","C. closterium 8","Low Iron",-1.97726153696893
-"K13606"," NOL, NYC1"," chlorophyll(ide) b reductase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K13606"," NOL, NYC1"," chlorophyll(ide) b reductase "," Porphyrin metabolism","C. closterium 8","Low Iron",-2.46553410972825
-"K00611"," OTC, argF, argI"," ornithine carbamoyltransferase "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K00611"," OTC, argF, argI"," ornithine carbamoyltransferase "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K01477"," alc, ALLC"," allantoicase "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K08738"," CYC"," cytochrome c"," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K00787"," FDPS"," farnesyl diphosphate synthase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00787"," FDPS"," farnesyl diphosphate synthase "," Terpenoid backbone biosynthesis","C. closterium 8","Low Iron",-1.92668113018138
-"K19073"," DVR"," divinyl chlorophyllide a 8-vinyl-reductase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K19073"," DVR"," divinyl chlorophyllide a 8-vinyl-reductase "," Porphyrin metabolism","C. closterium 8","Low Iron",-2.46553410972825
-"K01937"," pyrG, CTPS"," CTP synthase "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K21104"," E3.1.1.101"," poly(ethylene terephthalate) hydrolase "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-1.72996893807351
-"K18533"," AK9"," adenylate/nucleoside-diphosphate kinase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K18533"," AK9"," adenylate/nucleoside-diphosphate kinase "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K02641"," petH"," ferredoxin--NADP+ reductase "," Photosynthesis","C. closterium 8","Low Iron",-2.28614624083326
-"K13789"," GGPS"," geranylgeranyl diphosphate synthase, type II "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K13789"," GGPS"," geranylgeranyl diphosphate synthase, type II "," Terpenoid backbone biosynthesis","C. closterium 8","Low Iron",-1.92668113018138
-"K00390"," cysH"," phosphoadenosine phosphosulfate reductase "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K02716"," psbO"," photosystem II oxygen-evolving enhancer protein 1"," Photosynthesis","G. huxleyi","High Iron",1.90636539586772
-"K02716"," psbO"," photosystem II oxygen-evolving enhancer protein 1"," Photosynthesis","C. closterium 8","Low Iron",-2.28614624083326
-"K00616"," TALDO1, talB, talA"," transaldolase "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K01698"," hemB, ALAD"," porphobilinogen synthase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K01698"," hemB, ALAD"," porphobilinogen synthase "," Porphyrin metabolism","C. closterium 8","Low Iron",-2.46553410972825
-"K01698"," hemB, ALAD"," porphobilinogen synthase "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K01698"," hemB, ALAD"," porphobilinogen synthase "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K01586"," lysA"," diaminopimelate decarboxylase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K01586"," lysA"," diaminopimelate decarboxylase "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K01586"," lysA"," diaminopimelate decarboxylase "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K00218"," por"," protochlorophyllide reductase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00218"," por"," protochlorophyllide reductase "," Porphyrin metabolism","C. closterium 8","Low Iron",-2.46553410972825
-"K01739"," metB"," cystathionine gamma-synthase "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K03949"," NDUFA5"," NADH dehydrogenase (ubiquinone) 1 alpha subcomplex subunit 5"," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K00609"," pyrB, PYR2"," aspartate carbamoyltransferase catalytic subunit "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K01599"," hemE, UROD"," uroporphyrinogen decarboxylase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K01599"," hemE, UROD"," uroporphyrinogen decarboxylase "," Porphyrin metabolism","C. closterium 8","Low Iron",-2.46553410972825
-"K01599"," hemE, UROD"," uroporphyrinogen decarboxylase "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K00615"," E2.2.1.1, tktA, tktB"," transketolase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00615"," E2.2.1.1, tktA, tktB"," transketolase "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K00615"," E2.2.1.1, tktA, tktB"," transketolase "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K00615"," E2.2.1.1, tktA, tktB"," transketolase "," Carbon metabolism","C. closterium 8","Low Iron",-1.97726153696893
-"K00615"," E2.2.1.1, tktA, tktB"," transketolase "," Carbon fixation in photosynthetic organisms","C. closterium 8","Low Iron",-2.02075412527927
-"K00615"," E2.2.1.1, tktA, tktB"," transketolase "," Pentose phosphate pathway","C. closterium 8","Low Iron",-1.70830269239501
-"K19269"," PGP, PGLP"," phosphoglycolate phosphatase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K19269"," PGP, PGLP"," phosphoglycolate phosphatase "," Carbon metabolism","C. closterium 8","Low Iron",-1.97726153696893
-"K18534"," K18534"," MPBQ/MSBQ methyltransferase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K18534"," K18534"," MPBQ/MSBQ methyltransferase "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K00831"," serC, PSAT1"," phosphoserine aminotransferase "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K00831"," serC, PSAT1"," phosphoserine aminotransferase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00831"," serC, PSAT1"," phosphoserine aminotransferase "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K00831"," serC, PSAT1"," phosphoserine aminotransferase "," Carbon metabolism","C. closterium 8","Low Iron",-1.97726153696893
-"K00831"," serC, PSAT1"," phosphoserine aminotransferase "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K01736"," aroC"," chorismate synthase "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K01736"," aroC"," chorismate synthase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K01736"," aroC"," chorismate synthase "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K03938"," NDUFS5"," NADH dehydrogenase (ubiquinone) Fe-S protein 5"," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K04040"," chlG, bchG"," chlorophyll/bacteriochlorophyll a synthase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K04040"," chlG, bchG"," chlorophyll/bacteriochlorophyll a synthase "," Porphyrin metabolism","C. closterium 8","Low Iron",-2.46553410972825
-"K05275"," E1.1.1.65"," pyridoxine 4-dehydrogenase "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K00145"," argC"," N-acetyl-gamma-glutamyl-phosphate reductase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00145"," argC"," N-acetyl-gamma-glutamyl-phosphate reductase "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K01607"," pcaC"," 4-carboxymuconolactone decarboxylase "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-1.72996893807351
-"K13800"," CMPK1, UMPK"," UMP-CMP kinase "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K13517"," MBOAT1_2"," lysophospholipid acyltransferase 1/2 "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K13517"," MBOAT1_2"," lysophospholipid acyltransferase 1/2 "," Glycerolipid metabolism","C. closterium 8","Low Iron",-1.67743373260717
-"K03428"," bchM, chlM"," magnesium-protoporphyrin O-methyltransferase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K03428"," bchM, chlM"," magnesium-protoporphyrin O-methyltransferase "," Porphyrin metabolism","C. closterium 8","Low Iron",-2.46553410972825
-"K00507"," SCD, desC"," stearoyl-CoA desaturase (Delta-9 desaturase) "," Fatty acid metabolism","C. closterium 8","Low Iron",-1.89606743142593
-"K02372"," fabZ"," 3-hydroxyacyl-[acyl-carrier-protein] dehydratase "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K02372"," fabZ"," 3-hydroxyacyl-[acyl-carrier-protein] dehydratase "," Fatty acid metabolism","C. closterium 8","Low Iron",-1.89606743142593
-"K02372"," fabZ"," 3-hydroxyacyl-[acyl-carrier-protein] dehydratase "," Fatty acid biosynthesis","C. closterium 8","Low Iron",-1.77514704517309
-"K01609"," trpC"," indole-3-glycerol phosphate synthase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K01609"," trpC"," indole-3-glycerol phosphate synthase "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K00022"," HADH"," 3-hydroxyacyl-CoA dehydrogenase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00022"," HADH"," 3-hydroxyacyl-CoA dehydrogenase "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K00022"," HADH"," 3-hydroxyacyl-CoA dehydrogenase "," Fatty acid metabolism","C. closterium 8","Low Iron",-1.89606743142593
-"K00919"," ispE"," 4-diphosphocytidyl-2-C-methyl-D-erythritol kinase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00919"," ispE"," 4-diphosphocytidyl-2-C-methyl-D-erythritol kinase "," Terpenoid backbone biosynthesis","C. closterium 8","Low Iron",-1.92668113018138
-"K00372"," nasC, nasA"," assimilatory nitrate reductase catalytic subunit "," Nitrogen metabolism","G. huxleyi","Low Iron",-2.34018659762105
-"K00372"," nasC, nasA"," assimilatory nitrate reductase catalytic subunit "," Microbial metabolism in diverse environments","G. huxleyi","Low Iron",-1.78756647289849
-"K08901"," psbQ"," photosystem II oxygen-evolving enhancer protein 3"," Photosynthesis","C. closterium 8","Low Iron",-2.28614624083326
-"K00991"," ispD"," 2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00991"," ispD"," 2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase "," Terpenoid backbone biosynthesis","C. closterium 8","Low Iron",-1.92668113018138
-"K01803"," TPI, tpiA"," triosephosphate isomerase (TIM) "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K01803"," TPI, tpiA"," triosephosphate isomerase (TIM) "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K01803"," TPI, tpiA"," triosephosphate isomerase (TIM) "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K01803"," TPI, tpiA"," triosephosphate isomerase (TIM) "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K01803"," TPI, tpiA"," triosephosphate isomerase (TIM) "," Carbon metabolism","C. closterium 8","Low Iron",-1.97726153696893
-"K01803"," TPI, tpiA"," triosephosphate isomerase (TIM) "," Carbon fixation in photosynthetic organisms","C. closterium 8","Low Iron",-2.02075412527927
-"K01803"," TPI, tpiA"," triosephosphate isomerase (TIM) "," Glycolysis / Gluconeogenesis","C. closterium 8","Low Iron",-1.92115621735555
-"K01803"," TPI, tpiA"," triosephosphate isomerase (TIM) "," Fructose and mannose metabolism","C. closterium 8","Low Iron",-1.70434362705106
-"K01662"," dxs"," 1-deoxy-D-xylulose-5-phosphate synthase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K01662"," dxs"," 1-deoxy-D-xylulose-5-phosphate synthase "," Terpenoid backbone biosynthesis","C. closterium 8","Low Iron",-1.92668113018138
-"K01764"," HCCS"," cytochrome c heme-lyase "," Porphyrin metabolism","C. closterium 8","Low Iron",-2.46553410972825
-"K00034"," gdh"," glucose 1-dehydrogenase "," Microbial metabolism in diverse environments","G. huxleyi","Low Iron",-1.78756647289849
-"K00034"," gdh"," glucose 1-dehydrogenase "," Carbon metabolism","G. huxleyi","Low Iron",-1.72201876693846
-"K03943"," NDUFV2"," NADH dehydrogenase (ubiquinone) flavoprotein 2 "," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K00793"," ribE, RIB5"," riboflavin synthase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00793"," ribE, RIB5"," riboflavin synthase "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K01750"," E4.3.1.12, ocd"," ornithine cyclodeaminase "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K17725"," ETHE1"," sulfur dioxygenase "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K17725"," ETHE1"," sulfur dioxygenase "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-1.72996893807351
-"K00029"," E1.1.1.40, maeB"," malate dehydrogenase (oxaloacetate-decarboxylating)(NADP+) "," Carbon metabolism","C. closterium 8","Low Iron",-1.97726153696893
-"K00765"," hisG"," ATP phosphoribosyltransferase "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K00765"," hisG"," ATP phosphoribosyltransferase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00765"," hisG"," ATP phosphoribosyltransferase "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K06125"," COQ2"," 4-hydroxybenzoate polyprenyltransferase "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K00362"," nirB"," nitrite reductase (NADH) large subunit "," Nitrogen metabolism","G. huxleyi","Low Iron",-2.34018659762105
-"K00362"," nirB"," nitrite reductase (NADH) large subunit "," Microbial metabolism in diverse environments","G. huxleyi","Low Iron",-1.78756647289849
-"K00362"," nirB"," nitrite reductase (NADH) large subunit "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-1.72996893807351
-"K01476"," E3.5.3.1, rocF, arg"," arginase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K01476"," E3.5.3.1, rocF, arg"," arginase "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K00645"," fabD, MCAT, MCT1"," [acyl-carrier-protein] S-malonyltransferase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00645"," fabD, MCAT, MCT1"," [acyl-carrier-protein] S-malonyltransferase "," Fatty acid metabolism","C. closterium 8","Low Iron",-1.89606743142593
-"K00645"," fabD, MCAT, MCT1"," [acyl-carrier-protein] S-malonyltransferase "," Fatty acid biosynthesis","C. closterium 8","Low Iron",-1.77514704517309
-"K00944"," AK3"," nucleoside-triphosphate--adenylate kinase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00944"," AK3"," nucleoside-triphosphate--adenylate kinase "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K03661"," ATPeV0B, ATP6F"," V-type H+-transporting ATPase 21kDa proteolipid subunit"," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K09839"," VDE, NPQ1"," violaxanthin de-epoxidase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00940"," ndk, NME"," nucleoside-diphosphate kinase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00940"," ndk, NME"," nucleoside-diphosphate kinase "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K00891"," aroK, aroL"," shikimate kinase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00891"," aroK, aroL"," shikimate kinase "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K00855"," PRK, prkB"," phosphoribulokinase "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K00855"," PRK, prkB"," phosphoribulokinase "," Carbon metabolism","C. closterium 8","Low Iron",-1.97726153696893
-"K00855"," PRK, prkB"," phosphoribulokinase "," Carbon fixation in photosynthetic organisms","C. closterium 8","Low Iron",-2.02075412527927
-"K10251"," HSD17B12, KAR, IFA38"," 17beta-estradiol 17-dehydrogenase / very-long-chain 3-oxoacyl-CoA reductase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K10251"," HSD17B12, KAR, IFA38"," 17beta-estradiol 17-dehydrogenase / very-long-chain 3-oxoacyl-CoA reductase "," Fatty acid metabolism","C. closterium 8","Low Iron",-1.89606743142593
-"K01610"," E4.1.1.49, pckA"," phosphoenolpyruvate carboxykinase (ATP) "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K01610"," E4.1.1.49, pckA"," phosphoenolpyruvate carboxykinase (ATP) "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K01610"," E4.1.1.49, pckA"," phosphoenolpyruvate carboxykinase (ATP) "," Carbon metabolism","C. closterium 8","Low Iron",-1.97726153696893
-"K01610"," E4.1.1.49, pckA"," phosphoenolpyruvate carboxykinase (ATP) "," Carbon fixation in photosynthetic organisms","C. closterium 8","Low Iron",-2.02075412527927
-"K01610"," E4.1.1.49, pckA"," phosphoenolpyruvate carboxykinase (ATP) "," Glycolysis / Gluconeogenesis","C. closterium 8","Low Iron",-1.92115621735555
-"K01610"," E4.1.1.49, pckA"," phosphoenolpyruvate carboxykinase (ATP) "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-1.72996893807351
-"K00647"," fabB"," 3-oxoacyl-[acyl-carrier-protein] synthase I "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K00647"," fabB"," 3-oxoacyl-[acyl-carrier-protein] synthase I "," Fatty acid metabolism","C. closterium 8","Low Iron",-1.89606743142593
-"K00647"," fabB"," 3-oxoacyl-[acyl-carrier-protein] synthase I "," Fatty acid biosynthesis","C. closterium 8","Low Iron",-1.77514704517309
-"K00265"," gltB"," glutamate synthase (NADPH) large chain "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00265"," gltB"," glutamate synthase (NADPH) large chain "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K00265"," gltB"," glutamate synthase (NADPH) large chain "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K15576"," nrtA, nasF, cynA"," nitrate/nitrite transport system substrate-binding protein"," Nitrogen metabolism","G. huxleyi","Low Iron",-2.34018659762105
-"K15578"," nrtC, nasD"," nitrate/nitrite transport system ATP-binding protein "," Nitrogen metabolism","G. huxleyi","Low Iron",-2.34018659762105
-"K15577"," nrtB, nasE, cynB"," nitrate/nitrite transport system permease protein"," Nitrogen metabolism","G. huxleyi","Low Iron",-2.34018659762105
-"K10249"," ELOVL4"," elongation of very long chain fatty acids protein 4 "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K10249"," ELOVL4"," elongation of very long chain fatty acids protein 4 "," Fatty acid metabolism","C. closterium 8","Low Iron",-1.89606743142593
-"K01719"," hemD, UROS"," uroporphyrinogen-III synthase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K01719"," hemD, UROS"," uroporphyrinogen-III synthase "," Porphyrin metabolism","C. closterium 8","Low Iron",-2.46553410972825
-"K01719"," hemD, UROS"," uroporphyrinogen-III synthase "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K01719"," hemD, UROS"," uroporphyrinogen-III synthase "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K00215"," dapB"," 4-hydroxy-tetrahydrodipicolinate reductase "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K02108"," ATPF0A, atpB"," F-type H+-transporting ATPase subunit a"," Photosynthesis","G. huxleyi","High Iron",1.90636539586772
-"K00794"," ribH, RIB4"," 6,7-dimethyl-8-ribityllumazine synthase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00794"," ribH, RIB4"," 6,7-dimethyl-8-ribityllumazine synthase "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K01687"," ilvD"," dihydroxy-acid dehydratase "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K00630"," ATS1"," glycerol-3-phosphate O-acyltransferase "," Glycerolipid metabolism","C. closterium 8","Low Iron",-1.67743373260717
-"K15744"," Z-ISO"," zeta-carotene isomerase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K03950"," NDUFA6"," NADH dehydrogenase (ubiquinone) 1 alpha subcomplex subunit 6"," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K08906"," petJ"," cytochrome c6"," Photosynthesis","G. huxleyi","High Iron",1.90636539586772
-"K08906"," petJ"," cytochrome c6"," Photosynthesis","C. closterium 8","Low Iron",-2.28614624083326
-"K17218"," sqr"," sulfide:quinone oxidoreductase "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K01591"," pyrF"," orotidine-5'-phosphate decarboxylase "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K01100"," E3.1.3.37"," sedoheptulose-bisphosphatase "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K01100"," E3.1.3.37"," sedoheptulose-bisphosphatase "," Carbon metabolism","C. closterium 8","Low Iron",-1.97726153696893
-"K01100"," E3.1.3.37"," sedoheptulose-bisphosphatase "," Carbon fixation in photosynthetic organisms","C. closterium 8","Low Iron",-2.02075412527927
-"K09828"," DHCR24, DWF1"," Delta24-sterol reductase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00762"," pyrE"," orotate phosphoribosyltransferase "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K13421"," UMPS"," uridine monophosphate synthetase "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K03940"," NDUFS7"," NADH dehydrogenase (ubiquinone) Fe-S protein 7 "," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K02639"," petF"," ferredoxin"," Photosynthesis","G. huxleyi","High Iron",1.90636539586772
-"K14446"," ccr"," crotonyl-CoA carboxylase/reductase "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K14446"," ccr"," crotonyl-CoA carboxylase/reductase "," Carbon metabolism","C. closterium 8","Low Iron",-1.97726153696893
-"K01953"," asnB, ASNS"," asparagine synthase (glutamine-hydrolysing) "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K01953"," asnB, ASNS"," asparagine synthase (glutamine-hydrolysing) "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K00031"," IDH1, IDH2, icd"," isocitrate dehydrogenase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00031"," IDH1, IDH2, icd"," isocitrate dehydrogenase "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K00031"," IDH1, IDH2, icd"," isocitrate dehydrogenase "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K00031"," IDH1, IDH2, icd"," isocitrate dehydrogenase "," Carbon metabolism","C. closterium 8","Low Iron",-1.97726153696893
-"K11353"," NDUFA13"," NADH dehydrogenase (ubiquinone) 1 alpha subcomplex subunit 13"," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K02137"," ATPeF0O, ATP5O, ATP5"," F-type H+-transporting ATPase subunit O"," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K02719"," psbU"," photosystem II PsbU protein"," Photosynthesis","G. huxleyi","High Iron",1.90636539586772
-"K02719"," psbU"," photosystem II PsbU protein"," Photosynthesis","C. closterium 8","Low Iron",-2.28614624083326
-"K03955"," NDUFAB1"," NADH dehydrogenase (ubiquinone) 1 alpha/beta subcomplex 1, acyl-carrier protein"," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K00632"," fadA, fadI"," acetyl-CoA acyltransferase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00632"," fadA, fadI"," acetyl-CoA acyltransferase "," Fatty acid metabolism","C. closterium 8","Low Iron",-1.89606743142593
-"K02551"," menD"," 2-succinyl-5-enolpyruvyl-6-hydroxy-3-cyclohexene-1-carboxylate synthase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K02551"," menD"," 2-succinyl-5-enolpyruvyl-6-hydroxy-3-cyclohexene-1-carboxylate synthase "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K12638"," CYP90D1"," 3-epi-6-deoxocathasterone 23-monooxygenase "," Brassinosteroid biosynthesis","G. huxleyi","Low Iron",-2.00581595550285
-"K12638"," CYP90D1"," 3-epi-6-deoxocathasterone 23-monooxygenase "," Brassinosteroid biosynthesis","C. closterium 8","High Iron",2.28067249463465
-"K08902"," psb27"," photosystem II Psb27 protein"," Photosynthesis","C. closterium 8","Low Iron",-2.28614624083326
-"K02717"," psbP"," photosystem II oxygen-evolving enhancer protein 2"," Photosynthesis","C. closterium 8","Low Iron",-2.28614624083326
-"K00208"," fabI"," enoyl-[acyl-carrier protein] reductase I "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00208"," fabI"," enoyl-[acyl-carrier protein] reductase I "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K00208"," fabI"," enoyl-[acyl-carrier protein] reductase I "," Fatty acid metabolism","C. closterium 8","Low Iron",-1.89606743142593
-"K00208"," fabI"," enoyl-[acyl-carrier protein] reductase I "," Fatty acid biosynthesis","C. closterium 8","Low Iron",-1.77514704517309
-"K01681"," ACO, acnA"," aconitate hydratase "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-1.72996893807351
-"K03526"," gcpE, ispG"," (E)-4-hydroxy-3-methylbut-2-enyl-diphosphate synthase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K03526"," gcpE, ispG"," (E)-4-hydroxy-3-methylbut-2-enyl-diphosphate synthase "," Terpenoid backbone biosynthesis","C. closterium 8","Low Iron",-1.92668113018138
-"K01689"," ENO, eno"," enolase "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K01689"," ENO, eno"," enolase "," Carbon metabolism","C. closterium 8","Low Iron",-1.97726153696893
-"K01638"," aceB, glcB"," malate synthase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K01638"," aceB, glcB"," malate synthase "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K01638"," aceB, glcB"," malate synthase "," Carbon metabolism","C. closterium 8","Low Iron",-1.97726153696893
-"K01638"," aceB, glcB"," malate synthase "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-1.72996893807351
-"K15404"," K15404, CER1"," aldehyde decarbonylase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00626"," ACAT, atoB"," acetyl-CoA C-acetyltransferase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00626"," ACAT, atoB"," acetyl-CoA C-acetyltransferase "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K00626"," ACAT, atoB"," acetyl-CoA C-acetyltransferase "," Carbon metabolism","C. closterium 8","Low Iron",-1.97726153696893
-"K00626"," ACAT, atoB"," acetyl-CoA C-acetyltransferase "," Terpenoid backbone biosynthesis","C. closterium 8","Low Iron",-1.92668113018138
-"K00626"," ACAT, atoB"," acetyl-CoA C-acetyltransferase "," Fatty acid metabolism","C. closterium 8","Low Iron",-1.89606743142593
-"K02267"," COX6B"," cytochrome c oxidase subunit 6b"," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K01623"," ALDO"," fructose-bisphosphate aldolase, class I "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K01623"," ALDO"," fructose-bisphosphate aldolase, class I "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K01623"," ALDO"," fructose-bisphosphate aldolase, class I "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K01623"," ALDO"," fructose-bisphosphate aldolase, class I "," Carbon metabolism","C. closterium 8","Low Iron",-1.97726153696893
-"K01623"," ALDO"," fructose-bisphosphate aldolase, class I "," Carbon fixation in photosynthetic organisms","C. closterium 8","Low Iron",-2.02075412527927
-"K01623"," ALDO"," fructose-bisphosphate aldolase, class I "," Glycolysis / Gluconeogenesis","C. closterium 8","Low Iron",-1.92115621735555
-"K01623"," ALDO"," fructose-bisphosphate aldolase, class I "," Fructose and mannose metabolism","C. closterium 8","Low Iron",-1.70434362705106
-"K01623"," ALDO"," fructose-bisphosphate aldolase, class I "," Pentose phosphate pathway","C. closterium 8","Low Iron",-1.70830269239501
-"K00971"," manC, cpsB"," mannose-1-phosphate guanylyltransferase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00971"," manC, cpsB"," mannose-1-phosphate guanylyltransferase "," Fructose and mannose metabolism","C. closterium 8","Low Iron",-1.70434362705106
-"K02152"," ATPeV1G, ATP6G"," V-type H+-transporting ATPase subunit G"," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K00411"," UQCRFS1, RIP1, petA"," ubiquinol-cytochrome c reductase iron-sulfur subunit "," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K13830"," ARO1"," pentafunctional AROM polypeptide "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K13830"," ARO1"," pentafunctional AROM polypeptide "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K13830"," ARO1"," pentafunctional AROM polypeptide "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K00806"," uppS"," undecaprenyl diphosphate synthase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00806"," uppS"," undecaprenyl diphosphate synthase "," Terpenoid backbone biosynthesis","C. closterium 8","Low Iron",-1.92668113018138
-"K08903"," psb28"," photosystem II 13kDa protein"," Photosynthesis","C. closterium 8","Low Iron",-2.28614624083326
-"K02078"," acpP"," acyl carrier protein"," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K11517"," HAO"," (S)-2-hydroxy-acid oxidase "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-1.72996893807351
-"K15633"," gpmI"," 2,3-bisphosphoglycerate-independent phosphoglycerate mutase "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K15633"," gpmI"," 2,3-bisphosphoglycerate-independent phosphoglycerate mutase "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-1.72996893807351
-"K07404"," pgl"," 6-phosphogluconolactonase "," Microbial metabolism in diverse environments","G. huxleyi","Low Iron",-1.78756647289849
-"K07404"," pgl"," 6-phosphogluconolactonase "," Carbon metabolism","G. huxleyi","Low Iron",-1.72201876693846
-"K01782"," fadJ"," 3-hydroxyacyl-CoA dehydrogenase / enoyl-CoA hydratase / 3-hydroxybutyryl-CoA epimerase "," Microbial metabolism in diverse environments","G. huxleyi","Low Iron",-1.78756647289849
-"K01782"," fadJ"," 3-hydroxyacyl-CoA dehydrogenase / enoyl-CoA hydratase / 3-hydroxybutyryl-CoA epimerase "," Carbon metabolism","G. huxleyi","Low Iron",-1.72201876693846
-"K01782"," fadJ"," 3-hydroxyacyl-CoA dehydrogenase / enoyl-CoA hydratase / 3-hydroxybutyryl-CoA epimerase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K01782"," fadJ"," 3-hydroxyacyl-CoA dehydrogenase / enoyl-CoA hydratase / 3-hydroxybutyryl-CoA epimerase "," Carbon metabolism","C. closterium 8","Low Iron",-1.97726153696893
-"K01782"," fadJ"," 3-hydroxyacyl-CoA dehydrogenase / enoyl-CoA hydratase / 3-hydroxybutyryl-CoA epimerase "," Fatty acid metabolism","C. closterium 8","Low Iron",-1.89606743142593
-"K03517"," nadA"," quinolinate synthase "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K09587"," CYP90B, DWF4"," steroid 22S-hydroxylase "," Brassinosteroid biosynthesis","G. huxleyi","Low Iron",-2.00581595550285
-"K09587"," CYP90B, DWF4"," steroid 22S-hydroxylase "," Brassinosteroid biosynthesis","C. closterium 8","High Iron",2.28067249463465
-"K09588"," CYP90A1, CPD"," 3beta,22alpha-dihydroxysteroid 3-dehydrogenase "," Brassinosteroid biosynthesis","G. huxleyi","Low Iron",-2.00581595550285
-"K09588"," CYP90A1, CPD"," 3beta,22alpha-dihydroxysteroid 3-dehydrogenase "," Brassinosteroid biosynthesis","C. closterium 8","High Iron",2.28067249463465
-"K09589"," CYP90D2, D2"," steroid 3-oxidase "," Brassinosteroid biosynthesis","G. huxleyi","Low Iron",-2.00581595550285
-"K09589"," CYP90D2, D2"," steroid 3-oxidase "," Brassinosteroid biosynthesis","C. closterium 8","High Iron",2.28067249463465
-"K09590"," CYP85A1, BR6OX1"," brassinosteroid 6-oxygenase "," Brassinosteroid biosynthesis","G. huxleyi","Low Iron",-2.00581595550285
-"K09590"," CYP85A1, BR6OX1"," brassinosteroid 6-oxygenase "," Brassinosteroid biosynthesis","C. closterium 8","High Iron",2.28067249463465
-"K12637"," CYP90C1, ROT3"," 3-epi-6-deoxocathasterone 23-monooxygenase "," Brassinosteroid biosynthesis","G. huxleyi","Low Iron",-2.00581595550285
-"K12637"," CYP90C1, ROT3"," 3-epi-6-deoxocathasterone 23-monooxygenase "," Brassinosteroid biosynthesis","C. closterium 8","High Iron",2.28067249463465
-"K12639"," CYP724, D11"," steroid 22S-hydroxylase "," Brassinosteroid biosynthesis","G. huxleyi","Low Iron",-2.00581595550285
-"K12639"," CYP724, D11"," steroid 22S-hydroxylase "," Brassinosteroid biosynthesis","C. closterium 8","High Iron",2.28067249463465
-"K12640"," CYP85A2, BR6OX2"," brassinosteroid 6-oxygenase / brassinolide synthase "," Brassinosteroid biosynthesis","G. huxleyi","Low Iron",-2.00581595550285
-"K12640"," CYP85A2, BR6OX2"," brassinosteroid 6-oxygenase / brassinolide synthase "," Brassinosteroid biosynthesis","C. closterium 8","High Iron",2.28067249463465
-"K03639"," moaA, CNX2"," GTP 3',8-cyclase "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K00114"," exaA"," alcohol dehydrogenase (cytochrome c) "," Microbial metabolism in diverse environments","G. huxleyi","Low Iron",-1.78756647289849
-"K00114"," exaA"," alcohol dehydrogenase (cytochrome c) "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00114"," exaA"," alcohol dehydrogenase (cytochrome c) "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K00114"," exaA"," alcohol dehydrogenase (cytochrome c) "," Glycolysis / Gluconeogenesis","C. closterium 8","Low Iron",-1.92115621735555
-"K00114"," exaA"," alcohol dehydrogenase (cytochrome c) "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-1.72996893807351
-"K00863"," DAK, TKFC"," triose/dihydroxyacetone kinase / FAD-AMP lyase (cyclizing) "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K00863"," DAK, TKFC"," triose/dihydroxyacetone kinase / FAD-AMP lyase (cyclizing) "," Carbon metabolism","C. closterium 8","Low Iron",-1.97726153696893
-"K00863"," DAK, TKFC"," triose/dihydroxyacetone kinase / FAD-AMP lyase (cyclizing) "," Fructose and mannose metabolism","C. closterium 8","Low Iron",-1.70434362705106
-"K00863"," DAK, TKFC"," triose/dihydroxyacetone kinase / FAD-AMP lyase (cyclizing) "," Glycerolipid metabolism","C. closterium 8","Low Iron",-1.67743373260717
-"K14448"," mcd"," (2S)-methylsuccinyl-CoA dehydrogenase "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K14448"," mcd"," (2S)-methylsuccinyl-CoA dehydrogenase "," Carbon metabolism","C. closterium 8","Low Iron",-1.97726153696893
-"K00318"," PRODH, fadM, putB"," proline dehydrogenase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K14454"," GOT1"," aspartate aminotransferase, cytoplasmic "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K00123"," fdoG, fdhF, fdwA"," formate dehydrogenase major subunit "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K00123"," fdoG, fdhF, fdwA"," formate dehydrogenase major subunit "," Carbon metabolism","C. closterium 8","Low Iron",-1.97726153696893
-"K00123"," fdoG, fdhF, fdwA"," formate dehydrogenase major subunit "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-1.72996893807351
-"K01495"," GCH1, folE"," GTP cyclohydrolase IA "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K00643"," E2.3.1.37, ALAS"," 5-aminolevulinate synthase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00643"," E2.3.1.37, ALAS"," 5-aminolevulinate synthase "," Porphyrin metabolism","C. closterium 8","Low Iron",-2.46553410972825
-"K00643"," E2.3.1.37, ALAS"," 5-aminolevulinate synthase "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K01427"," URE"," urease "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-1.72996893807351
-"K14447"," ecm"," ethylmalonyl-CoA mutase "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K14447"," ecm"," ethylmalonyl-CoA mutase "," Carbon metabolism","C. closterium 8","Low Iron",-1.97726153696893
-"K02154"," ATPeV0A, ATP6N"," V-type H+-transporting ATPase subunit a"," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K02114"," ATPF1E, atpC"," F-type H+-transporting ATPase subunit epsilon"," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K02134"," ATPeF1D, ATP5D, ATP16"," F-type H+-transporting ATPase subunit delta"," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K01807"," rpiA"," ribose 5-phosphate isomerase A "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K01807"," rpiA"," ribose 5-phosphate isomerase A "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K01807"," rpiA"," ribose 5-phosphate isomerase A "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K01807"," rpiA"," ribose 5-phosphate isomerase A "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K01807"," rpiA"," ribose 5-phosphate isomerase A "," Carbon metabolism","C. closterium 8","Low Iron",-1.97726153696893
-"K01807"," rpiA"," ribose 5-phosphate isomerase A "," Carbon fixation in photosynthetic organisms","C. closterium 8","Low Iron",-2.02075412527927
-"K01807"," rpiA"," ribose 5-phosphate isomerase A "," Pentose phosphate pathway","C. closterium 8","Low Iron",-1.70830269239501
-"K14152"," HIS4"," phosphoribosyl-ATP pyrophosphohydrolase / phosphoribosyl-AMP cyclohydrolase / histidinol dehydrogenase "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K14152"," HIS4"," phosphoribosyl-ATP pyrophosphohydrolase / phosphoribosyl-AMP cyclohydrolase / histidinol dehydrogenase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K14152"," HIS4"," phosphoribosyl-ATP pyrophosphohydrolase / phosphoribosyl-AMP cyclohydrolase / histidinol dehydrogenase "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K02150"," ATPeV1E, ATP6E"," V-type H+-transporting ATPase subunit E"," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K01490"," AMPD"," AMP deaminase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K02266"," COX6A"," cytochrome c oxidase subunit 6a"," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K02636"," petC"," cytochrome b6-f complex iron-sulfur subunit "," Photosynthesis","G. huxleyi","High Iron",1.90636539586772
-"K02636"," petC"," cytochrome b6-f complex iron-sulfur subunit "," Photosynthesis","C. closterium 8","Low Iron",-2.28614624083326
-"K03921"," FAB2, SSI2, desA1"," acyl-[acyl-carrier-protein] desaturase "," Fatty acid metabolism","C. closterium 8","Low Iron",-1.89606743142593
-"K03921"," FAB2, SSI2, desA1"," acyl-[acyl-carrier-protein] desaturase "," Fatty acid biosynthesis","C. closterium 8","Low Iron",-1.77514704517309
-"K00211"," TYR1"," prephenate dehydrogenase (NADP+) "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K15227"," TYRAAT"," arogenate dehydrogenase (NADP+), plant "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K00815"," TAT"," tyrosine aminotransferase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K11819"," SUR1, RTY"," S-alkyl-thiohydroximate lyase SUR1 "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K01702"," LEU1"," 3-isopropylmalate dehydratase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K01702"," LEU1"," 3-isopropylmalate dehydratase "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K03404"," chlD, bchD"," magnesium chelatase subunit D "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K03404"," chlD, bchD"," magnesium chelatase subunit D "," Porphyrin metabolism","C. closterium 8","Low Iron",-2.46553410972825
-"K13065"," E2.3.1.133, HCT"," shikimate O-hydroxycinnamoyltransferase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K01694"," TRP"," tryptophan synthase "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K01694"," TRP"," tryptophan synthase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K01694"," TRP"," tryptophan synthase "," Biosynthesis of amino acids","C. closterium 8","Low Iron",-2.00508215311542
-"K00417"," QCR7, UQCRB"," ubiquinol-cytochrome c reductase subunit 7"," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K02690"," psaB"," photosystem I P700 chlorophyll a apoprotein A2"," Photosynthesis","G. huxleyi","High Iron",1.90636539586772
-"K07515"," HADHA"," enoyl-CoA hydratase / long-chain 3-hydroxyacyl-CoA dehydrogenase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K07515"," HADHA"," enoyl-CoA hydratase / long-chain 3-hydroxyacyl-CoA dehydrogenase "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K07515"," HADHA"," enoyl-CoA hydratase / long-chain 3-hydroxyacyl-CoA dehydrogenase "," Fatty acid metabolism","C. closterium 8","Low Iron",-1.89606743142593
-"K02714"," psbM"," photosystem II PsbM protein"," Photosynthesis","G. huxleyi","High Iron",1.90636539586772
-"K02714"," psbM"," photosystem II PsbM protein"," Photosynthesis","C. closterium 8","Low Iron",-2.28614624083326
-"K00116"," mqo"," malate dehydrogenase (quinone) "," Microbial metabolism in diverse environments","G. huxleyi","Low Iron",-1.78756647289849
-"K00116"," mqo"," malate dehydrogenase (quinone) "," Carbon metabolism","G. huxleyi","Low Iron",-1.72201876693846
-"K00234"," SDHA, SDH1"," succinate dehydrogenase (ubiquinone) flavoprotein subunit "," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K14731"," mlhB, chnC"," epsilon-lactone hydrolase "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-1.72996893807351
-"K00953"," FLAD1"," FAD synthetase "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K15889"," PCME"," prenylcysteine alpha-carboxyl methylesterase "," Microbial metabolism in diverse environments","G. huxleyi","Low Iron",-1.78756647289849
-"K02204"," thrB2"," homoserine kinase type II "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K17872"," NDC1, ndbB"," demethylphylloquinone reductase "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K17872"," NDC1, ndbB"," demethylphylloquinone reductase "," Biosynthesis of cofactors","C. closterium 8","Low Iron",-1.91167122131255
-"K15634"," gpmB"," 2,3-bisphosphoglycerate-dependent phosphoglycerate mutase "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K00147"," proA"," glutamate-5-semialdehyde dehydrogenase "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K03946"," NDUFA2"," NADH dehydrogenase (ubiquinone) 1 alpha subcomplex subunit 2"," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K00811"," ASP5"," aspartate aminotransferase, chloroplastic "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K05359"," ADT, PDT"," arogenate/prephenate dehydratase "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K00451"," HGD, hmgA"," homogentisate 1,2-dioxygenase "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-1.72996893807351
-"K11352"," NDUFA12"," NADH dehydrogenase (ubiquinone) 1 alpha subcomplex subunit 12"," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K03937"," NDUFS4"," NADH dehydrogenase (ubiquinone) Fe-S protein 4"," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K03941"," NDUFS8"," NADH dehydrogenase (ubiquinone) Fe-S protein 8 "," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K00931"," proB"," glutamate 5-kinase "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K03662"," ATPeVS1, ATP6S1"," V-type H+-transporting ATPase S1 subunit"," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K12659"," ARG56"," N-acetyl-gamma-glutamyl-phosphate reductase / acetylglutamate kinase "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K01055"," pcaD"," 3-oxoadipate enol-lactonase "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-1.72996893807351
-"K14727"," pcaL"," 3-oxoadipate enol-lactonase / 4-carboxymuconolactone decarboxylase "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-1.72996893807351
-"K03935"," NDUFS2"," NADH dehydrogenase (ubiquinone) Fe-S protein 2 "," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K02693"," psaE"," photosystem I subunit IV"," Photosynthesis","G. huxleyi","High Iron",1.90636539586772
-"K05824"," LYS12"," homoisocitrate dehydrogenase "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-1.72996893807351
-"K03954"," NDUFA10"," NADH dehydrogenase (ubiquinone) 1 alpha subcomplex subunit 10"," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K03936"," NDUFS3"," NADH dehydrogenase (ubiquinone) Fe-S protein 3 "," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K01243"," mtnN, mtn, pfs"," adenosylhomocysteine nucleosidase "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K02135"," ATPeF1E, ATP5E, ATP15"," F-type H+-transporting ATPase subunit epsilon"," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K02265"," COX5B"," cytochrome c oxidase subunit 5b"," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K03952"," NDUFA8"," NADH dehydrogenase (ubiquinone) 1 alpha subcomplex subunit 8"," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K01865"," hab"," (hydroxyamino)benzene mutase "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-1.72996893807351
-"K03959"," NDUFB3"," NADH dehydrogenase (ubiquinone) 1 beta subcomplex subunit 3"," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K03963"," NDUFB7"," NADH dehydrogenase (ubiquinone) 1 beta subcomplex subunit 7"," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K03934"," NDUFS1"," NADH dehydrogenase (ubiquinone) Fe-S protein 1 "," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K00419"," QCR9, UCRC"," ubiquinol-cytochrome c reductase subunit 9"," Oxidative phosphorylation","G. oceanica","High Iron",1.88459110260173
-"K01695"," trpA"," tryptophan synthase alpha chain "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K01696"," trpB"," tryptophan synthase beta chain "," Biosynthesis of amino acids","G. huxleyi","High Iron",1.87310446487658
-"K00163"," aceE"," pyruvate dehydrogenase E1 component "," Biosynthesis of secondary metabolites","C. closterium 8","Low Iron",-2.04381531717317
-"K00163"," aceE"," pyruvate dehydrogenase E1 component "," Microbial metabolism in diverse environments","C. closterium 8","Low Iron",-2.07386461275405
-"K00163"," aceE"," pyruvate dehydrogenase E1 component "," Carbon metabolism","C. closterium 8","Low Iron",-1.97726153696893
-"K00163"," aceE"," pyruvate dehydrogenase E1 component "," Glycolysis / Gluconeogenesis","C. closterium 8","Low Iron",-1.92115621735555
-"K15579"," nrtD, cynD"," nitrate/nitrite transport system ATP-binding protein"," Nitrogen metabolism","G. huxleyi","Low Iron",-2.34018659762105
-"K00066"," algD"," GDP-mannose 6-dehydrogenase "," Fructose and mannose metabolism","C. closterium 8","Low Iron",-1.70434362705106
-"K01800"," maiA, GSTZ1"," maleylacetoacetate isomerase "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-1.72996893807351
-"K01729"," algL"," poly(beta-D-mannuronate) lyase "," Fructose and mannose metabolism","C. closterium 8","Low Iron",-1.70434362705106
-"K00237"," SDHD, SDH4"," succinate dehydrogenase (ubiquinone) membrane anchor subunit"," Microbial metabolism in diverse environments","G. huxleyi","Low Iron",-1.78756647289849
-"K00237"," SDHD, SDH4"," succinate dehydrogenase (ubiquinone) membrane anchor subunit"," Carbon metabolism","G. huxleyi","Low Iron",-1.72201876693846
+"K09838"," ZEP, ABA1"," zeaxanthin epoxidase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K09838"," ZEP, ABA1"," zeaxanthin epoxidase "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K15371"," GDH2"," glutamate dehydrogenase "," Nitrogen metabolism","G. huxleyi","Low Iron",-2.24580078892326
+"K15371"," GDH2"," glutamate dehydrogenase "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-2.32812355703468
+"K00525"," E1.17.4.1A, nrdA, nrdE"," ribonucleoside-diphosphate reductase alpha chain "," Pyrimidine metabolism","G. oceanica","High Iron",2.13579560105754
+"K06443"," lcyB, crtL1, crtY"," lycopene beta-cyclase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K06443"," lcyB, crtL1, crtY"," lycopene beta-cyclase "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K00053"," ilvC"," ketol-acid reductoisomerase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K00053"," ilvC"," ketol-acid reductoisomerase "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K03841"," FBP, fbp"," fructose-1,6-bisphosphatase I "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-2.32812355703468
+"K01792"," E5.1.3.15"," glucose-6-phosphate 1-epimerase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K01792"," E5.1.3.15"," glucose-6-phosphate 1-epimerase "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K00134"," GAPDH, gapA"," glyceraldehyde 3-phosphate dehydrogenase (phosphorylating) "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K00134"," GAPDH, gapA"," glyceraldehyde 3-phosphate dehydrogenase (phosphorylating) "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K03403"," chlH, bchH"," magnesium chelatase subunit H "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K03403"," chlH, bchH"," magnesium chelatase subunit H "," Porphyrin and chlorophyll metabolism","C. closterium UGA8","Low Iron",-2.11480753190049
+"K03403"," chlH, bchH"," magnesium chelatase subunit H "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K10808"," RRM2"," ribonucleoside-diphosphate reductase subunit M2 "," Pyrimidine metabolism","G. oceanica","High Iron",2.13579560105754
+"K00648"," fabH"," 3-oxoacyl-[acyl-carrier-protein] synthase III "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K00231"," PPOX, hemY"," protoporphyrinogen/coproporphyrinogen III oxidase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K00231"," PPOX, hemY"," protoporphyrinogen/coproporphyrinogen III oxidase "," Porphyrin and chlorophyll metabolism","C. closterium UGA8","Low Iron",-2.11480753190049
+"K00231"," PPOX, hemY"," protoporphyrinogen/coproporphyrinogen III oxidase "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K02492"," hemA"," glutamyl-tRNA reductase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K02492"," hemA"," glutamyl-tRNA reductase "," Porphyrin and chlorophyll metabolism","C. closterium UGA8","Low Iron",-2.11480753190049
+"K02492"," hemA"," glutamyl-tRNA reductase "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K02291"," crtB"," 15-cis-phytoene synthase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K02291"," crtB"," 15-cis-phytoene synthase "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K11262"," ACACA"," acetyl-CoA carboxylase / biotin carboxylase 1 "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K11262"," ACACA"," acetyl-CoA carboxylase / biotin carboxylase 1 "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K00099"," dxr"," 1-deoxy-D-xylulose-5-phosphate reductoisomerase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K00099"," dxr"," 1-deoxy-D-xylulose-5-phosphate reductoisomerase "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K01637"," E4.1.3.1, aceA"," isocitrate lyase "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-2.32812355703468
+"K06118"," SQD1, sqdB"," UDP-sulfoquinovose synthase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K00138"," aldB"," aldehyde dehydrogenase "," Microbial metabolism in diverse environments","G. huxleyi","Low Iron",-2.52625804791826
+"K00138"," aldB"," aldehyde dehydrogenase "," Pyruvate metabolism","G. huxleyi","Low Iron",-2.06558406751194
+"K00138"," aldB"," aldehyde dehydrogenase "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-2.32812355703468
+"K00138"," aldB"," aldehyde dehydrogenase "," Pyruvate metabolism","G. oceanica","Low Iron",-2.15746007047501
+"K12304"," CANT1"," soluble calcium-activated nucleotidase 1 "," Pyrimidine metabolism","G. oceanica","High Iron",2.13579560105754
+"K03783"," punA, PNP"," purine-nucleoside phosphorylase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K03783"," punA, PNP"," purine-nucleoside phosphorylase "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K09458"," fabF, OXSM, CEM1"," 3-oxoacyl-[acyl-carrier-protein] synthase II "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K00232"," E1.3.3.6, ACOX1, ACOX3"," acyl-CoA oxidase "," Carbon metabolism","G. huxleyi","Low Iron",-2.22010137968385
+"K00232"," E1.3.3.6, ACOX1, ACOX3"," acyl-CoA oxidase "," alpha-Linolenic acid metabolism","G. oceanica","Low Iron",-1.96861170392308
+"K01845"," hemL"," glutamate-1-semialdehyde 2,1-aminomutase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K01845"," hemL"," glutamate-1-semialdehyde 2,1-aminomutase "," Porphyrin and chlorophyll metabolism","C. closterium UGA8","Low Iron",-2.11480753190049
+"K01845"," hemL"," glutamate-1-semialdehyde 2,1-aminomutase "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K00655"," plsC"," 1-acyl-sn-glycerol-3-phosphate acyltransferase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K00655"," plsC"," 1-acyl-sn-glycerol-3-phosphate acyltransferase "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K03527"," ispH, lytB"," 4-hydroxy-3-methylbut-2-en-1-yl diphosphate reductase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K03527"," ispH, lytB"," 4-hydroxy-3-methylbut-2-en-1-yl diphosphate reductase "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K01783"," rpe, RPE"," ribulose-phosphate 3-epimerase "," Microbial metabolism in diverse environments","G. huxleyi","Low Iron",-2.52625804791826
+"K01783"," rpe, RPE"," ribulose-phosphate 3-epimerase "," Carbon metabolism","G. huxleyi","Low Iron",-2.22010137968385
+"K01783"," rpe, RPE"," ribulose-phosphate 3-epimerase "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-2.32812355703468
+"K01624"," FBA, fbaA"," fructose-bisphosphate aldolase, class II "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K01624"," FBA, fbaA"," fructose-bisphosphate aldolase, class II "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K01679"," E4.2.1.2B, fumC, FH"," fumarate hydratase, class II "," Microbial metabolism in diverse environments","G. huxleyi","Low Iron",-2.52625804791826
+"K01679"," E4.2.1.2B, fumC, FH"," fumarate hydratase, class II "," Carbon metabolism","G. huxleyi","Low Iron",-2.22010137968385
+"K01679"," E4.2.1.2B, fumC, FH"," fumarate hydratase, class II "," Pyruvate metabolism","G. huxleyi","Low Iron",-2.06558406751194
+"K01679"," E4.2.1.2B, fumC, FH"," fumarate hydratase, class II "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-2.32812355703468
+"K01679"," E4.2.1.2B, fumC, FH"," fumarate hydratase, class II "," Pyruvate metabolism","G. oceanica","Low Iron",-2.15746007047501
+"K00766"," trpD"," anthranilate phosphoribosyltransferase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K00766"," trpD"," anthranilate phosphoribosyltransferase "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K10960"," chlP, bchP"," geranylgeranyl diphosphate/geranylgeranyl-bacteriochlorophyllide a reductase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K10960"," chlP, bchP"," geranylgeranyl diphosphate/geranylgeranyl-bacteriochlorophyllide a reductase "," Porphyrin and chlorophyll metabolism","C. closterium UGA8","Low Iron",-2.11480753190049
+"K10960"," chlP, bchP"," geranylgeranyl diphosphate/geranylgeranyl-bacteriochlorophyllide a reductase "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K15422"," SAL"," 3'(2'), 5'-bisphosphate nucleotidase / inositol polyphosphate 1-phosphatase "," Microbial metabolism in diverse environments","G. huxleyi","Low Iron",-2.52625804791826
+"K02293"," PDS, crtP"," 15-cis-phytoene desaturase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K02293"," PDS, crtP"," 15-cis-phytoene desaturase "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K13998"," DHFR-TS"," dihydrofolate reductase / thymidylate synthase "," Pyrimidine metabolism","G. oceanica","High Iron",2.13579560105754
+"K00927"," PGK, pgk"," phosphoglycerate kinase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K00927"," PGK, pgk"," phosphoglycerate kinase "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K00958"," sat, met3"," sulfate adenylyltransferase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K00958"," sat, met3"," sulfate adenylyltransferase "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K02115"," ATPF1G, atpG"," F-type H+-transporting ATPase subunit gamma"," Photosynthesis","G. huxleyi","High Iron",1.96448317981056
+"K02115"," ATPF1G, atpG"," F-type H+-transporting ATPase subunit gamma"," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K02115"," ATPF1G, atpG"," F-type H+-transporting ATPase subunit gamma"," Photosynthesis","C. closterium UGA8","Low Iron",-2.06959458891993
+"K01784"," galE, GALE"," UDP-glucose 4-epimerase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K10206"," E2.6.1.83"," LL-diaminopimelate aminotransferase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K10206"," E2.6.1.83"," LL-diaminopimelate aminotransferase "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K00228"," CPOX, hemF"," coproporphyrinogen III oxidase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K00228"," CPOX, hemF"," coproporphyrinogen III oxidase "," Porphyrin and chlorophyll metabolism","C. closterium UGA8","Low Iron",-2.11480753190049
+"K00228"," CPOX, hemF"," coproporphyrinogen III oxidase "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K01749"," hemC, HMBS"," hydroxymethylbilane synthase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K01749"," hemC, HMBS"," hydroxymethylbilane synthase "," Porphyrin and chlorophyll metabolism","C. closterium UGA8","Low Iron",-2.11480753190049
+"K01749"," hemC, HMBS"," hydroxymethylbilane synthase "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K00817"," hisC"," histidinol-phosphate aminotransferase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K00817"," hisC"," histidinol-phosphate aminotransferase "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K13606"," NOL, NYC1"," chlorophyll(ide) b reductase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K19073"," DVR"," divinyl chlorophyllide a 8-vinyl-reductase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K19073"," DVR"," divinyl chlorophyllide a 8-vinyl-reductase "," Porphyrin and chlorophyll metabolism","C. closterium UGA8","Low Iron",-2.11480753190049
+"K19073"," DVR"," divinyl chlorophyllide a 8-vinyl-reductase "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K01937"," pyrG, CTPS"," CTP synthase "," Pyrimidine metabolism","G. oceanica","High Iron",2.13579560105754
+"K21104"," E3.1.1.101"," poly(ethylene terephthalate) hydrolase "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-2.32812355703468
+"K02641"," petH"," ferredoxin--NADP+ reductase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K02641"," petH"," ferredoxin--NADP+ reductase "," Photosynthesis","C. closterium UGA8","Low Iron",-2.06959458891993
+"K13789"," GGPS"," geranylgeranyl diphosphate synthase, type II "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K13789"," GGPS"," geranylgeranyl diphosphate synthase, type II "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K02716"," psbO"," photosystem II oxygen-evolving enhancer protein 1"," Photosynthesis","G. huxleyi","High Iron",1.96448317981056
+"K02716"," psbO"," photosystem II oxygen-evolving enhancer protein 1"," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K02716"," psbO"," photosystem II oxygen-evolving enhancer protein 1"," Photosynthesis","C. closterium UGA8","Low Iron",-2.06959458891993
+"K01698"," hemB, ALAD"," porphobilinogen synthase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K01698"," hemB, ALAD"," porphobilinogen synthase "," Porphyrin and chlorophyll metabolism","C. closterium UGA8","Low Iron",-2.11480753190049
+"K01698"," hemB, ALAD"," porphobilinogen synthase "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K00218"," por"," protochlorophyllide reductase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K00218"," por"," protochlorophyllide reductase "," Porphyrin and chlorophyll metabolism","C. closterium UGA8","Low Iron",-2.11480753190049
+"K00218"," por"," protochlorophyllide reductase "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K11717"," sufS"," cysteine desulfurase / selenocysteine lyase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K00761"," upp, UPRT"," uracil phosphoribosyltransferase "," Pyrimidine metabolism","G. oceanica","High Iron",2.13579560105754
+"K01599"," hemE, UROD"," uroporphyrinogen decarboxylase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K01599"," hemE, UROD"," uroporphyrinogen decarboxylase "," Porphyrin and chlorophyll metabolism","C. closterium UGA8","Low Iron",-2.11480753190049
+"K01599"," hemE, UROD"," uroporphyrinogen decarboxylase "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K00615"," E2.2.1.1, tktA, tktB"," transketolase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K00615"," E2.2.1.1, tktA, tktB"," transketolase "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K19269"," PGP, PGLP"," phosphoglycolate phosphatase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K19269"," PGP, PGLP"," phosphoglycolate phosphatase "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K07513"," ACAA1"," acetyl-CoA acyltransferase 1 "," alpha-Linolenic acid metabolism","G. oceanica","Low Iron",-1.96861170392308
+"K08907"," LHCA1"," light-harvesting complex I chlorophyll a/b binding protein 1"," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K04040"," chlG, bchG"," chlorophyll/bacteriochlorophyll a synthase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K04040"," chlG, bchG"," chlorophyll/bacteriochlorophyll a synthase "," Porphyrin and chlorophyll metabolism","C. closterium UGA8","Low Iron",-2.11480753190049
+"K04040"," chlG, bchG"," chlorophyll/bacteriochlorophyll a synthase "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K03428"," bchM, chlM"," magnesium-protoporphyrin O-methyltransferase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K03428"," bchM, chlM"," magnesium-protoporphyrin O-methyltransferase "," Porphyrin and chlorophyll metabolism","C. closterium UGA8","Low Iron",-2.11480753190049
+"K03428"," bchM, chlM"," magnesium-protoporphyrin O-methyltransferase "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K00507"," SCD, desC"," stearoyl-CoA desaturase (Delta-9 desaturase) "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K00919"," ispE"," 4-diphosphocytidyl-2-C-methyl-D-erythritol kinase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K00919"," ispE"," 4-diphosphocytidyl-2-C-methyl-D-erythritol kinase "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K00372"," nasC, nasA"," assimilatory nitrate reductase catalytic subunit "," Microbial metabolism in diverse environments","G. huxleyi","Low Iron",-2.52625804791826
+"K00372"," nasC, nasA"," assimilatory nitrate reductase catalytic subunit "," Nitrogen metabolism","G. huxleyi","Low Iron",-2.24580078892326
+"K08901"," psbQ"," photosystem II oxygen-evolving enhancer protein 3"," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K08901"," psbQ"," photosystem II oxygen-evolving enhancer protein 3"," Photosynthesis","C. closterium UGA8","Low Iron",-2.06959458891993
+"K00991"," ispD"," 2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K00991"," ispD"," 2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K01803"," TPI, tpiA"," triosephosphate isomerase (TIM) "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K01803"," TPI, tpiA"," triosephosphate isomerase (TIM) "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K01662"," dxs"," 1-deoxy-D-xylulose-5-phosphate synthase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K01662"," dxs"," 1-deoxy-D-xylulose-5-phosphate synthase "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K00034"," gdh"," glucose 1-dehydrogenase "," Microbial metabolism in diverse environments","G. huxleyi","Low Iron",-2.52625804791826
+"K00034"," gdh"," glucose 1-dehydrogenase "," Carbon metabolism","G. huxleyi","Low Iron",-2.22010137968385
+"K17725"," ETHE1"," sulfur dioxygenase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K17725"," ETHE1"," sulfur dioxygenase "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-2.32812355703468
+"K00362"," nirB"," nitrite reductase (NADH) large subunit "," Microbial metabolism in diverse environments","G. huxleyi","Low Iron",-2.52625804791826
+"K00362"," nirB"," nitrite reductase (NADH) large subunit "," Nitrogen metabolism","G. huxleyi","Low Iron",-2.24580078892326
+"K00362"," nirB"," nitrite reductase (NADH) large subunit "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-2.32812355703468
+"K00645"," fabD, MCAT, MCT1"," [acyl-carrier-protein] S-malonyltransferase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K00645"," fabD, MCAT, MCT1"," [acyl-carrier-protein] S-malonyltransferase "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K00940"," ndk, NME"," nucleoside-diphosphate kinase "," Pyrimidine metabolism","G. oceanica","High Iron",2.13579560105754
+"K00855"," PRK, prkB"," phosphoribulokinase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K01610"," E4.1.1.49, pckA"," phosphoenolpyruvate carboxykinase (ATP) "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-2.32812355703468
+"K01610"," E4.1.1.49, pckA"," phosphoenolpyruvate carboxykinase (ATP) "," Pyruvate metabolism","G. oceanica","Low Iron",-2.15746007047501
+"K15576"," nrtA, nasF, cynA"," nitrate/nitrite transport system substrate-binding protein"," Nitrogen metabolism","G. huxleyi","Low Iron",-2.24580078892326
+"K02258"," COX11, ctaG"," cytochrome c oxidase assembly protein subunit 11"," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K00630"," ATS1"," glycerol-3-phosphate O-acyltransferase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K08906"," petJ"," cytochrome c6"," Photosynthesis","G. huxleyi","High Iron",1.96448317981056
+"K08906"," petJ"," cytochrome c6"," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K01591"," pyrF"," orotidine-5'-phosphate decarboxylase "," Pyrimidine metabolism","G. oceanica","High Iron",2.13579560105754
+"K01100"," E3.1.3.37"," sedoheptulose-bisphosphatase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K08910"," LHCA4"," light-harvesting complex I chlorophyll a/b binding protein 4"," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K00762"," pyrE"," orotate phosphoribosyltransferase "," Pyrimidine metabolism","G. oceanica","High Iron",2.13579560105754
+"K13421"," UMPS"," uridine monophosphate synthetase "," Pyrimidine metabolism","G. oceanica","High Iron",2.13579560105754
+"K02639"," petF"," ferredoxin"," Photosynthesis","G. huxleyi","High Iron",1.96448317981056
+"K01520"," dut, DUT"," dUTP diphosphatase "," Pyrimidine metabolism","G. oceanica","High Iron",2.13579560105754
+"K02719"," psbU"," photosystem II PsbU protein"," Photosynthesis","G. huxleyi","High Iron",1.96448317981056
+"K02719"," psbU"," photosystem II PsbU protein"," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K02719"," psbU"," photosystem II PsbU protein"," Photosynthesis","C. closterium UGA8","Low Iron",-2.06959458891993
+"K08902"," psb27"," photosystem II Psb27 protein"," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K08902"," psb27"," photosystem II Psb27 protein"," Photosynthesis","C. closterium UGA8","Low Iron",-2.06959458891993
+"K02717"," psbP"," photosystem II oxygen-evolving enhancer protein 2"," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K02717"," psbP"," photosystem II oxygen-evolving enhancer protein 2"," Photosynthesis","C. closterium UGA8","Low Iron",-2.06959458891993
+"K00560"," thyA, TYMS"," thymidylate synthase "," Pyrimidine metabolism","G. oceanica","High Iron",2.13579560105754
+"K03526"," gcpE, ispG"," (E)-4-hydroxy-3-methylbut-2-enyl-diphosphate synthase "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K03526"," gcpE, ispG"," (E)-4-hydroxy-3-methylbut-2-enyl-diphosphate synthase "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K01638"," aceB, glcB"," malate synthase "," Pyruvate metabolism","G. huxleyi","Low Iron",-2.06558406751194
+"K15404"," K15404, CER1"," aldehyde decarbonylase "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K02078"," acpP"," acyl carrier protein"," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K02078"," acpP"," acyl carrier protein"," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K07404"," pgl"," 6-phosphogluconolactonase "," Carbon metabolism","G. huxleyi","Low Iron",-2.22010137968385
+"K01782"," fadJ"," 3-hydroxyacyl-CoA dehydrogenase / enoyl-CoA hydratase / 3-hydroxybutyryl-CoA epimerase "," Microbial metabolism in diverse environments","G. huxleyi","Low Iron",-2.52625804791826
+"K01782"," fadJ"," 3-hydroxyacyl-CoA dehydrogenase / enoyl-CoA hydratase / 3-hydroxybutyryl-CoA epimerase "," Carbon metabolism","G. huxleyi","Low Iron",-2.22010137968385
+"K00114"," exaA"," alcohol dehydrogenase (cytochrome c) "," Microbial metabolism in diverse environments","G. huxleyi","Low Iron",-2.52625804791826
+"K00114"," exaA"," alcohol dehydrogenase (cytochrome c) "," Pyruvate metabolism","G. huxleyi","Low Iron",-2.06558406751194
+"K00114"," exaA"," alcohol dehydrogenase (cytochrome c) "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-2.32812355703468
+"K00114"," exaA"," alcohol dehydrogenase (cytochrome c) "," Pyruvate metabolism","G. oceanica","Low Iron",-2.15746007047501
+"K00863"," DAK, TKFC"," triose/dihydroxyacetone kinase / FAD-AMP lyase (cyclizing) "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K00123"," fdoG, fdhF, fdwA"," formate dehydrogenase major subunit "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-2.32812355703468
+"K01427"," URE"," urease "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-2.32812355703468
+"K02636"," petC"," cytochrome b6-f complex iron-sulfur subunit "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K02636"," petC"," cytochrome b6-f complex iron-sulfur subunit "," Photosynthesis","C. closterium UGA8","Low Iron",-2.06959458891993
+"K03404"," chlD, bchD"," magnesium chelatase subunit D "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K03404"," chlD, bchD"," magnesium chelatase subunit D "," Porphyrin and chlorophyll metabolism","C. closterium UGA8","Low Iron",-2.11480753190049
+"K03404"," chlD, bchD"," magnesium chelatase subunit D "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K02714"," psbM"," photosystem II PsbM protein"," Photosynthesis","G. huxleyi","High Iron",1.96448317981056
+"K02714"," psbM"," photosystem II PsbM protein"," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K02714"," psbM"," photosystem II PsbM protein"," Photosynthesis","C. closterium UGA8","Low Iron",-2.06959458891993
+"K00116"," mqo"," malate dehydrogenase (quinone) "," Microbial metabolism in diverse environments","G. huxleyi","Low Iron",-2.52625804791826
+"K00116"," mqo"," malate dehydrogenase (quinone) "," Carbon metabolism","G. huxleyi","Low Iron",-2.22010137968385
+"K00116"," mqo"," malate dehydrogenase (quinone) "," Pyruvate metabolism","G. huxleyi","Low Iron",-2.06558406751194
+"K01431"," UPB1, pydC"," beta-ureidopropionase "," Pyrimidine metabolism","G. oceanica","High Iron",2.13579560105754
+"K10527"," MFP2"," enoyl-CoA hydratase/3-hydroxyacyl-CoA dehydrogenase "," alpha-Linolenic acid metabolism","G. oceanica","Low Iron",-1.96861170392308
+"K14621"," PLB1, PLB"," phospholipase B1, membrane-associated "," alpha-Linolenic acid metabolism","G. oceanica","Low Iron",-1.96861170392308
+"K10529"," DOX"," fatty acid alpha-dioxygenase "," alpha-Linolenic acid metabolism","G. oceanica","Low Iron",-1.96861170392308
+"K00876"," udk, UCK"," uridine kinase "," Pyrimidine metabolism","G. oceanica","High Iron",2.13579560105754
+"K02693"," psaE"," photosystem I subunit IV"," Photosynthesis","G. huxleyi","High Iron",1.96448317981056
+"K01865"," hab"," (hydroxyamino)benzene mutase "," Microbial metabolism in diverse environments","G. oceanica","Low Iron",-2.32812355703468
+"K00163"," aceE"," pyruvate dehydrogenase E1 component "," Metabolic pathways","C. closterium UGA8","Low Iron",-2.12899726197486
+"K00163"," aceE"," pyruvate dehydrogenase E1 component "," Biosynthesis of secondary metabolites","C. closterium UGA8","Low Iron",-1.88689451946648
+"K00237"," SDHD, SDH4"," succinate dehydrogenase (ubiquinone) membrane anchor subunit"," Microbial metabolism in diverse environments","G. huxleyi","Low Iron",-2.52625804791826
+"K00237"," SDHD, SDH4"," succinate dehydrogenase (ubiquinone) membrane anchor subunit"," Carbon metabolism","G. huxleyi","Low Iron",-2.22010137968385
