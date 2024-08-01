@@ -103,7 +103,7 @@ NA,"ptox2","ptox2","Plastid terminal oxidase 2","PSII","Photosynthesis",NA,"Plas
 NA,"isip_1a","isip_1a","Iron stress induced protein 1a","ISIP","Photosynthesis",NA,"Iron stress induced protein 1a"
 NA,"isip_2a","isip_2a","Iron stress induced protein 2a","ISIP","Photosynthesis",NA,"Iron stress induced protein 2a"
 NA,"isip_3","isip_3","Iron stress induced protein 3","ISIP","Photosynthesis",NA,"Iron stress induced protein 3"
-NA,"7tm_1","rho","Rhodopsin","PSII","Photosynthesis",NA,"Rhodopsin"
+NA,"Bac_rhodopsin","Bac_rho","Rhodopsin","PSII","Photosynthesis",NA,"Rhodopsin"
 "map00910","K01755"," argH, ASL"," argininosuccinate lyase ","Urea cycle","Nitrogen metabolism",NA,"argininosuccinate lyase"
 "map00910","K01940"," argG, ASS1"," argininosuccinate synthase ","Urea cycle","Nitrogen metabolism",NA,"argininosuccinate synthase"
 "map00910","K00611"," OTC, argF, argI"," ornithine carbamoyltransferase ","Urea cycle","Nitrogen metabolism",NA,"ornithine carbamoyltransferase"
