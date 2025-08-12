@@ -15,7 +15,7 @@ source('functions.R')
 checkAndLoadPackages('tidyverse','patchwork','rstatix','ggpubr','ggmisc','multcompView',
                      'shadowtext')
 #-------Cell Sizes--------
-size <- read.csv('../rawData/exp_cell_size.csv') 
+size <- read.csv('exp_cell_size.csv') 
 size=pivot_longer(size, !Organism, names_to = c('Treatment', 'rep'), 
              names_pattern = '(.*\\..*\\.)(A|B|C)', values_to = 'size')
 
@@ -65,8 +65,7 @@ anova.flex <- function(df,organism, var){
   summary.org <- aov.df %>% 
     group_by(Treatment) %>%
     summarize('av.Param' = mean(Param),'sd'=sd(Param))%>%
-    arrange(desc('av.Param')) ##!!! this is important so letters from cld map 
-  ## to the right treatment
+    arrange(desc(av.Param)) ##!!! this is important so letters from cld map to the right treatment
   
   # 3. run Tukey's test using anova output
   tukey.org <- TukeyHSD(anova.org)
@@ -85,6 +84,7 @@ anova.flex <- function(df,organism, var){
 }
 
 aov.size.4 <- anova.flex(df = size, organism = 'C. closterium UGA4', var = 'Size')
+aov.size.4$Tukey<-c('a','a','a')
 aov.size.8 <- anova.flex(size,"C. closterium UGA8", "Size")
 aov.size.6 <- anova.flex(size,"G. oceanica", "Size")
 aov.size.13 <- anova.flex(size,"G. huxleyi", "Size")
@@ -120,7 +120,7 @@ barplot.aov <- function(df.sig, hist.parameter=-1, y_axis){
     facet_grid(~taxa, scales="free_x", space="free_x", switch="x") +
     theme_pubr()+
     theme(axis.title.x = element_blank(),
-          axis.text.x = element_text(face="italic"),legend.position='none',
+          axis.text.x = element_text(face="italic"),legend.position='bottom',
           strip.placement = 'outside',
           strip.text = element_text(size=15,face='bold'),
           strip.background = element_rect(fill='white', color='white')) + 
@@ -142,12 +142,12 @@ barplot.aov <- function(df.sig, hist.parameter=-1, y_axis){
   plot
 }
 
-size.plot <- barplot.aov(df.sig = size.sig, y_axis='Cell size (µM^2)')
+size.plot <- barplot.aov(df.sig = size.sig, y_axis='Diameter (µm)')
 size.plot
 
 #-----------Growth rate and Chla----------
 
-physio<-read.csv('../rawData/physio_exp.csv')
+physio<-read.csv('physio_exp_growth.csv')
 
 physio$culture <- gsub( "4", "C. closterium UGA4", physio$culture)
 physio$culture <- gsub( "8", "C. closterium UGA8", physio$culture)
@@ -227,7 +227,24 @@ mu <- mu %>% group_by(Organism)%>%
 mu_muMax <- summarise(mu, 
                       m = paste(signif(mean(mu_perc),2), 
                                 signif(sd(mu_perc),2), sep=' ± '))
-colnames(mu_muMax) <- c("Organism", "µ/µMAX")
+colnames(mu_muMax) <- c("Organism", "µ/µmax")
+
+#Manual adjustment - should include extra replicates for the coccolithophores (minus the Low Fe from 2 low pH G. oceanica, 1 high G. huxleyi, and 1 high UGA8)
+
+#propogate error for u/umax for each isolate
+mean_high <- 0.701866667
+mean_low <- 0.45254
+
+sd_low <- 0.041018996
+sd_high <- 0.01291872
+
+#mu_muMax <- mean_low / mean_high
+
+# Error propagation
+#mu_muMax_sd <- mu_muMax * sqrt((sd_low / mean_low)^2 + (sd_high / mean_high)^2)
+
+mu_muMax$`µ/µmax` <- c("0.29 ± 0.04","0.65 ± 0.06", "0.55 ± 0.11", "NA")
+mu_muMax$Organism <- c("G. oceanica","G. huxleyi", "C. closterium UGA8", "C. closterium UGA4")
 
 
 #### run T tests
@@ -239,52 +256,79 @@ colnames(mu_muMax) <- c("Organism", "µ/µMAX")
 # 3. run appropriate test
 
 high.vs.low <- function(df, organism, var){
-  #this function tests significance for each organism given either µ or Chla as variable to test
-  df <- filter(df,Organism==eval(quote(organism))) #select for organism in df
-  df <- data.frame(Treatment=df$Treatment, x = df[[var]], Organism= df$Organism)
+  # Filter and clean
+  df <- filter(df, Organism == eval(quote(organism)))
+  df <- data.frame(Treatment = df$Treatment, x = df[[var]], Organism = df$Organism)
+  df <- df[complete.cases(df$x), ]
   df$treatment <- factor(df$Treatment)
-        # to run a Shapiro-wilks test, separate df by organism and iron treatment
-        # to test the normality WITHIN each treatment, high and low Fe
-        # where H0: the sample is normal, if the p-value is > 0.05, you can run a t test,
-        # otherwise if p-value < 0.05, we reject the H0 and run a Wilcox rank test
-  high.fe <- filter(df, grepl("High Fe",Treatment)==TRUE)
-  low.fe <- filter(df,grepl("Low Fe",Treatment)==TRUE)
   
-  if (nrow(low.fe) >= 3){ #run normality check if there are enough rows
-    normal.h <-shapiro_test(high.fe$x) #here x is the variable for the organism either growth rate or chla
+  # Subset treatments
+  high.fe <- filter(df, grepl("High Fe", Treatment))
+  low.fe  <- filter(df, grepl("Low Fe", Treatment))
+  
+  # Replicate counts
+  n_high <- nrow(high.fe)
+  n_low  <- nrow(low.fe)
+  
+  stat.test <- NULL
+  
+  if (n_high < 2 | n_low < 2) {
+    warning("Too few replicates in one or both groups (<2). Cannot run any test.")
+    return(NULL)
+  }
+  
+  # Shapiro only if both groups ≥ 3
+  if (n_high >= 3 & n_low >= 3) {
+    normal.h <- shapiro_test(high.fe$x)
     normal.l <- shapiro_test(low.fe$x)
     
-    if (normal.h$p.value < 0.05 || normal.l$p.value < 0.05){ #if not normal,...
-      print("Sample not normal, run a wilcoxon rank test")
-      stat.test <- wilcox_test(df,x~Treatment) %>% 
-        adjust_pvalue(method='fdr') 
-      stat.test
-      }else{
-      print("Sample is normal, run an f test")
-      f.test <- var.test(x~Treatment,df)  # to test equal variance between Treatments, we run an F test
+    if (normal.h$p.value < 0.05 || normal.l$p.value < 0.05) {
+      message("Normality test failed — using Wilcoxon test")
+      stat.test <- wilcox_test(df, x ~ Treatment) %>%
+        adjust_pvalue(method = 'fdr')
+    } else {
+      message("Normality OK — performing F-test and t-test")
+      f.test <- var.test(x ~ Treatment, data = df)
       print(f.test)
       
-      if(f.test$p.value >0.05){
-        # the H0: sample variances are equal, so if p-value > 0.05, run a t test with
-        # equal variances. 
-        print("run a t.test with equal variance")
-        stat.test <- t_test(df, x~Treatment) %>% 
-          adjust_pvalue(method='fdr') 
-        stat.test
-        }else{
-        #if p-value < 0.05, run a t test with unequal variances 
-        print("run a t test with unequal variance")  
-        stat.test <- t_test(df, x~Treatment, var.equal = FALSE) %>% 
-          adjust_pvalue(method='fdr') 
-       print(stat.test)
-       }
+      if (f.test$p.value > 0.05) {
+        message("Equal variance — t-test with equal variance")
+        stat.test <- t_test(df, x ~ Treatment) %>%
+          adjust_pvalue(method = 'fdr')
+      } else {
+        message("Unequal variance — t-test with unequal variance")
+        stat.test <- t_test(df, x ~ Treatment, var.equal = FALSE) %>%
+          adjust_pvalue(method = 'fdr')
       }
     }
-  stat.test <- stat.test %>% 
-    add_significance(p.col = 'p.adj', output.col = 'signif',
-                     cutpoints = c(0, 1e-04, 0.001, 0.01, 0.05, 1),
-                     symbols = c("****", "***", "**", "*", "ns")) %>%
-    mutate('Organism'=organism)
+    
+  } else {
+    # Too few reps for Shapiro, proceed directly to F + t-test
+    message("Not enough replicates for normality test — skipping Shapiro and using t-test")
+    f.test <- var.test(x ~ Treatment, data = df)
+    print(f.test)
+    
+    if (f.test$p.value > 0.05) {
+      message("Equal variance — t-test with equal variance")
+      stat.test <- t_test(df, x ~ Treatment) %>%
+        adjust_pvalue(method = 'fdr')
+    } else {
+      message("Unequal variance — t-test with unequal variance")
+      stat.test <- t_test(df, x ~ Treatment, var.equal = FALSE) %>%
+        adjust_pvalue(method = 'fdr')
+    }
+  }
+  
+  # Add significance labels if test succeeded
+  if (!is.null(stat.test)) {
+    stat.test <- stat.test %>%
+      add_significance(p.col = 'p.adj', output.col = 'signif',
+                       cutpoints = c(0, 1e-04, 0.001, 0.01, 0.05, 1),
+                       symbols = c("****", "***", "**", "*", "ns")) %>%
+      mutate(Organism = organism)
+  }
+  
+  return(stat.test)
 }
 
 
@@ -311,7 +355,7 @@ chl.signif <- left_join(avg.chla, chl.signif, by=c('Organism','Treatment'))
 #####------ Growth Plots-------
 
 ###to add bars for historical mu, reading in older data
-hist.mu <- read.csv('../rawData/histData/histGrowth.csv')
+hist.mu <- read.csv('histGrowth.csv')
 hist.mu$Organism <- str_replace(hist.mu$Organism, 'E. huxleyi','G. huxleyi')
 hist.av.mu <- hist.mu %>% group_by(Organism,Treatment,Taxa)%>%
   summarize('h.growth.sd'=sd(GrowthRate),'h.growth'=mean(GrowthRate))
@@ -319,8 +363,11 @@ hist.av.mu <- hist.mu %>% group_by(Organism,Treatment,Taxa)%>%
 hist.av.mu <- hist.av.mu %>% group_by(Treatment, Organism, Taxa)
 colnames(hist.av.mu)[3] <- 'taxa'
 mu.signif <- left_join(mu.signif, hist.av.mu, by=c('Organism','Treatment','taxa'))
+mu.signif$Organism <- factor(mu.signif$Organism, 
+                             levels=c('G. oceanica', 'G. huxleyi', 'C. closterium UGA8', 'C. closterium UGA4'))
 
 
+#Removed 2 low pH G. oceanica replicates
 mu.plot <-{
   avg.mu$Organism <- factor(avg.mu$Organism, 
                             levels=c('G. oceanica','G. huxleyi',
@@ -331,13 +378,13 @@ mu.plot <-{
                   position = position_dodge(width=0.9),
                   width=0.2) +
     geom_text(aes(label=signif, y=mu+mu.sd, 
-                  vjust=-1.6),size=10,
+                  vjust=-1.0),size=6,
               show.legend=F) +
-    geom_shadowtext(aes(label='------', y=h.growth + h.growth.sd),
-                    position = position_dodge2(0.9),size=5,
+    geom_shadowtext(aes(label='------', y=h.growth),
+                    position = position_dodge2(0.9),size=3,
                     bg.r=.08, bg.colour='white',color='black') +
     facet_grid(~taxa, scales="free_x", space="free_x", switch="x")+
-    labs(y=expression(paste('Growth Rate (',day^-1,')')), fill='Treatment')+
+    labs(y=expression(paste('Growth rate (',day^-1,')')), fill='Treatment')+
     theme_pubr()+
     theme(axis.title.x=element_blank(), 
           axis.text.x = element_text(face="italic"),
@@ -345,7 +392,7 @@ mu.plot <-{
           strip.placement = 'outside',
           strip.text = element_text(size=15, face='bold'),
           strip.background = element_rect(fill='white', color='white'))  +
-    scale_fill_manual(labels=c('High iron','Low iron'),values=c("black","white")) +
+    scale_fill_manual(labels=c('High iron','Low iron'),values=c("black","white","grey")) +
     scale_x_discrete(labels=c(
       "C. closterium UGA8" = "C. closterium UGA8\n(Inner)",
       "G. oceanica" = "G. oceanica\n(Inner)",
@@ -360,8 +407,8 @@ mu.plot
 
 #####µ/µMAX plots#####
 #first make the tibble a ggtexttable
-
-xxyy<- paste0("µ/µMAX") %>% 
+library(ggpp)
+xxyy<- paste0("µ/µmax") %>% 
   strwrap(width=25) %>%
   paste(collapse="\n")
 
@@ -391,10 +438,10 @@ df <- tibble(x = rep(-Inf, length(tbs)),
 
 
 mu_muMax_plot <-  mu.plot + 
-  theme(legend.position='none', 
+  theme(legend.position='bottom', 
         axis.title.x=element_blank())  +
   geom_table(data = df, aes(x = x, y = y, label = tbl),
-                 hjust=-.3,vjust = 1.5, 
+                 hjust=-.6,vjust = 1.5, 
              table.theme = ttheme_gtlight(),
              fill='white') 
 
@@ -425,7 +472,7 @@ chla.plot <-{
           strip.placement = 'outside',
           strip.text = element_text(size=15, face='bold'),
           strip.background = element_rect(fill='white', color='white'))  +
- scale_fill_manual(values=c("black","white")) +
+ scale_fill_manual(values=c("black","white", "grey")) +
    scale_x_discrete(labels=c(
      "C. closterium UGA8" = "C. closterium 8\n(Inner)",
      "G. oceanica" = "G. oceanica\n(Inner)",
@@ -442,7 +489,7 @@ chla.plot
 #cell and shut down photosystem
 
 
-fire <- read.csv('../rawData/fire_exp.csv')
+fire <- read.csv('fire_exp.csv')
 
 ### The first column contains the organism, treatment, and replicate in one.
 ### Clean up data frame by removing replicate letter, extracting treatment  
@@ -464,10 +511,9 @@ fire$Organism <- str_replace_all(fire$Organism, c('04'="C. closterium UGA4",
                                                     '13'="G. huxleyi"))
 fire$Treatment <- str_replace_all(fire$Treatment, c("pFe19"="High Iron",
                                                       "pFe21.9"="Low Iron",
-                                                      "Fe_add"="Fe Ammendment"))
-
+                                                      "Fe_add"="Iron Amendment"))
 # set order of treatments to appear in figure
-fire$Treatment <- factor(fire$Treatment,levels = c("High Iron","Low Iron","Fe Ammendment"))
+fire$Treatment <- factor(fire$Treatment,levels = c("High Iron","Low Iron","Iron Amendment"))
 
 ##### calculate summary stats for table in output/ 
 stat.fire <- {
@@ -488,7 +534,7 @@ fv.fm.sig <- rbind(fv.fm.anova.08, fv.fm.anova.06, fv.fm.anova.04, fv.fm.anova.1
 fv.fm.sig <- group_by(fv.fm.sig, Organism, Treatment) 
 
 #####read in and prep historical  fire#####
-histFire <- read.csv('../rawData/histData/histFire.csv')
+histFire <- read.csv('histFire.csv')
 
 # str_extract will take a pattern matching the treatment or organism codes and 
 # move it to a new column via mutate
@@ -536,7 +582,7 @@ for (i in 1:nrow(fv.fm.sig)) {
 }
 ######------Fv/Fm Plot----------
 
-Fv.Fm.Plot <- barplot.aov(fv.fm.sig,hist.parameter = 'h.AvgFv.Fm',y_axis = 'Fv.Fm')
+Fv.Fm.Plot <- barplot.aov(fv.fm.sig,hist.parameter = 'h.AvgFv.Fm',y_axis = 'Fv/Fm')
 Fv.Fm.Plot
 
 ####TauAv1####
@@ -573,6 +619,9 @@ tQa.sig$Treatment <- factor(tQa.sig$Treatment,
                                 levels = c("High Iron","Low Iron","Iron Amendment"))
 
 ######--------tQa Plot-------
+#manually flip a/b on plot so it starts with a 'a' and not 'b'
+#tau.06<-edit(tau.06)
+#tau.13<-edit(tau.13)
 
 Tau.av.Plot <- barplot.aov(tQa.sig, hist.parameter = 'h.AvgtQa',y_axis=expression(paste(tau,"Q"[a],' (µs)')))
 
@@ -582,7 +631,7 @@ Tau.av.Plot
 ## functional absorption cross-section of PSII ##
 
 ##### RUN ONE-WAY ANOVA #####
-
+#manually edit letters to be in descending order
 sigma.04 <- anova.flex(df = fire, organism = "C. closterium UGA4", var = 'Sigma')
 sigma.08 <- anova.flex(fire, "C. closterium UGA8", "Sigma")
 sigma.06 <- anova.flex(fire, "G. oceanica", 'Sigma')
@@ -596,9 +645,11 @@ Sigma.sig <- full_join(Sigma.sig, hist_table)
 Sigma.sig$Organism <- factor(Sigma.sig$Organism,
                            levels = c("C. closterium UGA8","G. oceanica",
                                       "C. closterium UGA4","G. huxleyi"))
+Sigma.sig$Treatment <- factor(Sigma.sig$Treatment, levels = c("High Iron", "Low Iron", "Iron Amendment"))
+
 
 for (i in 1:nrow(Sigma.sig)) {
-  if (Sigma.sig$Organism[i] == "G. oceanica"|Sigma.sig$Organism[i] == "C. closterium 8"){
+  if (Sigma.sig$Organism[i] == "G. oceanica"|Sigma.sig$Organism[i] == "C. closterium UGA8"){
     Sigma.sig$Shelf[i] = "Inner shelf"} 
   else{Sigma.sig$Shelf[i] = "Outer shelf"}
 }
@@ -608,6 +659,7 @@ for (i in 1:nrow(Sigma.sig)) {
     Sigma.sig$taxa[i] = "Coccolithophore"} 
   else{Sigma.sig$taxa[i] = "Diatom"}
 }
+
 
 ##### Sigma plot #####
 
@@ -646,7 +698,38 @@ npq.plot <- ggplot(npqLow, aes(PAR, NPQ))+
   coord_cartesian(ylim=c(0, 2.2))
 npq.plot
 
+###Natalie's NPQ boxplots
+a<-read.csv('ETR_maintenance.csv')
+df_filtered <- a %>% filter(PAR == 2000)
+df_filtered$Treatment <- as.factor(df_filtered$Treatment)
+df_filtered$isolate <- factor(df_filtered$isolate, levels = c("C. closterium UGA4",  "C. closterium UGA8", "G. oceanica UGA6","G. huxleyi UGA13"))
 
+# Set color scheme for the organisms (based on the figure)
+
+# Set color scheme for the individual points based on iron treatment
+iron_colors <- c("High Fe" = "black",      
+                 "Low Fe" = "white",       
+                 "Iron Add-Back" = "grey") 
+
+# Create the boxplot
+cairo_ps("plot.eps", width = 6, height = 4)  # Adjust width and height as necessary
+ggplot(df_filtered, aes(x = isolate, y = NPQ, fill = isolate)) +
+  geom_boxplot(alpha = 0.6, outlier.shape = NA, fill = "#CAF0F8", color = "black") +  # Slightly transparent boxes, hide default outliers
+  geom_jitter(aes(fill=Treatment), color="black", width = 0.2, size = 3, alpha = 0.8, shape=21) +  # Individual data points
+  labs(x = "", y = "NPQ at 2000 PAR") +
+  scale_fill_manual(values = iron_colors) +
+  theme_pubr() +
+  theme(
+    axis.text.x = element_text(size = 12),
+    legend.position = "top"
+  ) +
+  theme(axis.title.x=element_blank(), 
+        axis.text.x = element_text(face="italic"),
+        legend.position = 'bottom', 
+        strip.placement = 'outside',
+        strip.text = element_text(size=15, face='bold'),
+        strip.background = element_rect(fill='white', color='white'))  
+dev.off()
 ####------------plot all physiological data together-----------------------####
 design <- "
 1122
@@ -734,3 +817,7 @@ add_fluor <- add_fluor4+add_fluor8+add_fluor6+add_fluor13 +
         plot.tag = element_text( hjust=11)) 
 
 add_fluor
+########
+
+library(tidyverse)
+
